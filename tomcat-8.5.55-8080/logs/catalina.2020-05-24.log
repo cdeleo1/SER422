@@ -1,478 +1,3 @@
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-23-May-2020 21:14:05.249 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
-23-May-2020 21:14:05.255 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
-23-May-2020 21:14:05.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
-23-May-2020 21:14:05.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
-23-May-2020 21:14:05.258 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-46-generic
-23-May-2020 21:14:05.258 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
-23-May-2020 21:14:05.258 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
-23-May-2020 21:14:05.259 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-2ubuntu218.04
-23-May-2020 21:14:05.259 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
-23-May-2020 21:14:05.259 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/apache-tomcat-8.5.55
-23-May-2020 21:14:05.260 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/apache-tomcat-8.5.55
-23-May-2020 21:14:05.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-23-May-2020 21:14:05.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-23-May-2020 21:14:05.264 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-23-May-2020 21:14:05.264 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/apache-tomcat-8.5.55/conf/logging.properties
-23-May-2020 21:14:05.264 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-23-May-2020 21:14:05.265 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-23-May-2020 21:14:05.265 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-23-May-2020 21:14:05.265 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-23-May-2020 21:14:05.265 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-23-May-2020 21:14:05.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/apache-tomcat-8.5.55
-23-May-2020 21:14:05.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/apache-tomcat-8.5.55
-23-May-2020 21:14:05.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/apache-tomcat-8.5.55/temp
-23-May-2020 21:14:05.267 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
-23-May-2020 21:14:05.356 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:14:05.377 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
-23-May-2020 21:14:05.402 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1315 ms
-23-May-2020 21:14:05.495 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-23-May-2020 21:14:05.496 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
-23-May-2020 21:14:05.519 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/manager]
-23-May-2020 21:14:06.009 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/manager] has finished in [489] ms
-23-May-2020 21:14:06.010 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/examples]
-23-May-2020 21:14:06.459 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/examples] has finished in [449] ms
-23-May-2020 21:14:06.460 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/ROOT]
-23-May-2020 21:14:06.489 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/ROOT] has finished in [29] ms
-23-May-2020 21:14:06.490 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/docs]
-23-May-2020 21:14:06.546 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/docs] has finished in [56] ms
-23-May-2020 21:14:06.546 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/host-manager]
-23-May-2020 21:14:06.639 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/host-manager] has finished in [93] ms
-23-May-2020 21:14:06.649 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:14:06.668 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1265 ms
-23-May-2020 21:16:27.633 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
-23-May-2020 21:16:27.634 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:16:27.647 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
-23-May-2020 21:16:27.793 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:16:27.799 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-23-May-2020 21:18:14.535 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
-23-May-2020 21:18:14.543 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
-23-May-2020 21:18:14.543 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
-23-May-2020 21:18:14.544 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
-23-May-2020 21:18:14.544 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-46-generic
-23-May-2020 21:18:14.545 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
-23-May-2020 21:18:14.545 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
-23-May-2020 21:18:14.545 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-2ubuntu218.04
-23-May-2020 21:18:14.545 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
-23-May-2020 21:18:14.546 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/apache-tomcat-8.5.55
-23-May-2020 21:18:14.546 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/apache-tomcat-8.5.55
-23-May-2020 21:18:14.551 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-23-May-2020 21:18:14.551 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-23-May-2020 21:18:14.551 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-23-May-2020 21:18:14.551 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/apache-tomcat-8.5.55/conf/logging.properties
-23-May-2020 21:18:14.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-23-May-2020 21:18:14.553 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-23-May-2020 21:18:14.553 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-23-May-2020 21:18:14.553 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-23-May-2020 21:18:14.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-23-May-2020 21:18:14.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/apache-tomcat-8.5.55
-23-May-2020 21:18:14.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/apache-tomcat-8.5.55
-23-May-2020 21:18:14.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/apache-tomcat-8.5.55/temp
-23-May-2020 21:18:14.554 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
-23-May-2020 21:18:14.651 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:18:14.673 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
-23-May-2020 21:18:14.718 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1256 ms
-23-May-2020 21:18:14.858 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-23-May-2020 21:18:14.858 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
-23-May-2020 21:18:14.882 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/manager]
-23-May-2020 21:18:15.450 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/manager] has finished in [567] ms
-23-May-2020 21:18:15.452 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/examples]
-23-May-2020 21:18:15.905 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/examples] has finished in [453] ms
-23-May-2020 21:18:15.906 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/ROOT]
-23-May-2020 21:18:15.942 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/ROOT] has finished in [35] ms
-23-May-2020 21:18:15.942 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/docs]
-23-May-2020 21:18:15.976 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/docs] has finished in [33] ms
-23-May-2020 21:18:15.976 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/host-manager]
-23-May-2020 21:18:16.015 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/apache-tomcat-8.5.55/webapps/host-manager] has finished in [39] ms
-23-May-2020 21:18:16.029 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:18:16.069 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1349 ms
-23-May-2020 21:20:26.203 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/home/cristi/apache-tomcat-8.5.55/conf/tomcat-users.xml]
-23-May-2020 21:20:26.207 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.users.MemoryUserDatabase.open The specified user database [conf/tomcat-users.xml] could not be found
-23-May-2020 21:20:26.210 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.users.MemoryUserDatabase.open Failed to close [conf/tomcat-users.xml]
-	java.io.FileNotFoundException: /home/cristi/apache-tomcat-8.5.55/conf/tomcat-users.xml (No such file or directory)
-		at java.base/java.io.FileInputStream.open0(Native Method)
-		at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-		at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-		at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-		at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
-		at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
-		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:466)
-		at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:689)
-		at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:160)
-		at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:309)
-		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1145)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
-		at java.base/java.lang.Thread.run(Thread.java:834)
-23-May-2020 21:20:26.717 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context []
-23-May-2020 21:20:26.775 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [ROOT]
-	java.lang.NullPointerException
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1657)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1596)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1548)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:452)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:834)
-		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1417)
-		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1344)
-		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1603)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
-		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1159)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1385)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
-		at java.base/java.lang.Thread.run(Thread.java:834)
-23-May-2020 21:20:27.333 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/examples]
-23-May-2020 21:20:27.442 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [examples]
-	java.lang.IllegalStateException: java.io.IOException: java.lang.reflect.InvocationTargetException
-		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:100)
-		at org.apache.catalina.webresources.AbstractArchiveResourceSet.getResource(AbstractArchiveResourceSet.java:257)
-		at org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:280)
-		at org.apache.catalina.webresources.Cache.getResource(Cache.java:62)
-		at org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:215)
-		at org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:224)
-		at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1129)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1655)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1596)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1548)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:452)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:834)
-		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1417)
-		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1344)
-		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1603)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
-		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1159)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1385)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
-		at java.base/java.lang.Thread.run(Thread.java:834)
-	Caused by: java.io.IOException: java.lang.reflect.InvocationTargetException
-		at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:236)
-		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:182)
-		at org.apache.catalina.webresources.AbstractArchiveResourceSet.openJarFile(AbstractArchiveResourceSet.java:308)
-		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:96)
-		... 24 more
-	Caused by: java.lang.reflect.InvocationTargetException
-		at java.base/jdk.internal.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
-		at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-		at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:233)
-		... 27 more
-	Caused by: java.nio.file.NoSuchFileException: /home/cristi/apache-tomcat-8.5.55/webapps/examples/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar
-		at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
-		at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
-		at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
-		at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
-		at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
-		at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
-		at java.base/java.nio.file.Files.readAttributes(Files.java:1763)
-		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1225)
-		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:727)
-		at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:844)
-		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:247)
-		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
-		at java.base/java.util.jar.JarFile.<init>(JarFile.java:348)
-		... 31 more
-23-May-2020 21:20:27.985 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/host-manager]
-23-May-2020 21:20:28.006 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [host-manager]
-	java.lang.NullPointerException
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1657)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1596)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1548)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:452)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:834)
-		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1417)
-		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1344)
-		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1603)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
-		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1159)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1385)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
-		at java.base/java.lang.Thread.run(Thread.java:834)
-23-May-2020 21:20:28.535 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/manager]
-23-May-2020 21:20:28.558 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [manager]
-	java.lang.NullPointerException
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1657)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1596)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1548)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:452)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:834)
-		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1417)
-		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1344)
-		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1603)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
-		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1159)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1385)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
-		at java.base/java.lang.Thread.run(Thread.java:834)
-23-May-2020 21:20:29.075 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/docs]
-23-May-2020 21:20:29.092 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [docs]
-	java.lang.NullPointerException
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1657)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1596)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1548)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:452)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:834)
-		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1417)
-		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1344)
-		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1603)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
-		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1159)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1385)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
-		at java.base/java.lang.Thread.run(Thread.java:834)
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-23-May-2020 21:29:05.095 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
-23-May-2020 21:29:05.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
-23-May-2020 21:29:05.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
-23-May-2020 21:29:05.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
-23-May-2020 21:29:05.105 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-46-generic
-23-May-2020 21:29:05.105 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
-23-May-2020 21:29:05.106 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
-23-May-2020 21:29:05.106 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-2ubuntu218.04
-23-May-2020 21:29:05.106 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
-23-May-2020 21:29:05.107 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
-23-May-2020 21:29:05.107 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
-23-May-2020 21:29:05.110 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-23-May-2020 21:29:05.111 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-23-May-2020 21:29:05.112 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-23-May-2020 21:29:05.112 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
-23-May-2020 21:29:05.112 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-23-May-2020 21:29:05.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-23-May-2020 21:29:05.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-23-May-2020 21:29:05.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-23-May-2020 21:29:05.113 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-23-May-2020 21:29:05.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
-23-May-2020 21:29:05.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
-23-May-2020 21:29:05.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
-23-May-2020 21:29:05.114 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
-23-May-2020 21:29:05.217 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:29:05.243 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
-	org.apache.catalina.LifecycleException: Protocol handler initialization failed
-		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1068)
-		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
-		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
-		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
-		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:848)
-		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
-		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
-		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
-	Caused by: java.net.BindException: Address already in use
-		at java.base/sun.nio.ch.Net.bind0(Native Method)
-		at java.base/sun.nio.ch.Net.bind(Net.java:455)
-		at java.base/sun.nio.ch.Net.bind(Net.java:447)
-		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
-		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
-		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
-		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1118)
-		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:222)
-		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:587)
-		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
-		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1066)
-		... 13 more
-23-May-2020 21:29:05.246 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1676 ms
-23-May-2020 21:29:05.378 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-23-May-2020 21:29:05.379 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
-23-May-2020 21:29:05.400 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
-23-May-2020 21:29:05.920 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [519] ms
-23-May-2020 21:29:05.920 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
-23-May-2020 21:29:06.323 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [403] ms
-23-May-2020 21:29:06.324 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
-23-May-2020 21:29:06.356 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [31] ms
-23-May-2020 21:29:06.356 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
-23-May-2020 21:29:06.390 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [34] ms
-23-May-2020 21:29:06.391 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
-23-May-2020 21:29:06.427 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [36] ms
-23-May-2020 21:29:06.437 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1190 ms
-23-May-2020 21:29:06.442 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
-	java.net.BindException: Address already in use (Bind failed)
-		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
-		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
-		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
-		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
-		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
-		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
-23-May-2020 21:29:06.443 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:29:06.443 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
-23-May-2020 21:29:06.491 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:29:06.492 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-23-May-2020 21:29:57.265 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
-23-May-2020 21:29:57.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
-23-May-2020 21:29:57.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
-23-May-2020 21:29:57.273 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
-23-May-2020 21:29:57.273 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-46-generic
-23-May-2020 21:29:57.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
-23-May-2020 21:29:57.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
-23-May-2020 21:29:57.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-2ubuntu218.04
-23-May-2020 21:29:57.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
-23-May-2020 21:29:57.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
-23-May-2020 21:29:57.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
-23-May-2020 21:29:57.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-23-May-2020 21:29:57.278 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-23-May-2020 21:29:57.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-23-May-2020 21:29:57.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
-23-May-2020 21:29:57.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-23-May-2020 21:29:57.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-23-May-2020 21:29:57.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-23-May-2020 21:29:57.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-23-May-2020 21:29:57.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-23-May-2020 21:29:57.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
-23-May-2020 21:29:57.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
-23-May-2020 21:29:57.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
-23-May-2020 21:29:57.281 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
-23-May-2020 21:29:57.371 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:29:57.390 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
-	org.apache.catalina.LifecycleException: Protocol handler initialization failed
-		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1068)
-		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
-		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
-		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
-		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:848)
-		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
-		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
-		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
-	Caused by: java.net.BindException: Address already in use
-		at java.base/sun.nio.ch.Net.bind0(Native Method)
-		at java.base/sun.nio.ch.Net.bind(Net.java:455)
-		at java.base/sun.nio.ch.Net.bind(Net.java:447)
-		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
-		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
-		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
-		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1118)
-		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:222)
-		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:587)
-		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
-		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1066)
-		... 13 more
-23-May-2020 21:29:57.393 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1130 ms
-23-May-2020 21:29:57.491 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-23-May-2020 21:29:57.492 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
-23-May-2020 21:29:57.511 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
-23-May-2020 21:29:58.001 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [489] ms
-23-May-2020 21:29:58.002 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
-23-May-2020 21:29:58.426 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [423] ms
-23-May-2020 21:29:58.426 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
-23-May-2020 21:29:58.456 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [30] ms
-23-May-2020 21:29:58.456 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
-23-May-2020 21:29:58.484 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [28] ms
-23-May-2020 21:29:58.484 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
-23-May-2020 21:29:58.516 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [32] ms
-23-May-2020 21:29:58.526 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1133 ms
-23-May-2020 21:29:58.531 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
-	java.net.BindException: Address already in use (Bind failed)
-		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
-		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
-		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
-		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
-		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
-		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
-23-May-2020 21:29:58.532 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:29:58.532 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
-23-May-2020 21:29:58.592 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:29:58.592 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:30:27.152 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
-23-May-2020 21:30:27.154 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:30:27.180 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
-23-May-2020 21:30:27.186 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:30:27.194 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-23-May-2020 21:30:51.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
-23-May-2020 21:30:51.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
-23-May-2020 21:30:51.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
-23-May-2020 21:30:51.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
-23-May-2020 21:30:51.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-46-generic
-23-May-2020 21:30:51.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
-23-May-2020 21:30:51.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
-23-May-2020 21:30:51.842 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-2ubuntu218.04
-23-May-2020 21:30:51.842 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
-23-May-2020 21:30:51.843 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
-23-May-2020 21:30:51.843 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
-23-May-2020 21:30:51.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-23-May-2020 21:30:51.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-23-May-2020 21:30:51.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-23-May-2020 21:30:51.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
-23-May-2020 21:30:51.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-23-May-2020 21:30:51.849 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-23-May-2020 21:30:51.849 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-23-May-2020 21:30:51.849 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-23-May-2020 21:30:51.850 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-23-May-2020 21:30:51.850 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
-23-May-2020 21:30:51.850 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
-23-May-2020 21:30:51.850 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
-23-May-2020 21:30:51.851 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
-23-May-2020 21:30:51.956 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:30:51.982 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
-23-May-2020 21:30:52.017 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1313 ms
-23-May-2020 21:30:52.124 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-23-May-2020 21:30:52.125 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
-23-May-2020 21:30:52.144 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
-23-May-2020 21:30:52.636 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [492] ms
-23-May-2020 21:30:52.637 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
-23-May-2020 21:30:53.056 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [419] ms
-23-May-2020 21:30:53.057 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
-23-May-2020 21:30:53.089 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [32] ms
-23-May-2020 21:30:53.089 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
-23-May-2020 21:30:53.121 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [32] ms
-23-May-2020 21:30:53.121 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
-23-May-2020 21:30:53.159 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [37] ms
-23-May-2020 21:30:53.169 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:30:53.198 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1179 ms
-23-May-2020 21:33:14.152 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
-23-May-2020 21:33:14.153 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:33:14.162 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
-23-May-2020 21:33:14.264 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-23-May-2020 21:33:14.269 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 24-May-2020 01:16:01.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
 24-May-2020 01:16:01.956 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
 24-May-2020 01:16:01.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
@@ -522,7 +47,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 24-May-2020 01:29:13.875 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 24-May-2020 01:29:14.000 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 24-May-2020 01:29:14.006 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 24-May-2020 01:29:18.711 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
 24-May-2020 01:29:18.717 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
 24-May-2020 01:29:18.718 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
@@ -569,7 +93,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 24-May-2020 01:30:40.484 INFO [http-nio-8080-exec-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/lab1_cdeleo1] has started
 24-May-2020 01:30:40.694 INFO [http-nio-8080-exec-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/lab1_cdeleo1] is completed
 24-May-2020 01:30:49.103 INFO [http-nio-8080-exec-9] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/lab1_cdeleo1]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 24-May-2020 01:30:59.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
 24-May-2020 01:30:59.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
 24-May-2020 01:30:59.893 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
@@ -662,7 +185,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 24-May-2020 01:31:11.102 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 24-May-2020 01:31:11.224 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 24-May-2020 01:31:11.230 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 24-May-2020 01:31:14.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
 24-May-2020 01:31:14.379 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
 24-May-2020 01:31:14.379 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
@@ -711,7 +233,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 24-May-2020 01:36:11.246 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 24-May-2020 01:36:11.357 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 24-May-2020 01:36:11.363 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 24-May-2020 01:36:14.673 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
 24-May-2020 01:36:14.680 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
 24-May-2020 01:36:14.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
@@ -760,7 +281,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 24-May-2020 01:41:17.496 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 24-May-2020 01:41:17.643 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 24-May-2020 01:41:17.654 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 24-May-2020 01:41:21.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
 24-May-2020 01:41:21.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
 24-May-2020 01:41:21.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
@@ -811,7 +331,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 24-May-2020 01:43:48.084 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 24-May-2020 01:43:48.206 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 24-May-2020 01:43:48.213 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 24-May-2020 01:43:52.023 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
 24-May-2020 01:43:52.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
 24-May-2020 01:43:52.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
@@ -862,7 +381,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 24-May-2020 01:50:47.075 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 24-May-2020 01:50:47.202 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 24-May-2020 01:50:47.208 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 24-May-2020 01:50:50.352 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
 24-May-2020 01:50:50.358 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
 24-May-2020 01:50:50.359 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
@@ -913,7 +431,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 24-May-2020 01:51:58.963 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 24-May-2020 01:51:59.080 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 24-May-2020 01:51:59.085 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 24-May-2020 01:52:02.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
 24-May-2020 01:52:02.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
 24-May-2020 01:52:02.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
@@ -964,7 +481,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 24-May-2020 01:52:52.200 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 24-May-2020 01:52:52.328 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 24-May-2020 01:52:52.335 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 24-May-2020 01:52:55.352 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
 24-May-2020 01:52:55.359 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
 24-May-2020 01:52:55.359 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
