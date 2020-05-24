@@ -1,0 +1,25 @@
+# build files
+*.class
+**/build/
+**/classes/
+**/bin/
+
+# apidocs where we use it
+**/apidocs/
+
+# Emacs stuff
+.#*
+*~
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Eclipse
+*.project
+*.settings
+*.classpath
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
