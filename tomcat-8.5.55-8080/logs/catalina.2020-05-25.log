@@ -1,0 +1,57 @@
+25-May-2020 12:02:26.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+25-May-2020 12:02:26.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+25-May-2020 12:02:26.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+25-May-2020 12:02:26.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+25-May-2020 12:02:26.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-53-generic
+25-May-2020 12:02:26.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-May-2020 12:02:26.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+25-May-2020 12:02:26.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-2ubuntu218.04
+25-May-2020 12:02:26.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+25-May-2020 12:02:26.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
+25-May-2020 12:02:26.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
+25-May-2020 12:02:26.628 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-May-2020 12:02:26.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-May-2020 12:02:26.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-May-2020 12:02:26.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
+25-May-2020 12:02:26.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-May-2020 12:02:26.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-May-2020 12:02:26.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-May-2020 12:02:26.635 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+25-May-2020 12:02:26.636 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+25-May-2020 12:02:26.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
+25-May-2020 12:02:26.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
+25-May-2020 12:02:26.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
+25-May-2020 12:02:26.639 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+25-May-2020 12:02:27.016 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-May-2020 12:02:27.121 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+25-May-2020 12:02:27.174 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2959 ms
+25-May-2020 12:02:27.447 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-May-2020 12:02:27.447 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+25-May-2020 12:02:27.534 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
+25-May-2020 12:02:29.245 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [1,710] ms
+25-May-2020 12:02:29.248 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1]
+25-May-2020 12:02:29.440 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1] has finished in [192] ms
+25-May-2020 12:02:29.441 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
+25-May-2020 12:02:31.077 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [1,635] ms
+25-May-2020 12:02:31.077 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
+25-May-2020 12:02:31.136 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [59] ms
+25-May-2020 12:02:31.137 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
+25-May-2020 12:02:31.222 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [84] ms
+25-May-2020 12:02:31.222 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab1_cdeleo1]
+25-May-2020 12:02:31.252 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab1_cdeleo1] has finished in [29] ms
+25-May-2020 12:02:31.252 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
+25-May-2020 12:02:31.338 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [86] ms
+25-May-2020 12:02:31.350 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+25-May-2020 12:02:31.388 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 4213 ms
+25-May-2020 12:34:12.617 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/task1_cdeleo1]
+25-May-2020 12:34:12.759 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1.war]
+25-May-2020 12:34:12.931 INFO [localhost-startStop-2] GroceryListServlet.init Opening file lab1data.txt
+25-May-2020 12:34:12.952 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1.war] has finished in [192] ms
+25-May-2020 12:55:03.722 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/task1_cdeleo1]
+25-May-2020 12:55:03.723 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/task1_cdeleo1] has started
+25-May-2020 12:55:03.846 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/task1_cdeleo1] is completed
+25-May-2020 12:56:39.029 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+25-May-2020 12:56:39.030 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-May-2020 12:56:39.039 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-May-2020 12:56:39.110 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-May-2020 12:56:39.115 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

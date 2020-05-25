@@ -1,20 +1,17 @@
-
-import java.io.*;
-import java.util.*;
+package task1;
 
 public class GroceryEntry {
-    private String itemname;
+    private String name;
     private String quantity;
-    private String category;
+    private String custom;
     private String brand;
     private String aisle;
 
-    public GroceryEntry(String itemname, String quantity, String category,
-                String brand, String aisle)
-    {
-	this.itemname  = itemname;
+    public GroceryEntry(String name, String quantity, String custom,
+                String brand, String aisle) {
+	this.name  = name;
 	this.quantity  = quantity;
-	this.category = category;
+	this.custom = custom;
         this.brand = brand;
         this.aisle = aisle;
     }
@@ -30,7 +27,7 @@ public class GroceryEntry {
     }
     
     public String toString()
-    { return itemname + "\n" + quantity + "\n" + category + "\n" + brand
+    { return name + "\n" + brand + "\n" + quantity + "\n" + custom 
             + "\n" + aisle; }
 }
 

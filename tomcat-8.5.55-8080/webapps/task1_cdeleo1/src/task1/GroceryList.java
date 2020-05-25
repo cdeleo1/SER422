@@ -1,3 +1,5 @@
+package task1;
+
 import java.io.*;
 import java.util.*;
 
@@ -16,18 +18,22 @@ public class GroceryList {
 		this(new BufferedReader(new InputStreamReader(is)));
 	}
 	private GroceryList(BufferedReader br) throws IOException {	
-		String itemname = null;
+		String name = null;
 		String quantity = null;
-		String category = null;
+		String custom = null;
+                String brand = null;
+                String aisle = null;
 
 		try {
 			String nextLine = null;
 			while ( (nextLine=br.readLine()) != null)
 			{
-				itemname  = nextLine;
+				name  = nextLine;
 				quantity = br.readLine();
-				category = br.readLine();
-				addEntry(itemname, quantity, category);
+				custom = br.readLine();
+                                brand = br.readLine();
+                                aisle = br.readLine();
+				addEntry(name, quantity, custom, brand, aisle);
 			}
 			br.close();
 		}
@@ -56,24 +62,24 @@ public class GroceryList {
 		}
 	}
 
-	public void editEntry(String itemname, String quantity, String category,
+	public void editEntry(String name, String quantity, String custom,
                 String brand, String aisle) {
-		GroceryEntry pentry = _glist.get(itemname);
+		GroceryEntry pentry = _glist.get(name);
 		pentry.changeQuantity(quantity);
 	}
 
-	public void addEntry(String itemname, String quantity, String category,
+	public void addEntry(String name, String quantity, String custom,
                 String brand, String aisle)
 	{ 
-		addEntry(itemname, new GroceryEntry(itemname, quantity, category,
+		addEntry(name, new GroceryEntry(name, quantity, custom,
                     brand, aisle));
 	}
 
-	public void addEntry(String itemname, GroceryEntry entry)
-	{ _glist.put(itemname, entry); }
+	public void addEntry(String name, GroceryEntry entry)
+	{ _glist.put(name, entry); }
 
-	public GroceryEntry removeEntry(String itemname) {
-		return _glist.remove(itemname);
+	public GroceryEntry removeEntry(String name) {
+		return _glist.remove(name);
 	}
 
 	public String[] listEntries()

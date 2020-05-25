@@ -1,5 +1,3 @@
-package task1;
-
 import javax.servlet.*;
 import javax.servlet.http.*;
 
@@ -48,13 +46,13 @@ public class GroceryListServlet extends HttpServlet {
 	    if (action != null) {
 		if (action.equals("Add")) {
 		    GroceryEntry pentry = new GroceryEntry(
-                            req.getParameter("itemname"),
+                            req.getParameter("name"),
                             req.getParameter("brand"), 
                             req.getParameter("aisle"),
-                            req.getParameter("category"),
+                            req.getParameter("custom"),
                             req.getParameter("quantity"));
 
-		    _glist.addEntry(req.getParameter("itemname"), pentry);
+		    _glist.addEntry(req.getParameter("name"), pentry);
 		    _glist.saveGroceryList(getServletContext().getRealPath("/WEB-INF/classes/" + 
 									 GroceryList.DEFAULT_FILENAME));
 		    out.println("Entry added to grocery list");
@@ -63,13 +61,13 @@ public class GroceryListServlet extends HttpServlet {
 		    for (int i = 0; i < entries.length; i++)
 			out.println("<b>" + i + ":</b> " + entries[i] + "<br>");
 		} else if (action.equals("Remove")) {
-		    GroceryEntry pentry = _glist.removeEntry(req.getParameter("itemname"));
+		    GroceryEntry pentry = _glist.removeEntry(req.getParameter("name"));
 		    if (pentry == null) {
-			out.println("No entry with grocery item " + req.getParameter("itemname"));
+			out.println("No entry with grocery item " + req.getParameter("name"));
 		    } else {
 			out.println("Removed entry " + pentry);
-			_glist.saveGroceryList(getServletContext().getRealPath("/WEB-INF/classes/" + 
-									     GroceryList.DEFAULT_FILENAME));
+			_glist.saveGroceryList(getServletContext().getRealPath(
+                                "/WEB-INF/classes/" + GroceryList.DEFAULT_FILENAME));
 		    }
 		}
 	    } else {
@@ -85,7 +83,8 @@ public class GroceryListServlet extends HttpServlet {
     }
 	
     public void doGet(HttpServletRequest req, HttpServletResponse res) 
-	throws ServletException, IOException	{
-	res.sendError(HttpServletResponse.SC_NOT_IMPLEMENTED, "GET not supported by this servlet");
+	throws ServletException, IOException {
+	res.sendError(HttpServletResponse.SC_NOT_IMPLEMENTED, 
+                "GET not supported by this servlet");
     }
 }
