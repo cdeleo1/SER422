@@ -1,3 +1,5 @@
+package task1;
+
 import java.io.*;
 import java.util.*;
 
@@ -19,6 +21,8 @@ public class GroceryList {
 		String name = null;
 		String quantity = null;
 		String custom = null;
+                String brand = null;
+                String aisle = null;
 
 		try {
 			String nextLine = null;
@@ -27,7 +31,9 @@ public class GroceryList {
 				name  = nextLine;
 				quantity = br.readLine();
 				custom = br.readLine();
-				addEntry(name, quantity, custom);
+                                brand = br.readLine();
+                                aisle = br.readLine();
+				addEntry(name, quantity, custom, brand, aisle);
 			}
 			br.close();
 		}

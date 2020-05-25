@@ -10,6 +10,7 @@
     <servlet-class>GroceryListServlet</servlet-class>
     <init-param>
     	<param-name>grocerylist</param-name>
+	<param-value>lab1data.txt</param-value>
   	</init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>

@@ -1,9 +1,4 @@
-<!--
-   Lab 1: Task 1 solution build.xml file for SER422 Summer 2020.
-   Copyright 2020 Cristi M. DeLeo
--->
-
-<project name="Lab 1: Task 1" default="compile" basedir=".">
+<project name="Lab 1" default="compile" basedir=".">
   <property file="build.properties"/>
 
   <!-- init target makes the directory structure. You may not
@@ -34,7 +29,7 @@
        example does), you can create it in a given directory, or create
        your dist jar first that can be run using java -jar. -->
   <target name="deploy" depends="dist">
-    <copy file="${dist.jar}" todir="${tomcat.home}/webapps" overwrite="yes"/>
+    <copy file="${dist.jar}" todir="${tomcat.home}/webapps/${app.name}" overwrite="yes"/>
   </target>
       
   <target name="build" depends="compile">
@@ -46,7 +41,7 @@
   	<copy todir="${build.home}/WEB-INF/classes">
   	  <fileset dir="${resources.dir}" includes="**/*.txt,**/*.properties" excludes="**/*.html,**/*.jsp"/>
   	</copy>
-  	<copy file="${resources.dir}/index.html" tofile="${build.home}/index.html"/>
+  	<copy file="index.html" tofile="${build.home}/index.html"/>
     <copy file="web.xml" tofile="${build.home}/WEB-INF/web.xml"/>
   </target>
     
@@ -76,3 +71,5 @@
   </target>
 
 </project>
+  
+

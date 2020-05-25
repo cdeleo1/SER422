@@ -1,3 +1,5 @@
+package task1;
+
 public class GroceryEntry {
     private String name;
     private String quantity;
@@ -25,7 +27,7 @@ public class GroceryEntry {
     }
     
     public String toString()
-    { return name + "\n" + quantity + "\n" + custom + "\n" + brand
+    { return name + "\n" + brand + "\n" + quantity + "\n" + custom 
             + "\n" + aisle; }
 }
 

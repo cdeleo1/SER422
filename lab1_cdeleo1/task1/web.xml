@@ -10,14 +10,14 @@
     <servlet-class>GroceryListServlet</servlet-class>
     <init-param>
     	<param-name>grocerylist</param-name>
-        <param-name>/resources/grocerylist.txt</param-name>
+	<param-value>lab1data.txt</param-value>
   	</init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
 	
   <servlet-mapping>
     <servlet-name>GroceryList</servlet-name>
-    <url-pattern>/grocerylist</url-pattern>
+    <url-pattern>/task1_cdeleo1</url-pattern>
   </servlet-mapping>
 
 </web-app>
