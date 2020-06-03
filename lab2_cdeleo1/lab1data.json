@@ -1,0 +1,27 @@
+[
+	{
+		"name": "milk",
+		"quantity": 2,
+		"aisle": 3,
+		"custom": "2 percent organic"
+	},
+	{
+		"name": "eggs",
+		"quantity": 12,
+		"aisle": 3,
+		"custom": "cage free"
+	},
+	{
+		"name": "deodorant",
+		"brand": "Degree",
+		"quantity": 1,
+		"aisle": 5,
+		"custom": "Mens"
+	},
+	{
+		"name": "peanuts",
+		"brand": "Planters",
+		"quantity": 1,
+		"custom": "honey roasted"
+	}
+]

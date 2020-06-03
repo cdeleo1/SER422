@@ -57,7 +57,11 @@ public class GroceryListViewerServlet extends HttpServlet {
 		// Note if we get an error case we blow this object away and use a new one to encapsulate the error
 
 		// This needs to be there always
-		responseJSON.put(Constants.JR_HOME, _refererURL);
+		try {
+                    responseJSON.put(Constants.JR_HOME, _refererURL);
+                } catch (Throwable t) {
+                    throw new ServletException(t.getMessage());
+                }
 		
 		// Step 1. Process request headers. In this case Task 3 asks for an Accept header
 		if (responseContentType == null) {
@@ -65,10 +69,18 @@ public class GroceryListViewerServlet extends HttpServlet {
 			// didn't find a type we could use as a return type in the Accept header, return a 406
 			responseCode = HttpServletResponse.SC_NOT_ACCEPTABLE;
 			responseJSON = new JSONObject();
-			responseJSON.put(Constants.JR_ERROR, Boolean.TRUE);
-			responseJSON.put(Constants.JR_ERROR_MSG,
+			try {
+                            responseJSON.put(Constants.JR_ERROR, Boolean.TRUE);
+                        } catch (Throwable t) {
+                            throw new ServletException(t.getMessage());
+                        }
+			try {
+                            responseJSON.put(Constants.JR_ERROR_MSG,
 							 "This application understands " + Constants.CONTENT_HTML + ", " + Constants.CONTENT_TEXT + ", or " + Constants.CONTENT_JSON);
-			// Set the response content type to HTML and pass back as such
+                        } catch (Throwable t) {
+                           throw new ServletException(t.getMessage());
+                        }
+                        // Set the response content type to HTML and pass back as such
 			responseContentType = Constants.CONTENT_HTML;
 			try {
 				renderer = MyLab2RendererFactory.getRenderer(responseContentType, _refererURL);
@@ -104,8 +116,16 @@ public class GroceryListViewerServlet extends HttpServlet {
 			log.info("Viewer: Error trying to read in the json input file");
 			responseCode = HttpServletResponse.SC_INTERNAL_SERVER_ERROR;
 			responseJSON = new JSONObject();
-			responseJSON.put(Constants.JR_ERROR, hasErrored);
-			responseJSON.put(Constants.JR_ERROR_MSG, loadStatus.getValue());
+			try {
+                            responseJSON.put(Constants.JR_ERROR, hasErrored);
+                        } catch (Throwable t) {
+                            throw new ServletException(t.getMessage());
+                        }
+                        try {
+                            responseJSON.put(Constants.JR_ERROR_MSG, loadStatus.getValue());
+                        } catch (Throwable t) {
+                            throw new ServletException(t.getMessage());
+                        }
 			response.setStatus(responseCode);
 			renderer.renderResponse(responseJSON, response.getWriter());
 			return;
@@ -135,8 +155,16 @@ public class GroceryListViewerServlet extends HttpServlet {
 			log.info("Viewer: exception trying to filter a grocery list");
 			responseCode = ex.getResponseCode();
 			responseJSON = new JSONObject();
-			responseJSON.put(Constants.JR_ERROR, Boolean.TRUE);
-			responseJSON.put(Constants.JR_ERROR_MSG, ex.getMessage());
+			try {
+                            responseJSON.put(Constants.JR_ERROR, Boolean.TRUE);
+                        } catch (Throwable t) {
+                            throw new ServletException(t.getMessage());
+                        }
+			try {
+                            responseJSON.put(Constants.JR_ERROR_MSG, ex.getMessage());
+                        } catch (Throwable t) {
+                            throw new ServletException(t.getMessage());
+                        }
 			response.setStatus(responseCode);
 			renderer.renderResponse(responseJSON, response.getWriter());
 			return;
@@ -148,11 +176,27 @@ public class GroceryListViewerServlet extends HttpServlet {
 		} 
 		// Use the declared json object as we are good
 		for(String filterMessage: filterMessages) {
-			responseJSON.append(Constants.JR_FILTER_MESSAGES, filterMessage);
+			try {
+                            responseJSON.append(Constants.JR_FILTER_MESSAGES, filterMessage);
+                        } catch (Throwable t) {
+                            throw new ServletException(t.getMessage());
+                        }
 		}
-		responseJSON.put(Constants.JR_GROCERY_LIST, getGroceryListJSON(groceryList));
-		responseJSON.put(Constants.JR_ERROR, hasErrored);
-		responseJSON.put(Constants.JR_ERROR_MSG, "No error messages");
+		try {
+                    responseJSON.put(Constants.JR_GROCERY_LIST, getGroceryListJSON(groceryList));
+                } catch (Throwable t) {
+                    throw new ServletException(t.getMessage());
+                }
+                try {                
+                    responseJSON.put(Constants.JR_ERROR, hasErrored);
+                } catch (Throwable t) {
+                    throw new ServletException(t.getMessage());
+                }
+                try {
+                    responseJSON.put(Constants.JR_ERROR_MSG, "No error messages");
+                } catch (Throwable t) {
+                    throw new ServletException(t.getMessage());
+                }
 		
 		// Step 5. Set response headers (if not done so already)
 		// render content based on the requested content type
@@ -218,7 +262,8 @@ public class GroceryListViewerServlet extends HttpServlet {
 		@param groceryList. First parameter. A map comtaining grocery items mapped to their names.
 		@return JSONObject. The object containing the grocery list
 	 */
-	public JSONObject getGroceryListJSON(Map<String, GroceryItem> groceryList){
+	public JSONObject getGroceryListJSON(Map<String, GroceryItem> groceryList) 
+                throws ServletException {
 		JSONObject groceryValues = new JSONObject();
 
 		JSONArray headers = new JSONArray();
@@ -228,7 +273,11 @@ public class GroceryListViewerServlet extends HttpServlet {
 		headers.put("Quantity");
 		headers.put("Diet Type");
 
-		groceryValues.put(Constants.JR_GROCERY_LIST_HEADERS, headers);
+		try {
+                    groceryValues.put(Constants.JR_GROCERY_LIST_HEADERS, headers);
+                } catch (Throwable t) {
+                    throw new ServletException(t.getMessage());
+                }
 
 		JSONArray rows = new JSONArray();
 		if(groceryList.size() == 0){
@@ -247,7 +296,11 @@ public class GroceryListViewerServlet extends HttpServlet {
 				rows.put(data);
 			}
 		}
-		groceryValues.put(Constants.JR_GROCERY_LIST_ROWS, rows);
+		try {
+                    groceryValues.put(Constants.JR_GROCERY_LIST_ROWS, rows);
+                } catch (Throwable t) {
+                    throw new ServletException(t.getMessage());
+                }
 		return groceryValues;
 	}
 }

@@ -3,6 +3,7 @@ package edu.asupoly.ser422.grocery;
 import java.util.*; 
 import org.json.JSONObject;
 import java.util.logging.Logger;
+import org.json.JSONException;
 
 public class GroceryItem {
 	private static Logger log = Logger.getLogger(GroceryItem.class.getName());
@@ -79,6 +80,7 @@ public class GroceryItem {
 		for(Map.Entry<String, Boolean> entry : blueprintReq.entrySet()){
 			String key = entry.getKey();
 			if(blueprint.has(key)){
+                            try {
 				Object object = blueprint.get(key);
 				if (object instanceof Integer) {
 					valArray[0] = Integer.toString((int) object);
@@ -87,6 +89,9 @@ public class GroceryItem {
 				}
 				blueprintFinal.put(key, valArray);
 				valArray = new String[1];
+                            } catch (JSONException e) {
+                                return null;
+                            }
 			}
 		}
 		return GroceryItem.getGroceryItemObjFromBlueprint(blueprintFinal);
@@ -180,15 +185,35 @@ public class GroceryItem {
 		Map<String, Boolean> blueprint = GroceryItem.getGroceryItemBlueprint();
 		for(String key: blueprint.keySet()) {
 			if(key.equals(Constants.AISLE_KEY))
+                            try {
 				jObject.put(Constants.AISLE_KEY, this.getAisle());
+                            } catch (JSONException e) {
+                                return null;
+                            }
 			else if(key.equals(Constants.PNAME_KEY))
+                            try {
 				jObject.put(Constants.PNAME_KEY, this.getPname());
+                            } catch (JSONException e) {
+                                return null;
+                            }
 			else if(key.equals(Constants.BNAME_KEY))
+                            try {
 				jObject.put(Constants.BNAME_KEY, this.getBname());
+                            } catch (JSONException e) {
+                                return null;
+                            }
 			else if(key.equals(Constants.QTY_KEY))
+                            try {
 				jObject.put(Constants.QTY_KEY, this.getQty());
+                            } catch (JSONException e) {
+                                return null;
+                            }
 			else if(key.equals(Constants.CUSTOM_KEY))
+                            try {
 				jObject.put(Constants.CUSTOM_KEY, this.getCustom());
+                            } catch (JSONException e) {
+                                return null;
+                            }
 		}
 		return jObject;
 	}
