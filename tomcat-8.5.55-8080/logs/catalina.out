@@ -1268,3 +1268,814 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 25-May-2020 13:29:50.513 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [35] ms
 25-May-2020 13:29:50.523 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 25-May-2020 13:29:50.548 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1241 ms
+05-Jun-2020 19:30:07.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+05-Jun-2020 19:30:07.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+05-Jun-2020 19:30:07.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+05-Jun-2020 19:30:07.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+05-Jun-2020 19:30:07.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-53-generic
+05-Jun-2020 19:30:07.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2020 19:30:07.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+05-Jun-2020 19:30:07.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_252-8u252-b09-1~18.04-b09
+05-Jun-2020 19:30:07.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+05-Jun-2020 19:30:07.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
+05-Jun-2020 19:30:07.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
+05-Jun-2020 19:30:07.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
+05-Jun-2020 19:30:07.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2020 19:30:07.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2020 19:30:07.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2020 19:30:07.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+05-Jun-2020 19:30:07.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2020 19:30:07.883 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
+05-Jun-2020 19:30:07.883 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
+05-Jun-2020 19:30:07.883 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
+05-Jun-2020 19:30:07.884 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+05-Jun-2020 19:30:08.733 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 19:30:08.852 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+05-Jun-2020 19:30:08.958 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 3716 ms
+05-Jun-2020 19:30:09.181 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2020 19:30:09.182 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+05-Jun-2020 19:30:09.297 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+05-Jun-2020 19:30:12.203 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2020 19:30:13.766 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [4,469] ms
+05-Jun-2020 19:30:13.768 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
+05-Jun-2020 19:30:13.814 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [46] ms
+05-Jun-2020 19:30:13.815 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1]
+05-Jun-2020 19:30:13.834 SEVERE [localhost-startStop-1] org.apache.jasper.EmbeddedServletOptions.<init> The scratchDir you specified: [/home/cristi/SER422/tomcat-8.5.55-8080/work/Catalina/localhost/task1_cdeleo1] is unusable.
+05-Jun-2020 19:30:13.835 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1] has finished in [20] ms
+05-Jun-2020 19:30:13.835 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
+05-Jun-2020 19:30:14.416 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [581] ms
+05-Jun-2020 19:30:14.416 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
+05-Jun-2020 19:30:14.449 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [32] ms
+05-Jun-2020 19:30:14.449 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
+05-Jun-2020 19:30:14.469 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [19] ms
+05-Jun-2020 19:30:14.469 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
+05-Jun-2020 19:30:14.494 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [25] ms
+05-Jun-2020 19:30:14.495 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1]
+05-Jun-2020 19:30:14.512 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1] has finished in [16] ms
+05-Jun-2020 19:30:14.522 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 19:30:14.540 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 5581 ms
+05-Jun-2020 19:30:50.103 INFO [http-nio-8080-exec-8] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/RestExampleAPI] has started
+05-Jun-2020 19:30:51.810 INFO [http-nio-8080-exec-8] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2020 19:30:52.920 INFO [http-nio-8080-exec-8] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/RestExampleAPI] is completed
+05-Jun-2020 19:41:08.402 INFO [http-nio-8080-exec-11] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03bi[0x9a0x00:!O0x8e0x84r0xad0xf50x070xc30xa00x140x9eU0xa4d0xcb0xc20xcf0x1c0xe50xe6o0x81I0xbb0xb0]. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:432)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:502)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:818)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1627)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+05-Jun-2020 19:41:08.402 INFO [http-nio-8080-exec-19] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030x890x880x16&0xd90x0d0x1c0x91]0xc10x940x15s0xc50xa30xea0xe30xcc;mZc[0xf90xc60x1d0xee0xd60xfa0x1e0xa90xb0]. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:432)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:502)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:818)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1627)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+05-Jun-2020 19:41:27.683 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+05-Jun-2020 19:41:27.684 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 19:41:27.696 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+05-Jun-2020 19:41:27.919 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 19:41:27.929 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 19:41:47.008 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+05-Jun-2020 19:41:47.012 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+05-Jun-2020 19:41:47.012 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+05-Jun-2020 19:41:47.012 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+05-Jun-2020 19:41:47.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-53-generic
+05-Jun-2020 19:41:47.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2020 19:41:47.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+05-Jun-2020 19:41:47.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_252-8u252-b09-1~18.04-b09
+05-Jun-2020 19:41:47.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+05-Jun-2020 19:41:47.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
+05-Jun-2020 19:41:47.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
+05-Jun-2020 19:41:47.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
+05-Jun-2020 19:41:47.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2020 19:41:47.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2020 19:41:47.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2020 19:41:47.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+05-Jun-2020 19:41:47.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2020 19:41:47.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
+05-Jun-2020 19:41:47.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
+05-Jun-2020 19:41:47.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
+05-Jun-2020 19:41:47.016 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+05-Jun-2020 19:41:47.151 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 19:41:47.166 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+05-Jun-2020 19:41:47.191 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 975 ms
+05-Jun-2020 19:41:47.260 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2020 19:41:47.261 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+05-Jun-2020 19:41:47.292 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+05-Jun-2020 19:41:48.562 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2020 19:41:49.847 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,554] ms
+05-Jun-2020 19:41:49.849 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
+05-Jun-2020 19:41:49.929 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [80] ms
+05-Jun-2020 19:41:49.929 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1]
+05-Jun-2020 19:41:49.950 SEVERE [localhost-startStop-1] org.apache.jasper.EmbeddedServletOptions.<init> The scratchDir you specified: [/home/cristi/SER422/tomcat-8.5.55-8080/work/Catalina/localhost/task1_cdeleo1] is unusable.
+05-Jun-2020 19:41:49.951 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1] has finished in [21] ms
+05-Jun-2020 19:41:49.951 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
+05-Jun-2020 19:41:50.190 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [238] ms
+05-Jun-2020 19:41:50.190 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
+05-Jun-2020 19:41:50.209 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [19] ms
+05-Jun-2020 19:41:50.209 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
+05-Jun-2020 19:41:50.228 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [18] ms
+05-Jun-2020 19:41:50.228 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
+05-Jun-2020 19:41:50.250 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [22] ms
+05-Jun-2020 19:41:50.250 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1]
+05-Jun-2020 19:41:50.267 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1] has finished in [17] ms
+05-Jun-2020 19:41:50.279 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 19:41:50.295 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3103 ms
+05-Jun-2020 19:41:55.362 INFO [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x034`T0x920xceQ0xe90xc90x020x84`0xecB0xf80xd60xf5yU0x85n0xb10x1c0xb8j0x1d(*a<W0xde0xf0]. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:432)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:502)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:818)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1627)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+05-Jun-2020 19:41:55.362 INFO [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030xd2]. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:432)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:502)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:818)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1627)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+05-Jun-2020 19:41:55.440 INFO [http-nio-8080-exec-3] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03rb0x1dW0xaa0xb7b0x080x110xc5r&6M0x810x84Wp0xe5W+0x98*0x9b0xd9E0x01mJZ0xfaq]. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:432)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:502)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:818)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1627)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+05-Jun-2020 19:41:55.441 INFO [http-nio-8080-exec-4] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03Yk0xf00xc40xb70x10?0xdbt>0xfb0xcd0xad~0xef0xedJo0x800xea0x880x93\0x83c0xc1cD~0xf20xed0xbf]. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:432)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:502)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:818)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1627)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+05-Jun-2020 19:43:55.595 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+05-Jun-2020 19:43:55.597 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 19:43:55.609 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+05-Jun-2020 19:43:55.780 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 19:43:55.789 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:18:34.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+06-Jun-2020 23:18:34.510 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+06-Jun-2020 23:18:34.511 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+06-Jun-2020 23:18:34.511 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Jun-2020 23:18:34.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-53-generic
+06-Jun-2020 23:18:34.513 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2020 23:18:34.513 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+06-Jun-2020 23:18:34.514 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_252-8u252-b09-1~18.04-b09
+06-Jun-2020 23:18:34.514 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+06-Jun-2020 23:18:34.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:18:34.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:18:34.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
+06-Jun-2020 23:18:34.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2020 23:18:34.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Jun-2020 23:18:34.528 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Jun-2020 23:18:34.528 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Jun-2020 23:18:34.530 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Jun-2020 23:18:34.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:18:34.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:18:34.533 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
+06-Jun-2020 23:18:34.535 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+06-Jun-2020 23:18:35.017 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:18:35.118 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Jun-2020 23:18:35.222 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2472 ms
+06-Jun-2020 23:18:35.410 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2020 23:18:35.410 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+06-Jun-2020 23:18:35.518 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+06-Jun-2020 23:18:35.591 INFO [localhost-startStop-1] org.apache.catalina.startup.ExpandWar.expand An expanded directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Jun-2020 23:18:37.624 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Jun-2020 23:18:38.904 SEVERE [localhost-startStop-1] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+06-Jun-2020 23:18:38.942 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [3,423] ms
+06-Jun-2020 23:18:38.945 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
+06-Jun-2020 23:18:39.049 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [103] ms
+06-Jun-2020 23:18:39.049 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1]
+06-Jun-2020 23:18:39.088 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1] has finished in [39] ms
+06-Jun-2020 23:18:39.088 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
+06-Jun-2020 23:18:39.478 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [390] ms
+06-Jun-2020 23:18:39.479 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
+06-Jun-2020 23:18:39.502 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [23] ms
+06-Jun-2020 23:18:39.503 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
+06-Jun-2020 23:18:39.527 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [24] ms
+06-Jun-2020 23:18:39.527 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
+06-Jun-2020 23:18:39.554 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [27] ms
+06-Jun-2020 23:18:39.555 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1]
+06-Jun-2020 23:18:39.583 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1] has finished in [28] ms
+06-Jun-2020 23:18:39.593 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:18:39.612 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 4389 ms
+06-Jun-2020 23:19:00.641 SEVERE [http-nio-8080-exec-8] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+06-Jun-2020 23:37:58.378 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+06-Jun-2020 23:37:58.379 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:37:58.391 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jun-2020 23:37:58.594 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:37:58.603 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:38:19.792 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+06-Jun-2020 23:38:19.795 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+06-Jun-2020 23:38:19.795 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+06-Jun-2020 23:38:19.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Jun-2020 23:38:19.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-53-generic
+06-Jun-2020 23:38:19.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2020 23:38:19.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+06-Jun-2020 23:38:19.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_252-8u252-b09-1~18.04-b09
+06-Jun-2020 23:38:19.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+06-Jun-2020 23:38:19.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:38:19.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:38:19.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
+06-Jun-2020 23:38:19.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2020 23:38:19.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Jun-2020 23:38:19.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Jun-2020 23:38:19.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Jun-2020 23:38:19.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Jun-2020 23:38:19.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:38:19.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:38:19.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
+06-Jun-2020 23:38:19.799 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+06-Jun-2020 23:38:19.931 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:38:19.949 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Jun-2020 23:38:19.978 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1042 ms
+06-Jun-2020 23:38:20.059 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2020 23:38:20.059 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+06-Jun-2020 23:38:20.094 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+06-Jun-2020 23:38:20.136 INFO [localhost-startStop-1] org.apache.catalina.startup.ExpandWar.expand An expanded directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Jun-2020 23:38:21.538 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Jun-2020 23:38:22.802 SEVERE [localhost-startStop-1] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+06-Jun-2020 23:38:22.824 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,729] ms
+06-Jun-2020 23:38:22.825 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
+06-Jun-2020 23:38:22.911 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [85] ms
+06-Jun-2020 23:38:22.911 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1]
+06-Jun-2020 23:38:22.929 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1] has finished in [18] ms
+06-Jun-2020 23:38:22.929 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
+06-Jun-2020 23:38:23.170 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [240] ms
+06-Jun-2020 23:38:23.170 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
+06-Jun-2020 23:38:23.190 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [20] ms
+06-Jun-2020 23:38:23.191 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
+06-Jun-2020 23:38:23.211 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [20] ms
+06-Jun-2020 23:38:23.212 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
+06-Jun-2020 23:38:23.236 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [24] ms
+06-Jun-2020 23:38:23.237 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1]
+06-Jun-2020 23:38:23.254 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1] has finished in [18] ms
+06-Jun-2020 23:38:23.264 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:38:23.306 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3328 ms
+06-Jun-2020 23:38:24.830 SEVERE [http-nio-8080-exec-1] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+06-Jun-2020 23:48:32.201 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+06-Jun-2020 23:48:32.202 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:48:32.214 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jun-2020 23:48:32.346 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:48:32.358 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:48:35.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+06-Jun-2020 23:48:35.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+06-Jun-2020 23:48:35.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+06-Jun-2020 23:48:35.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Jun-2020 23:48:35.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-53-generic
+06-Jun-2020 23:48:35.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2020 23:48:35.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+06-Jun-2020 23:48:35.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_252-8u252-b09-1~18.04-b09
+06-Jun-2020 23:48:35.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+06-Jun-2020 23:48:35.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:48:35.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:48:35.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
+06-Jun-2020 23:48:35.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2020 23:48:35.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Jun-2020 23:48:35.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Jun-2020 23:48:35.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Jun-2020 23:48:35.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Jun-2020 23:48:35.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:48:35.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:48:35.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
+06-Jun-2020 23:48:35.077 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+06-Jun-2020 23:48:35.206 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:48:35.224 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Jun-2020 23:48:35.253 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1042 ms
+06-Jun-2020 23:48:35.314 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2020 23:48:35.315 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+06-Jun-2020 23:48:35.349 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+06-Jun-2020 23:48:35.385 INFO [localhost-startStop-1] org.apache.catalina.startup.ExpandWar.expand An expanded directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Jun-2020 23:48:36.738 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Jun-2020 23:48:37.898 SEVERE [localhost-startStop-1] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+06-Jun-2020 23:48:37.919 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,569] ms
+06-Jun-2020 23:48:37.922 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
+06-Jun-2020 23:48:38.001 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [79] ms
+06-Jun-2020 23:48:38.002 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1]
+06-Jun-2020 23:48:38.025 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1] has finished in [23] ms
+06-Jun-2020 23:48:38.026 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
+06-Jun-2020 23:48:38.242 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [217] ms
+06-Jun-2020 23:48:38.242 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
+06-Jun-2020 23:48:38.260 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [18] ms
+06-Jun-2020 23:48:38.261 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
+06-Jun-2020 23:48:38.277 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [16] ms
+06-Jun-2020 23:48:38.277 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
+06-Jun-2020 23:48:38.297 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [20] ms
+06-Jun-2020 23:48:38.298 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1]
+06-Jun-2020 23:48:38.313 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1] has finished in [15] ms
+06-Jun-2020 23:48:38.324 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:48:38.340 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3086 ms
+06-Jun-2020 23:48:38.712 SEVERE [http-nio-8080-exec-1] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+06-Jun-2020 23:48:57.264 SEVERE [http-nio-8080-exec-8] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+06-Jun-2020 23:50:18.435 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+06-Jun-2020 23:50:18.536 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+06-Jun-2020 23:50:19.967 INFO [localhost-startStop-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Jun-2020 23:50:21.601 SEVERE [localhost-startStop-2] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+06-Jun-2020 23:50:21.608 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [3,072] ms
+06-Jun-2020 23:50:33.280 SEVERE [http-nio-8080-exec-7] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+06-Jun-2020 23:50:41.651 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+06-Jun-2020 23:50:41.652 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:50:41.663 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jun-2020 23:50:41.794 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:50:41.801 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:50:45.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+06-Jun-2020 23:50:45.407 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+06-Jun-2020 23:50:45.407 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+06-Jun-2020 23:50:45.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Jun-2020 23:50:45.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-53-generic
+06-Jun-2020 23:50:45.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2020 23:50:45.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+06-Jun-2020 23:50:45.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_252-8u252-b09-1~18.04-b09
+06-Jun-2020 23:50:45.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+06-Jun-2020 23:50:45.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:50:45.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:50:45.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
+06-Jun-2020 23:50:45.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2020 23:50:45.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Jun-2020 23:50:45.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Jun-2020 23:50:45.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Jun-2020 23:50:45.419 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Jun-2020 23:50:45.419 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:50:45.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
+06-Jun-2020 23:50:45.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
+06-Jun-2020 23:50:45.420 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+06-Jun-2020 23:50:45.632 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:50:45.650 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Jun-2020 23:50:45.680 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1789 ms
+06-Jun-2020 23:50:45.766 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2020 23:50:45.766 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+06-Jun-2020 23:50:45.808 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+06-Jun-2020 23:50:47.185 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Jun-2020 23:50:48.377 SEVERE [localhost-startStop-1] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+06-Jun-2020 23:50:48.401 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,592] ms
+06-Jun-2020 23:50:48.402 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
+06-Jun-2020 23:50:48.464 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [62] ms
+06-Jun-2020 23:50:48.464 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1]
+06-Jun-2020 23:50:48.481 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1] has finished in [17] ms
+06-Jun-2020 23:50:48.481 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
+06-Jun-2020 23:50:48.713 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [232] ms
+06-Jun-2020 23:50:48.714 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
+06-Jun-2020 23:50:48.729 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [15] ms
+06-Jun-2020 23:50:48.730 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
+06-Jun-2020 23:50:48.747 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [16] ms
+06-Jun-2020 23:50:48.747 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
+06-Jun-2020 23:50:48.769 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [22] ms
+06-Jun-2020 23:50:48.770 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1]
+06-Jun-2020 23:50:48.786 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1] has finished in [16] ms
+06-Jun-2020 23:50:48.797 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2020 23:50:48.817 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3135 ms
+06-Jun-2020 23:50:49.026 SEVERE [http-nio-8080-exec-1] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+06-Jun-2020 23:51:33.916 SEVERE [http-nio-8080-exec-4] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 00:03:14.153 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-Jun-2020 00:03:14.157 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Jun-2020 00:03:14.176 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Jun-2020 00:03:14.327 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Jun-2020 00:03:14.337 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Jun-2020 00:03:31.172 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+07-Jun-2020 00:03:31.176 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+07-Jun-2020 00:03:31.176 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+07-Jun-2020 00:03:31.176 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-Jun-2020 00:03:31.176 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-53-generic
+07-Jun-2020 00:03:31.176 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Jun-2020 00:03:31.177 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+07-Jun-2020 00:03:31.177 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_252-8u252-b09-1~18.04-b09
+07-Jun-2020 00:03:31.177 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+07-Jun-2020 00:03:31.177 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
+07-Jun-2020 00:03:31.177 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
+07-Jun-2020 00:03:31.178 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
+07-Jun-2020 00:03:31.178 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Jun-2020 00:03:31.178 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Jun-2020 00:03:31.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Jun-2020 00:03:31.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+07-Jun-2020 00:03:31.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Jun-2020 00:03:31.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
+07-Jun-2020 00:03:31.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
+07-Jun-2020 00:03:31.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
+07-Jun-2020 00:03:31.180 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+07-Jun-2020 00:03:31.308 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Jun-2020 00:03:31.325 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Jun-2020 00:03:31.350 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1113 ms
+07-Jun-2020 00:03:31.413 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Jun-2020 00:03:31.413 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+07-Jun-2020 00:03:31.454 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 00:03:31.504 INFO [localhost-startStop-1] org.apache.catalina.startup.ExpandWar.expand An expanded directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI] was found with a last modified time that did not match the associated WAR. It will be deleted.
+07-Jun-2020 00:03:33.021 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 00:03:34.176 SEVERE [localhost-startStop-1] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 00:03:34.199 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,744] ms
+07-Jun-2020 00:03:34.205 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
+07-Jun-2020 00:03:34.278 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [73] ms
+07-Jun-2020 00:03:34.278 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1]
+07-Jun-2020 00:03:34.300 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1] has finished in [21] ms
+07-Jun-2020 00:03:34.300 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
+07-Jun-2020 00:03:34.556 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [256] ms
+07-Jun-2020 00:03:34.557 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
+07-Jun-2020 00:03:34.576 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [19] ms
+07-Jun-2020 00:03:34.577 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
+07-Jun-2020 00:03:34.596 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [19] ms
+07-Jun-2020 00:03:34.597 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
+07-Jun-2020 00:03:34.624 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [27] ms
+07-Jun-2020 00:03:34.624 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1]
+07-Jun-2020 00:03:34.644 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1] has finished in [19] ms
+07-Jun-2020 00:03:34.658 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Jun-2020 00:03:34.682 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3331 ms
+07-Jun-2020 00:03:53.540 SEVERE [http-nio-8080-exec-6] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 00:04:05.867 SEVERE [http-nio-8080-exec-7] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 00:04:10.059 SEVERE [http-nio-8080-exec-9] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 00:04:14.449 SEVERE [http-nio-8080-exec-10] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 00:04:19.042 SEVERE [http-nio-8080-exec-1] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 00:05:22.036 SEVERE [http-nio-8080-exec-3] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 00:05:24.797 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 00:05:24.898 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 00:05:26.573 INFO [localhost-startStop-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 00:05:27.512 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,614] ms
+07-Jun-2020 00:19:08.122 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 00:19:08.302 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 00:19:09.561 INFO [localhost-startStop-3] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 00:19:10.548 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,247] ms
+07-Jun-2020 00:43:01.427 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 00:43:01.599 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 00:43:02.793 INFO [localhost-startStop-4] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 00:43:04.323 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,724] ms
+07-Jun-2020 00:45:04.402 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 00:45:04.490 INFO [localhost-startStop-5] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 00:45:05.764 INFO [localhost-startStop-5] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 00:45:07.677 INFO [localhost-startStop-5] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [3,187] ms
+07-Jun-2020 00:48:17.805 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 00:48:17.967 INFO [localhost-startStop-6] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 00:48:19.483 INFO [localhost-startStop-6] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 00:48:21.042 INFO [localhost-startStop-6] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [3,075] ms
+07-Jun-2020 00:54:31.245 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 00:54:31.422 INFO [localhost-startStop-7] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 00:54:32.804 INFO [localhost-startStop-7] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 00:54:33.782 INFO [localhost-startStop-7] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,359] ms
+07-Jun-2020 01:00:13.938 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 01:00:14.085 INFO [localhost-startStop-8] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 01:00:15.673 INFO [localhost-startStop-8] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 01:00:16.481 INFO [localhost-startStop-8] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,396] ms
+07-Jun-2020 01:13:46.948 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 01:13:47.132 INFO [localhost-startStop-9] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 01:13:48.133 INFO [localhost-startStop-9] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 01:13:49.942 INFO [localhost-startStop-9] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,810] ms
+07-Jun-2020 01:16:30.044 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 01:16:30.259 INFO [localhost-startStop-10] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 01:16:31.896 INFO [localhost-startStop-10] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 01:16:33.538 INFO [localhost-startStop-10] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [3,278] ms
+07-Jun-2020 01:21:13.711 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 01:21:13.847 INFO [localhost-startStop-11] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 01:21:15.201 INFO [localhost-startStop-11] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 01:21:17.204 INFO [localhost-startStop-11] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [3,357] ms
+07-Jun-2020 09:29:04.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+07-Jun-2020 09:29:04.971 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+07-Jun-2020 09:29:04.971 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+07-Jun-2020 09:29:04.971 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-Jun-2020 09:29:04.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-53-generic
+07-Jun-2020 09:29:04.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Jun-2020 09:29:04.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+07-Jun-2020 09:29:04.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_252-8u252-b09-1~18.04-b09
+07-Jun-2020 09:29:04.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+07-Jun-2020 09:29:04.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
+07-Jun-2020 09:29:04.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
+07-Jun-2020 09:29:04.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
+07-Jun-2020 09:29:04.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Jun-2020 09:29:04.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Jun-2020 09:29:04.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Jun-2020 09:29:04.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+07-Jun-2020 09:29:04.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Jun-2020 09:29:04.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
+07-Jun-2020 09:29:04.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
+07-Jun-2020 09:29:04.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
+07-Jun-2020 09:29:04.975 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+07-Jun-2020 09:29:05.127 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Jun-2020 09:29:05.144 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1068)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:848)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.net.BindException: Address already in use
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1118)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:222)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:587)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1066)
+		... 13 more
+07-Jun-2020 09:29:05.146 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1339 ms
+07-Jun-2020 09:29:05.196 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Jun-2020 09:29:05.197 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+07-Jun-2020 09:29:05.232 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 09:29:06.479 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 09:29:07.782 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,549] ms
+07-Jun-2020 09:29:07.787 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
+07-Jun-2020 09:29:07.834 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [46] ms
+07-Jun-2020 09:29:07.834 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1]
+07-Jun-2020 09:29:07.869 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1] has finished in [35] ms
+07-Jun-2020 09:29:07.872 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
+07-Jun-2020 09:29:08.159 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [288] ms
+07-Jun-2020 09:29:08.160 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
+07-Jun-2020 09:29:08.177 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [17] ms
+07-Jun-2020 09:29:08.177 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
+07-Jun-2020 09:29:08.196 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [19] ms
+07-Jun-2020 09:29:08.196 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
+07-Jun-2020 09:29:08.217 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [21] ms
+07-Jun-2020 09:29:08.217 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1]
+07-Jun-2020 09:29:08.233 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1] has finished in [16] ms
+07-Jun-2020 09:29:08.244 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3097 ms
+07-Jun-2020 09:29:08.246 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+	java.net.BindException: Address already in use (Bind failed)
+		at java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+		at java.net.ServerSocket.bind(ServerSocket.java:390)
+		at java.net.ServerSocket.<init>(ServerSocket.java:252)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+07-Jun-2020 09:29:08.246 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Jun-2020 09:29:08.247 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Jun-2020 09:29:08.298 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Jun-2020 09:29:08.298 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Jun-2020 09:29:15.124 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 09:29:15.289 INFO [localhost-startStop-12] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 09:29:16.321 INFO [localhost-startStop-12] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 09:29:17.130 INFO [localhost-startStop-12] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [1,841] ms
+07-Jun-2020 09:31:27.211 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 09:31:27.357 INFO [localhost-startStop-13] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 09:31:28.629 INFO [localhost-startStop-13] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 09:31:30.303 INFO [localhost-startStop-13] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,946] ms
+07-Jun-2020 09:42:10.597 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 09:42:10.684 INFO [localhost-startStop-14] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 09:42:11.589 INFO [localhost-startStop-14] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 09:42:13.205 INFO [localhost-startStop-14] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,521] ms
+07-Jun-2020 09:45:23.280 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 09:45:23.410 INFO [localhost-startStop-15] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 09:45:24.492 INFO [localhost-startStop-15] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 09:45:25.287 INFO [localhost-startStop-15] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [1,877] ms
+07-Jun-2020 09:47:05.343 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 09:47:05.484 INFO [localhost-startStop-16] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 09:47:06.607 INFO [localhost-startStop-16] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 09:47:07.552 INFO [localhost-startStop-16] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,069] ms
+07-Jun-2020 09:52:57.726 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 09:52:57.786 INFO [localhost-startStop-17] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 09:52:59.152 INFO [localhost-startStop-17] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 09:52:59.957 SEVERE [localhost-startStop-17] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 09:52:59.959 INFO [localhost-startStop-17] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,174] ms
+07-Jun-2020 09:53:03.253 SEVERE [http-nio-8080-exec-131] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 09:53:07.087 SEVERE [http-nio-8080-exec-136] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 09:53:09.186 SEVERE [http-nio-8080-exec-135] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 09:53:17.071 SEVERE [http-nio-8080-exec-130] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 09:59:20.118 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 09:59:20.187 INFO [localhost-startStop-18] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 09:59:22.367 INFO [localhost-startStop-18] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 09:59:24.195 SEVERE [localhost-startStop-18] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 09:59:24.201 INFO [localhost-startStop-18] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [4,015] ms
+07-Jun-2020 09:59:24.869 SEVERE [http-nio-8080-exec-139] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 09:59:29.520 SEVERE [http-nio-8080-exec-143] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 09:59:32.086 SEVERE [http-nio-8080-exec-142] org.glassfish.jersey.internal.Errors.logErrors Following issues have been detected: 
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+WARNING: Method public javax.ws.rs.core.Response edu.asupoly.ser422.restexample.api.BookResource.createBook(java.lang.String,int,int) on resource class edu.asupoly.ser422.restexample.api.BookResource contains multiple parameters with no annotation. Unable to resolve the injection source.
+
+07-Jun-2020 10:08:14.425 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 10:08:14.464 INFO [localhost-startStop-19] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 10:08:15.319 INFO [localhost-startStop-19] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 10:08:16.075 INFO [localhost-startStop-19] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [1,611] ms
+07-Jun-2020 10:10:56.196 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 10:10:56.338 INFO [localhost-startStop-20] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 10:10:57.953 INFO [localhost-startStop-20] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 10:10:59.331 INFO [localhost-startStop-20] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,994] ms
+07-Jun-2020 10:12:39.365 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 10:12:39.520 INFO [localhost-startStop-21] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 10:12:41.064 INFO [localhost-startStop-21] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 10:12:41.913 INFO [localhost-startStop-21] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,393] ms
+07-Jun-2020 10:14:52.015 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 10:14:52.138 INFO [localhost-startStop-22] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 10:14:53.524 INFO [localhost-startStop-22] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 10:14:55.503 INFO [localhost-startStop-22] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [3,364] ms
+07-Jun-2020 10:38:36.238 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 10:38:36.368 INFO [localhost-startStop-23] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 10:38:38.075 INFO [localhost-startStop-23] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 10:38:39.133 INFO [localhost-startStop-23] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,765] ms
+07-Jun-2020 10:44:39.262 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 10:44:39.324 INFO [localhost-startStop-24] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 10:44:40.233 INFO [localhost-startStop-24] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 10:44:41.157 INFO [localhost-startStop-24] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [1,832] ms
+consumeJSON: {
+        "location": "Houston, TX",
+        "subject": "Humor",
+        "subjectId": 97602
+    }
+Deserializer processing token: null, field name: location
+Deserializer processing token: null, field name: subject
+Deserializer processing token: null, field name: subjectId
+Deserializer processing token: }Deserializer returning Subject: edu.asupoly.ser422.restexample.model.Subject@1c93c490
+consumeJSON: {
+"location": "Little Rock, AR",
+"subject": "Politics",
+"subjectId": 37706
+}
+Deserializer processing token: null, field name: location
+Deserializer processing token: null, field name: subject
+Deserializer processing token: null, field name: subjectId
+Deserializer processing token: }Deserializer returning Subject: edu.asupoly.ser422.restexample.model.Subject@621eb217
+07-Jun-2020 10:53:41.384 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 10:53:41.517 INFO [localhost-startStop-25] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 10:53:42.564 INFO [localhost-startStop-25] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 10:53:43.400 INFO [localhost-startStop-25] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [1,883] ms
+consumeJSON: {
+"location": "Rock, AR",
+"subject": "Politics",
+"subjectId": 88738
+}
+Deserializer processing token: null, field name: location
+Deserializer processing token: null, field name: subject
+Deserializer processing token: null, field name: subjectId
+Deserializer processing token: }Deserializer returning Subject: edu.asupoly.ser422.restexample.model.Subject@57c63b0
+consumeJSON: [{
+"location": "Rock, AR",
+"subject": "Politics",
+"subjectId": 88738
+}]
+Deserializer processing token: {Deserializer processing token: null, field name: location
+Deserializer processing token: null, field name: subject
+Deserializer processing token: null, field name: subjectId
+Deserializer processing token: }Deserializer processing token: ]Deserializer returning Subject: edu.asupoly.ser422.restexample.model.Subject@6cd95024
+07-Jun-2020 10:57:23.504 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 10:57:23.640 INFO [localhost-startStop-26] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 10:57:24.907 INFO [localhost-startStop-26] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 10:57:25.745 INFO [localhost-startStop-26] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,105] ms
+consumeJSON: [{
+"location": "Rock, AR",
+"subject": "Politics",
+"subjectId": 32301
+}]
+Deserializer processing token: {Deserializer processing token: null, field name: location
+Deserializer processing token: null, field name: subject
+Deserializer processing token: null, field name: subjectId
+Deserializer processing token: }Deserializer processing token: ]Deserializer returning Subject: edu.asupoly.ser422.restexample.model.Subject@178b8e37
+consumeJSON: {
+"location": "Rock, AR",
+"subject": "Politics",
+"subjectId": 32301
+}
+Deserializer processing token: null, field name: location
+Deserializer processing token: null, field name: subject
+Deserializer processing token: null, field name: subjectId
+Deserializer processing token: }Deserializer returning Subject: edu.asupoly.ser422.restexample.model.Subject@99c6884
+consumeJSON: {
+        "authorId": 58191,
+        "firstName": "George",
+        "lastName": "Bush"
+    }
+Deserializer processing token: null, field name: authorId
+Deserializer processing token: null, field name: firstName
+Deserializer processing token: null, field name: lastName
+Deserializer processing token: }Deserializer returning Author: Author ID 0, lastName null, firstName null
+07-Jun-2020 22:04:52.999 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/RestExampleAPI]
+07-Jun-2020 22:04:53.127 INFO [localhost-startStop-27] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+07-Jun-2020 22:04:54.264 INFO [localhost-startStop-27] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2020 22:04:55.023 INFO [localhost-startStop-27] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [1,896] ms
+07-Jun-2020 22:05:09.223 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-Jun-2020 22:05:09.224 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Jun-2020 22:05:09.235 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Jun-2020 22:05:09.291 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Jun-2020 22:05:09.298 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

@@ -8,6 +8,7 @@ import javafx.util.Pair;
 import java.util.ArrayList;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.json.JSONTokener;
 
 import edu.asupoly.ser422.renderers.MyLab2Renderer;
 import edu.asupoly.ser422.renderers.MyLab2RendererFactory;
@@ -104,7 +105,7 @@ public class GroceryListViewerServlet extends HttpServlet {
 		}
 		
 		// load the grocery list from the JSON file
-		InputStream is = this.getClass().getClassLoader().getResourceAsStream(_filename);
+                InputStream is = this.getClass().getClassLoader().getResourceAsStream(_filename);
 		Pair<Pair<Boolean, String>, GroceryList> loadBundle = ServletHelper.loadBootstrapFile(is);
 		Pair<Boolean, String> loadStatus = loadBundle.getKey();
 		GroceryList groceryListObj = loadBundle.getValue();
