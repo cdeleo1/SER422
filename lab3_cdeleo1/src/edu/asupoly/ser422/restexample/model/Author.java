@@ -20,7 +20,6 @@ public class Author {
 	public String getFirstName() {
 		return __firstName;
 	}
-
 	public void setAuthorId(int __id) {
 		this.__id = __id;
 	}
@@ -30,9 +29,9 @@ public class Author {
 	public void setFirstName(String __firstName) {
 		this.__firstName = __firstName;
 	}
-	
 	public String toString() {
-		return "Author ID " + getAuthorId() + ", lastName " + getLastName() + ", firstName " + getFirstName();
+		return "Author ID " + getAuthorId() + ", lastName " 
+                        + getLastName() + ", firstName " + getFirstName();
 	}
 	private int    __id;
 	private String __lastName;

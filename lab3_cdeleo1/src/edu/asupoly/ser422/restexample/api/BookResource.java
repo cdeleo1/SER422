@@ -19,6 +19,7 @@ import javax.ws.rs.core.UriInfo;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import edu.asupoly.ser422.restexample.model.Author;
 import edu.asupoly.ser422.restexample.model.Book;
 import edu.asupoly.ser422.restexample.services.BooktownService;
 import edu.asupoly.ser422.restexample.services.BooktownServiceFactory;
@@ -108,6 +109,39 @@ public class BookResource {
         try {
             String bString = BookSerializationHelper.getHelper().generateJSON(book);
             return Response.status(Response.Status.OK).entity(bString).build();
+        } catch (Exception exc) {
+            exc.printStackTrace();
+            return null;
+        }
+    }
+    
+    /**
+     * @api {get} /{bookId} Get author of a book
+     * @apiName getAuthor
+     * @apiGroup Books
+     *
+     * @apiUse BadRequestError
+     * @apiUse InternalServerError
+     *
+     * @apiSuccessExample Success-Response: HTTP/1.1 200 OK 
+     * [
+     *    {"authorId":1111,"firstName":"Ariel","lastName":"Denham"}
+     * ]
+     *
+     */
+    @GET
+    @Produces({MediaType.APPLICATION_JSON})
+    @Path("/getAuthor/{bookId}")
+    public Response findAuthorOfBook(@PathParam("bookId") int bid) {
+        Author author = __bService.findAuthorOfBook(bid);
+
+        // AuthorSerializationHelper will build a slightly different JSON string 
+        // and we still use the ResponseBuilder to use that. The key property 
+        // names are changed in the result.
+        try {
+            String aString = 
+                    AuthorSerializationHelper.getHelper().generateJSON(author);
+            return Response.status(Response.Status.OK).entity(aString).build();
         } catch (Exception exc) {
             exc.printStackTrace();
             return null;

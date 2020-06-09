@@ -148,7 +148,8 @@ public class SimpleBooktownServiceImpl extends ABooktownServiceImpl {
     public int createSubject(String subject, String location) {
         int subjectId = generateKey(1, 99999);
         // 10 retries if we have a key clash
-        for (int i = 0; i < 10 && !(__subjects.add(new Subject(subjectId, subject, location)));) {
+        for (int i = 0; i < 10 && !(__subjects.add(
+                new Subject(subjectId, subject, location)));) {
             subjectId = generateKey(1, 99999);
         }
         return subjectId;

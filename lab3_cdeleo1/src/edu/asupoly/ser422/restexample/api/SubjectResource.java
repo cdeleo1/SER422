@@ -108,7 +108,7 @@ public class SubjectResource {
     }
     
     /**
-     * @api {put} /subjects/subjectid/{id}/city/{city}/state/{state} Update the location of a Subject
+     * @api {put} /subjects Update the location of a Subject
      * @apiName updateSubject
      * @apiGroup Subjects
      *

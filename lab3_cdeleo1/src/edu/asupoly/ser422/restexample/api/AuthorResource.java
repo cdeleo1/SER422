@@ -85,8 +85,9 @@ public class AuthorResource {
     public Response getAuthor(@PathParam("authorId") int aid) {
         Author author = __bService.getAuthor(aid);
 
-        // AuthorSerializationHelper will build a slightly different JSON string and we still use
-        // the ResponseBuilder to use that. The key property names are changed in the result.
+        // AuthorSerializationHelper will build a slightly different JSON string 
+        // and we still use the ResponseBuilder to use that. The key property 
+        // names are changed in the result.
         try {
             String aString = AuthorSerializationHelper.getHelper().generateJSON(author);
             return Response.status(Response.Status.OK).entity(aString).build();

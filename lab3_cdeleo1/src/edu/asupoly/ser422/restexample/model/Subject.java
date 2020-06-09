@@ -20,14 +20,14 @@ public class Subject {
 	public String getLocation() {
 		return __location;
 	}
-        public void setLocation(String location) {
-		this.__location = location;
+        public void setLocation(String __location) {
+		this.__location = __location;
 	}
-        public void setSubjectId(int id) {
-		this.__id = id;
+        public void setSubjectId(int __id) {
+		this.__id = __id;
 	}
-        public void setSubject(String subject) {
-		this.__subject = subject;
+        public void setSubject(String __subject) {
+		this.__subject = __subject;
 	}
         private int __id;
 	private String __subject;
