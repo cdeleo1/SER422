@@ -156,8 +156,6 @@ public class BookResource {
      * @apiUse BadRequestError
      * @apiUse InternalServerError
      *
-     * @apiSuccessExample Success-Response: HTTP/1.1 200 OK 
-     *
      */
     @POST
     @Consumes("application/json")
@@ -186,7 +184,6 @@ public class BookResource {
      * @apiUse BadRequestError
      * @apiUse InternalServerError
      *
-     * @apiSuccessExample Success-Response: HTTP/1.1 204 OK
      *
      */
     @DELETE

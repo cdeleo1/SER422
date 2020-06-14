@@ -88,13 +88,15 @@ public class SimpleBooktownServiceImpl extends ABooktownServiceImpl {
     }
 
     // Book section
-    private final static String[] titles = {"Sisters First", "My Turn", "Four Days"};
+    private final static String[] titles 
+            = {"Sisters First", "My Turn", "Four Days"};
     private Set<Book> __books = null;
 
     public List<Book> getBooks() {
         List<Book> deepClone = new ArrayList<Book>();
         for (Book b : __books) {
-            deepClone.add(new Book(b.getBookId(), b.getTitle(), b.getAuthorId(), b.getSubjectId()));
+            deepClone.add(new Book(b.getBookId(), b.getTitle(), b.getAuthorId(), 
+                    b.getSubjectId()));
         }
         return deepClone;
     }
@@ -125,7 +127,8 @@ public class SimpleBooktownServiceImpl extends ABooktownServiceImpl {
     public int createBook(String title, int aid, int sid) {
         int bookId = generateKey(1, 99999);
         // 10 retries 
-        for (int i = 0; i < 10 && !(__books.add(new Book(bookId, title, aid, sid)));) {
+        for (int i = 0; i < 10 && !(__books.add(
+                new Book(bookId, title, aid, sid)));) {
             bookId = generateKey(1, 99999);
         }
         return bookId;
@@ -174,6 +177,47 @@ public class SimpleBooktownServiceImpl extends ABooktownServiceImpl {
 
     public List<Book> findBooksBySubject(int subjectId) {
         return null;
+    }
+
+    public List<Author> findAuthorsBySubject(String location) {
+        List<Book> deepCloneB = new ArrayList<Book>();
+        List<Subject> deepCloneS = new ArrayList<Subject>();
+        List<Author> deepCloneA = new ArrayList<Author>();
+        String[] l = location.split(", ");
+        String city = l[0];
+        String state = l[1];
+        int sCounter = 0;
+        for (Subject s : __subjects) {
+            String sLocation = s.getLocation();
+            String[] sL = sLocation.split(", ");
+            String sCity = sL[0];
+            String sState = sL[1];
+            
+            if(sCity == city && sState == state) {
+                int sid = s.getSubjectId();
+                String subject = s.getSubject();
+                deepCloneS.add(new Subject(sid, subject, sLocation));
+                sCounter++;
+            }
+        }
+        for (Book b : __books) {
+            for (Subject s : deepCloneS) {
+                if(b.getSubjectId() == s.getSubjectId()) {
+                    deepCloneB.add(new Book(b.getBookId(), b.getTitle(), 
+                            b.getAuthorId(), b.getSubjectId()));
+                }
+                
+            }
+        }
+        for (Author a : __authors) {
+            for (Book b : deepCloneB) {
+                if(a.getAuthorId() == b.getAuthorId()) {
+                    deepCloneA.add(new Author(a.getAuthorId(), a.getFirstName(), 
+                            a.getLastName()));
+                }
+            }
+        }
+        return deepCloneA;
     }
     
     @Override

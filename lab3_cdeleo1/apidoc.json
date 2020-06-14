@@ -1,7 +1,7 @@
 {
-  "name": "BooktownREST-example",
+  "name": "lab3_cdeleo1",
   "version": "0.1.0",
-  "description": "SER422 REST example project",
+  "description": "SER422",
   "title": "Booktown REST API",
-  "url" : "https://localhost:8080/RestExampleAPI/rest/"
+  "url" : "https://localhost:8080/lab3/rest/"
 }

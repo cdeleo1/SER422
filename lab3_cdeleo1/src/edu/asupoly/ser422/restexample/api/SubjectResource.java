@@ -19,12 +19,14 @@ import javax.ws.rs.core.UriInfo;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import edu.asupoly.ser422.restexample.model.Author;
 import edu.asupoly.ser422.restexample.model.Subject;
 import edu.asupoly.ser422.restexample.services.BooktownService;
 import edu.asupoly.ser422.restexample.services.BooktownServiceFactory;
 
 @Path("/subjects")
-@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.TEXT_XML})
+@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, 
+    MediaType.TEXT_XML})
 public class SubjectResource {
 
     private static BooktownService __bService = BooktownServiceFactory.getInstance();
@@ -141,6 +143,27 @@ public class SubjectResource {
                     "{ \"message \" : \"Internal server error deserializing "
                             + "Subject JSON\"}").build();
         }
+    }
+    
+    /**
+     * @api {get} /subjects/findAuthors Get list of Authors by Subject location
+     * @apiName findAuthorsBySubject
+     * @apiGroup Subjects
+     *
+     * @apiUse BadRequestError
+     * @apiUse InternalServerError
+     *
+     * @apiSuccessExample Success-Response: HTTP/1.1 200 OK [
+     * {"authorId":1111,"firstName":"Ariel","lastName":"Denham"},
+     * {"authorId":1212,"firstName":"John","lastName":"Worsley"} ]
+     *
+     *
+     */
+    @GET
+    @Path("/findAuthors")
+    @Consumes("text/plain")
+    public List<Author> findAuthorsBySubject(String location) {
+        return __bService.findAuthorsBySubject(location);
     }
 
 }

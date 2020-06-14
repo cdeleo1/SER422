@@ -331,6 +331,12 @@ public class RDBMBooktownServiceImpl extends ABooktownServiceImpl {
         // TODO Auto-generated method stub
         return null;
     }
+    
+    @Override
+    public List<Author> findAuthorsBySubject(String location) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
     @Override
     public boolean updateSubject(Subject subject) {

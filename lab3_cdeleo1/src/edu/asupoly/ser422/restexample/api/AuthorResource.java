@@ -78,7 +78,8 @@ public class AuthorResource {
         return __bService.getAuthors();
     }
 
-    // This is a 3rd version using a custom serializer I've encapsulated over in the new helper class
+    // This is a 3rd version using a custom serializer I've encapsulated over in 
+    // the new helper class
     @GET
     @Produces({MediaType.APPLICATION_JSON})
     @Path("/{authorId}")
@@ -98,7 +99,8 @@ public class AuthorResource {
     }
 
     /*
-	 * This was the second version that added simple custom response headers and payload
+     * This was the second version that added simple custom response headers
+     * and payload
      */
     @POST
     @Consumes("text/plain")
@@ -106,20 +108,26 @@ public class AuthorResource {
         String[] names = name.split(" ");
         int aid = __bService.createAuthor(names[0], names[1]);
         if (aid == -1) {
-            return Response.status(500).entity("{ \" EXCEPTION INSERTING INTO DATABASE! \"}").build();
+            return Response.status(500).entity(
+                    "{ \" EXCEPTION INSERTING INTO DATABASE! \"}").build();
         } else if (aid == 0) {
-            return Response.status(500).entity("{ \" ERROR INSERTING INTO DATABASE! \"}").build();
+            return Response.status(500).entity(
+                    "{ \" ERROR INSERTING INTO DATABASE! \"}").build();
         }
         return Response.status(201)
-                .header("Location", String.format("%s/%d", _uriInfo.getAbsolutePath().toString(), aid))
+                .header("Location", String.format("%s/%d", 
+                        _uriInfo.getAbsolutePath().toString(), aid))
                 .entity("{ \"Author\" : \"" + aid + "\"}").build();
     }
 
     /*
-	 * This 2nd version of PUT uses the deserializer from AuthorSerializationHelper, and process the JSON given
-	 * in GET version 3 above. Note that when you use the custom serializer/deserializer, it will not be 
-	 * compatible with methods that do not use it (which will continue to use the Jersey default). If you
-	 * decide to customize, then you should be certain to use your (de)serializer throughout your resource!
+     * This 2nd version of PUT uses the deserializer from 
+     * AuthorSerializationHelper, and process the JSON given
+     * in GET version 3 above. Note that when you use the custom 
+     * serializer/deserializer, it will not be compatible with methods that do 
+     * not use it (which will continue to use the Jersey default). If you
+     * decide to customize, then you should be certain to use your 
+     * (de)serializer throughout your resource!
      */
     @PUT
     @Consumes("application/json")

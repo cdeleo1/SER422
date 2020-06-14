@@ -27,4 +27,5 @@ public interface BooktownService {
     public Subject getSubject(int id);
     public boolean updateSubject(Subject subject);
     public List<Book> findBooksBySubject(int subjectId);
+    public List<Author> findAuthorsBySubject(String location);
 }

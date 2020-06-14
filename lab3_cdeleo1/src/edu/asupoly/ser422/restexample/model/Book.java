@@ -17,26 +17,26 @@ public class Book {
 	public int getBookId() {
 		return __id;
 	}
-	public void setBookId(int id) {
-		this.__id = id;
+	public void setBookId(int __id) {
+		this.__id = __id;
 	}
 	public String getTitle() {
 		return __title;
 	}
-	public void setTitle(String title) {
-		this.__title = title;
+	public void setTitle(String __title) {
+		this.__title = __title;
 	}
 	public int getAuthorId() {
 		return __authorId;
 	}
-	public void setAuthorId(int authorId) {
-		this.__authorId = authorId;
+	public void setAuthorId(int __authorId) {
+		this.__authorId = __authorId;
 	}
 	public int getSubjectId() {
 		return __subjectId;
 	}
-	public void setSubjectId(int subjectId) {
-		this.__subjectId = subjectId;
+	public void setSubjectId(int __subjectId) {
+		this.__subjectId = __subjectId;
 	}
         public String toString() {
 		return "Book ID " + getBookId() + ", title " + getTitle() + 
