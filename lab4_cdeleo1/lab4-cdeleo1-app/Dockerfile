@@ -24,7 +24,7 @@ RUN apt-get update && apt-get -y upgrade && apt-get install -y software-properti
 USER postgres
 
 # Now add database import script to tmp so the wrapper script can use it later
-COPY given.sql /tmp/given.sql
+COPY app.sql /tmp/app.sql
 
 # Create a PostgreSQL role named ``ser422`` with ``ser422`` as the password and
 # then create a database `courses` owned by the ``ser422`` role.
@@ -33,7 +33,7 @@ COPY given.sql /tmp/given.sql
 RUN    /etc/init.d/postgresql start &&\
     psql --command "CREATE USER ser422 WITH SUPERUSER PASSWORD 'ser422';" &&\
     createdb -O ser422 courses &&\
-    psql courses < /tmp/given.sql
+    psql courses < /tmp/app.sql
 
 # Adjust PostgreSQL configuration so that remote connections to the
 # database are possible.
@@ -55,7 +55,7 @@ RUN mkdir /usr/local/tomcat
 RUN wget http://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.36/bin/apache-tomcat-9.0.36.tar.gz -O /tmp/tomcat.tar.gz
 RUN cd /tmp && tar xvfz tomcat.tar.gz
 RUN cp -Rv /tmp/apache-tomcat-9.0.36/* /usr/local/tomcat/
-COPY gradeapp.war /usr/local/tomcat/webapps/
+COPY app.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 
 # Commented out the CMD command for Tomcat as we will run 2 things in our container

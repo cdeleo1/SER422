@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
-public class GradeService {
+public class MapService {
     // These are the possible queries
     private static String queryAll = "SELECT grade FROM Enrolled";
     private static String queryYear = 
@@ -29,16 +29,16 @@ public class GradeService {
     private String __jdbcDriver = null;
 
     // Singleton pattern
-    private static GradeService __theService = null;
+    private static MapService __theService = null;
 
     /*
      * getService()
      * 
-     * Creates new GradeService if one does not already exist.
+     * Creates new MapService if one does not already exist.
      */
-    public static final GradeService getService() throws Exception {
+    public static final MapService getService() throws Exception {
         if (__theService == null) {
-            __theService = new GradeService();
+            __theService = new MapService();
         }
         return __theService;
     }
@@ -48,7 +48,7 @@ public class GradeService {
      *
      * Constructor.
      */
-    private GradeService() throws Exception {
+    private MapService() throws Exception {
         Properties props = new Properties();
         try {
             InputStream propFile = this.getClass().getClassLoader().getResourceAsStream("db.properties");
@@ -70,77 +70,6 @@ public class GradeService {
             cnfe.printStackTrace();
             throw new Exception("Cannot initialize service from property file");
         }
-    }
-
-    // This is what you need to implement in a subclass!
-    public double calculateGrade(String year, String subject) {
-        Connection conn = null;
-        Statement stmt = null;
-        ResultSet rs = null;
-        double grade = 0.0;
-        try {
-            // Create the connection anew every time
-            conn = DriverManager.getConnection(__jdbcUrl, __jdbcUser, __jdbcPasswd);
-
-            stmt = conn.createStatement();
-
-            int iyear = 0;
-            String query;
-            if (year != null && !year.trim().isEmpty()) {
-                iyear = Integer.parseInt(year);
-            }
-            if (iyear <= 4 && iyear >= 1 && subject != null && !subject.trim().isEmpty()) {
-                query = queryYearSubject + year + " AND subject='" + subject + "'";
-            } else if (iyear <= 4 && iyear >= 1) {
-                query = queryYear + year;
-            } else if (subject != null && !subject.trim().isEmpty()) {
-                query = querySubject + subject + "'";
-            } else {
-                query = queryAll;
-            }
-            System.out.println("Executing query " + query);
-
-            rs = stmt.executeQuery(query);
-            int count = 0;
-            double gradesum = -1.0;
-            while (rs.next()) {
-                gradesum += rs.getDouble(1);
-                count++;
-            }
-            if (count > 0) {
-                grade = gradesum / count;
-            }
-        } catch (SQLException se) {
-            System.out.println("*** Uh-oh! Database Exception");
-            se.printStackTrace();
-        } catch (Exception e) {
-            System.out.println("*** Some other exception was thrown");
-            e.printStackTrace();
-        } finally {  // why nest all of these try/finally blocks?
-            try {
-                if (rs != null) {
-                    rs.close();
-                }
-            } catch (Throwable t1) {
-                t1.printStackTrace();
-            }
-            try {
-                if (stmt != null) {
-                    stmt.close();
-                }
-            } catch (Throwable t2) {
-                t2.printStackTrace();
-            }
-            try {
-                if (conn != null) {
-                    conn.close();
-                }
-            } catch (Throwable t) {
-                t.printStackTrace();
-            }
-        }
-        // Note that error cases will return this as well which is not good
-        return grade;
     }
 
     public final String mapToLetterGrade(double grade) {

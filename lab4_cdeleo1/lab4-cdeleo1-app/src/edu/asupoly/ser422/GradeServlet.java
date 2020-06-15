@@ -12,6 +12,7 @@ import java.io.PrintWriter;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
+
 /**
  * @author Kevin Gary
  *
@@ -42,20 +43,32 @@ public class GradeServlet extends HttpServlet {
         }
         
         // Create new GradeService
-        GradeService service = null;
+        //GradeService service = null;
+        
+        // Create new CalcService
+        CalcService calcService = null;
+        
+        // Create new MapService
+        MapService mapService = null;
         
         try {
-            service = GradeService.getService();
+            calcService = CalcService.getService();
         } catch (Exception e) {
             e.printStackTrace();
         }
         
-        if (service == null) {
+        try {
+            mapService = mapService.getService();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        
+        if (calcService == null || mapService == null) {
             pageBuf.append("\tSERVICE NOT AVAILABLE");
         } else {
-            grade = service.calculateGrade(year, subject);
+            grade = calcService.calculateGrade(year, subject);
             pageBuf.append("\n\t<br/>Grade: " + grade);
-            pageBuf.append("\n\t<br/>Letter: " + service.mapToLetterGrade(grade));
+            pageBuf.append("\n\t<br/>Letter: " + mapService.mapToLetterGrade(grade));
         }
 
         // some generic setup - our content type and output stream
