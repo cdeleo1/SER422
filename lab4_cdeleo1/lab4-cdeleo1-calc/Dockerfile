@@ -24,7 +24,6 @@ RUN apt-get update && apt-get -y upgrade && apt-get install -y software-properti
 USER postgres
 
 # Now add database import script to tmp so the wrapper script can use it later
-#COPY given.sql /tmp/given.sql
 COPY calc.sql /tmp/calc.sql
 
 # Create a PostgreSQL role named ``ser422`` with ``ser422`` as the password and
@@ -34,7 +33,6 @@ COPY calc.sql /tmp/calc.sql
 RUN    /etc/init.d/postgresql start &&\
     psql --command "CREATE USER ser422 WITH SUPERUSER PASSWORD 'ser422';" &&\
     createdb -O ser422 courses &&\
-    #psql courses < /tmp/given.sql
     psql courses < /tmp/calc.sql
 
 # Adjust PostgreSQL configuration so that remote connections to the

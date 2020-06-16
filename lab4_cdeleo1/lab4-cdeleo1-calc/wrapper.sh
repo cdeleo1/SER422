@@ -24,6 +24,7 @@ fi
 
 # Now load the warfile, this should also be
 echo "Now issue the docker copy command: docker cp <local warfile> <container id>:/usr/local/tomcat/webapps"
+
 # Naive check runs checks once a minute to see if either of the processes exited.
 # This illustrates part of the heavy lifting you need to do if you want to run
 # more than one service in a container. The container exits with an error

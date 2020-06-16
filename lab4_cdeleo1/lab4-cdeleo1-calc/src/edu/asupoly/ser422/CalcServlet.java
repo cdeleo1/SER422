@@ -1,9 +1,3 @@
-/*
- * CalcServlet.java
- *
- * Copyright:  Kevin A. Gary All Rights Reserved
- *
- */
 package edu.asupoly.ser422;
 
 import java.io.IOException;
@@ -11,6 +5,7 @@ import java.io.PrintWriter;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
+
 
 /**
  * @author Cristi DeLeo
@@ -27,6 +22,7 @@ public class CalcServlet extends HttpServlet {
     // GET 
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
+        
         StringBuffer pageBuf = new StringBuffer();
         double grade;
         

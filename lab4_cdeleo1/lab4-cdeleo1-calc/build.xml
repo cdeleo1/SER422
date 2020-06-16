@@ -1,8 +1,3 @@
-<!--
-   build.xml file for SER422 Summer 2020.
-   Copyright 2018 Kevin A. Gary
--->
-
 <project name="SER422 Lab 4 CalcApp" default="compile" basedir=".">
   <property file="build.properties"/>
 

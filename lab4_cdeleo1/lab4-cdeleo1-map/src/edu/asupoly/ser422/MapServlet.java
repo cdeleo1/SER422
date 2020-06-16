@@ -2,6 +2,7 @@ package edu.asupoly.ser422;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.lang.Double.*;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -17,8 +18,11 @@ public class MapServlet extends HttpServlet {
     // GET 
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
+        
         StringBuffer pageBuf = new StringBuffer();
-        double grade;
+        //double grade = Double.parseDouble(req.getParameter("grade"));
+        
+        double grade = 68.4;
         
         String year = req.getParameter("year");
         String subject = req.getParameter("subject");
@@ -32,16 +36,10 @@ public class MapServlet extends HttpServlet {
         }
         
         // Create new CalcService
-        CalcService calcService = null;
+        //CalcService calcService = null;
         
         // Create new MapService
         MapService mapService = null;
-        
-        try {
-            calcService = CalcService.getService();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         
         try {
             mapService = MapService.getService();
@@ -49,10 +47,10 @@ public class MapServlet extends HttpServlet {
             e.printStackTrace();
         }
         
-        if (mapService == null || calcService == null) {
+        if (mapService == null) {
             pageBuf.append("\tSERVICE NOT AVAILABLE");
         } else {
-            grade = calcService.calculateGrade(year, subject);
+            //grade = calcService.calculateGrade(year, subject);
             pageBuf.append("\n\t<br/>Letter: " + mapService.mapToLetterGrade(grade));
         }
 

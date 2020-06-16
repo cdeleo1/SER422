@@ -6,30 +6,12 @@
 
 <web-app>
   <servlet>
-    <servlet-name>GradeServlet</servlet-name>
-    <servlet-class>edu.asupoly.ser422.GradeServlet</servlet-class>
+    <servlet-name>MapServlet</servlet-name>
+    <servlet-class>edu.asupoly.ser422.MapServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <servlet-name>GradeServlet</servlet-name>
-    <url-pattern>/grades</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>CalcServlet</servlet-name>
-    <servlet-class>edu.asupoly.ser422.CalcServlet</servlet-class>
-    <load-on-startup>2</load-on-startup>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>CalcServlet</servlet-name>
-    <url-pattern>/calc</url-pattern>
-  </servlet-mapping>
-  <servlet>
     <servlet-name>MapServlet</servlet-name>
-    <servlet-class>edu.asupoly.ser422.MapServlet</servlet-class>
-    <load-on-startup>3</load-on-startup>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>MapServlet</servlet-name>
-    <url-pattern>/map</url-pattern>
+    <url-pattern>/</url-pattern>
   </servlet-mapping>
 </web-app>

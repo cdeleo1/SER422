@@ -55,7 +55,7 @@ RUN mkdir /usr/local/tomcat
 RUN wget http://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.36/bin/apache-tomcat-9.0.36.tar.gz -O /tmp/tomcat.tar.gz
 RUN cd /tmp && tar xvfz tomcat.tar.gz
 RUN cp -Rv /tmp/apache-tomcat-9.0.36/* /usr/local/tomcat/
-COPY gradeapp.war /usr/local/tomcat/webapps/
+COPY map.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 
 # Commented out the CMD command for Tomcat as we will run 2 things in our container
