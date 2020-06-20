@@ -1,0 +1,111 @@
+19-Jun-2020 15:05:28.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+19-Jun-2020 15:05:28.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+19-Jun-2020 15:05:28.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+19-Jun-2020 15:05:28.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+19-Jun-2020 15:05:28.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-59-generic
+19-Jun-2020 15:05:28.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Jun-2020 15:05:28.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+19-Jun-2020 15:05:28.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_252-8u252-b09-1~18.04-b09
+19-Jun-2020 15:05:28.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+19-Jun-2020 15:05:28.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
+19-Jun-2020 15:05:28.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
+19-Jun-2020 15:05:28.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
+19-Jun-2020 15:05:28.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Jun-2020 15:05:28.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Jun-2020 15:05:28.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Jun-2020 15:05:28.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+19-Jun-2020 15:05:28.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-Jun-2020 15:05:28.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
+19-Jun-2020 15:05:28.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
+19-Jun-2020 15:05:28.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
+19-Jun-2020 15:05:28.042 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+19-Jun-2020 15:05:28.206 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Jun-2020 15:05:28.223 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+19-Jun-2020 15:05:28.252 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1131 ms
+19-Jun-2020 15:05:28.331 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Jun-2020 15:05:28.331 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+19-Jun-2020 15:05:28.367 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/app.war]
+19-Jun-2020 15:05:28.938 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Jun-2020 15:05:28.996 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/app.war] has finished in [628] ms
+19-Jun-2020 15:05:28.997 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab3.war]
+19-Jun-2020 15:05:29.937 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Jun-2020 15:05:31.209 WARNING [localhost-startStop-1] org.glassfish.jersey.internal.Errors.logErrors The following warnings have been detected: WARNING: A HTTP GET method, public java.util.List edu.asupoly.ser422.restexample.api.SubjectResource.findAuthorsBySubject(java.lang.String), should not consume any entity.
+
+19-Jun-2020 15:05:31.216 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab3.war] has finished in [2,219] ms
+19-Jun-2020 15:05:31.217 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+19-Jun-2020 15:05:32.006 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Jun-2020 15:05:32.987 WARNING [localhost-startStop-1] org.glassfish.jersey.internal.Errors.logErrors The following warnings have been detected: WARNING: A HTTP GET method, public java.util.List edu.asupoly.ser422.restexample.api.SubjectResource.findAuthorsBySubject(java.lang.String), should not consume any entity.
+
+19-Jun-2020 15:05:32.993 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [1,776] ms
+19-Jun-2020 15:05:32.994 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/calc.war]
+19-Jun-2020 15:05:33.078 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Jun-2020 15:05:33.082 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/calc.war] has finished in [88] ms
+19-Jun-2020 15:05:33.083 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1]
+19-Jun-2020 15:05:33.104 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1] has finished in [21] ms
+19-Jun-2020 15:05:33.104 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
+19-Jun-2020 15:05:33.391 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [287] ms
+19-Jun-2020 15:05:33.392 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
+19-Jun-2020 15:05:33.410 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [18] ms
+19-Jun-2020 15:05:33.410 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
+19-Jun-2020 15:05:33.442 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [32] ms
+19-Jun-2020 15:05:33.443 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
+19-Jun-2020 15:05:33.461 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [18] ms
+19-Jun-2020 15:05:33.461 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
+19-Jun-2020 15:05:33.487 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [26] ms
+19-Jun-2020 15:05:33.488 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1]
+19-Jun-2020 15:05:33.506 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1] has finished in [19] ms
+19-Jun-2020 15:05:33.518 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Jun-2020 15:05:33.534 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 5282 ms
+19-Jun-2020 15:06:53.616 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+19-Jun-2020 15:06:53.735 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [118] ms
+19-Jun-2020 19:25:22.070 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war]
+19-Jun-2020 19:25:23.995 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war] has finished in [1,925] ms
+19-Jun-2020 19:28:39.293 INFO [http-nio-8080-exec-10] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/aqmapps] has started
+19-Jun-2020 19:28:39.438 INFO [http-nio-8080-exec-10] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/aqmapps] is completed
+19-Jun-2020 19:28:41.304 INFO [http-nio-8080-exec-6] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/aqm] has started
+19-Jun-2020 19:28:41.347 WARNING [http-nio-8080-exec-6] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [aqm] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+19-Jun-2020 19:28:41.352 WARNING [http-nio-8080-exec-6] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [aqm] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+19-Jun-2020 19:28:42.851 INFO [http-nio-8080-exec-6] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/aqm] is completed
+19-Jun-2020 19:47:44.680 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+19-Jun-2020 19:47:44.723 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+19-Jun-2020 19:47:44.840 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [118] ms
+19-Jun-2020 19:48:25.361 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqm]
+19-Jun-2020 19:48:25.382 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [aqm] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+19-Jun-2020 19:48:25.385 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [aqm] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+19-Jun-2020 19:48:25.403 INFO [localhost-startStop-5] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war]
+19-Jun-2020 19:48:27.734 INFO [localhost-startStop-5] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war] has finished in [2,332] ms
+19-Jun-2020 19:48:37.739 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqm]
+19-Jun-2020 19:48:37.811 INFO [localhost-startStop-6] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war]
+19-Jun-2020 19:48:39.220 INFO [localhost-startStop-6] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war] has finished in [1,409] ms
+19-Jun-2020 19:51:13.532 INFO [http-nio-8080-exec-30] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/aqm] has started
+19-Jun-2020 19:51:13.549 WARNING [http-nio-8080-exec-30] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [aqm] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+19-Jun-2020 19:51:13.551 WARNING [http-nio-8080-exec-30] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [aqm] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+19-Jun-2020 19:51:14.676 INFO [http-nio-8080-exec-30] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/aqm] is completed
+19-Jun-2020 19:51:19.238 INFO [http-nio-8080-exec-27] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/aqmapps] has started
+19-Jun-2020 19:51:19.271 INFO [http-nio-8080-exec-27] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/aqmapps] is completed
+19-Jun-2020 20:00:56.430 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+19-Jun-2020 20:00:56.431 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Jun-2020 20:00:56.439 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Jun-2020 20:00:56.680 WARNING [localhost-startStop-7] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [RestExampleAPI] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:64)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+19-Jun-2020 20:00:56.719 WARNING [localhost-startStop-7] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [aqm] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+19-Jun-2020 20:00:56.722 WARNING [localhost-startStop-7] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [aqm] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+19-Jun-2020 20:00:56.864 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Jun-2020 20:00:56.880 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
