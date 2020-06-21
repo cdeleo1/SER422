@@ -4,7 +4,8 @@ import org.apache.log4j.BasicConfigurator;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class SimplePumpSubscriberModelWithListener implements javax.jms.MessageListener {
+public class SimplePumpSubscriberModelWithListener implements 
+        javax.jms.MessageListener {
 
     private TopicSession pubSession;
     private TopicConnection connection;
@@ -19,19 +20,18 @@ public class SimplePumpSubscriberModelWithListener implements javax.jms.MessageL
 
         // Look up a JMS connection factory
         TopicConnectionFactory conFactory
-                = (TopicConnectionFactory)jndi.lookup("topicConnectionFactry");
+                = (TopicConnectionFactory)jndi.lookup("connectionFactory");
 
         // Create a JMS connection
         connection = conFactory.createTopicConnection();
-        connection.setClientID(clientName); // this is normally done by configuration not programmatically
-
         // Look up a JMS topic - see jndi.properties in the classes directory
-        Topic chatTopic = (Topic)jndi.lookup(topicName);
-        TopicSession subSession
-                = connection.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
-        TopicSubscriber subscriber
-                = subSession.createDurableSubscriber(chatTopic,
-                        "SimplePumpSubscriberModel");
+        Topic chatTopic = (Topic)jndi.lookup("Chat1");
+        //connection.setClientID(); // this is normally done by configuration not programmatically
+
+        
+        TopicSession subSession = connection.createTopicSession(false, TopicSession.AUTO_ACKNOWLEDGE);
+        TopicSubscriber subscriber = subSession.createDurableSubscriber(chatTopic,
+                        "SimplePumpSubscriberModelWithListener");
 
         subscriber.setMessageListener(this);  // so we will use onMessage
 
@@ -42,7 +42,7 @@ public class SimplePumpSubscriberModelWithListener implements javax.jms.MessageL
     public void onMessage(Message message) {
         try {
             if (message instanceof TextMessage) {
-                TextMessage txtMessage = (TextMessage)message;
+                TextMessage txtMessage = (TextMessage) message;
                 System.out.println("Message received: " + txtMessage.getText());
             } else {
                 System.out.println("Invalid message received.");

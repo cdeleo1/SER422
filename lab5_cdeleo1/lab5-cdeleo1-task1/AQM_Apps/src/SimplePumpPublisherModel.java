@@ -15,21 +15,19 @@ public class SimplePumpPublisherModel {
             String password) throws Exception {
         
         // Obtain a JNDI connection - see jndi.properties
-        InitialContext jndi = new InitialContext();
+        Context jndi = new InitialContext();
         
         // Look up a JMS connection factory
-        TopicConnectionFactory conFactory = 
-                (TopicConnectionFactory)jndi.lookup("topicConnectionFactry");
+        TopicConnectionFactory conFactory = (TopicConnectionFactory)jndi.lookup("connectionFactory");
         
         // Create a JMS connection
-        connection = conFactory.createTopicConnection(username, password);
-        
-        // Create JMS session objects for publisher
-        pubSession = 
-                connection.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
-        
+        connection = conFactory.createTopicConnection();
         // Look up a JMS topic
-        Topic chatTopic = (Topic) jndi.lookup(topicName);
+        Topic chatTopic = (Topic)jndi.lookup("Chat1");
+        // Create JMS session objects for publisher
+        pubSession = connection.createTopicSession(false, TopicSession.AUTO_ACKNOWLEDGE);
+        
+        
         
         // Create a JMS publisher
         publisher = pubSession.createPublisher(chatTopic);
