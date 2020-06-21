@@ -1,0 +1,72 @@
+<project name="AQM_REST" default="compile" basedir=".">
+	<property file="build.properties"/>
+    <property name="src" value="src" />
+    <property name="classes" value="classes" />
+	<property name="build" value="build"/>
+	<property name="lib" value="lib"/>
+	<property name="dist.jar" value="aqm.war"/>
+	<property name="dist" value="aqm"/>
+
+    <path id="compile.classpath">
+    	   <pathelement path="${classes}"/>
+    	   <pathelement path="${aqmcommon.home}/${classes}"/> 
+       <fileset dir="${lib}">
+          <include name="**/*.jar"/>
+       </fileset> 
+	   <fileset dir="${tomcat.home}/lib" includes="servlet-api.jar"/>
+    </path>	
+	
+	<target name="prepare">
+		<tstamp/>
+		<mkdir dir="${build}"/>
+		<mkdir dir="${build}/WEB-INF"/>
+	</target>	
+	
+	<target name="compile">
+		<mkdir dir="WEB-INF"/>
+		<mkdir dir="${classes}"/>
+		<javac srcdir="${src}" destdir="${classes}" includeantruntime="false">
+			<classpath refid="compile.classpath"/>
+		</javac>
+	</target>	
+	
+	<target name="build" depends="compile,prepare">
+		<copy todir="${build}/WEB-INF/${classes}">
+			<fileset dir="${classes}"/>
+			<fileset dir="${aqmcommon.home}/${classes}" />
+		</copy>
+		<copy todir="${build}/WEB-INF/${classes}/properties">
+		    <fileset dir="${aqmcommon.home}/properties">
+		    		<include name="**.properties"/>	
+		    </fileset>
+		</copy>
+		<copy todir="${build}/WEB-INF/${classes}/">
+			    <fileset dir="./properties">
+			    		<include name="**.properties"/>	
+			    </fileset>
+			</copy>
+		<copy todir="${build}/WEB-INF/${lib}">
+			<fileset dir="${lib}"/>		
+		</copy> 
+	    <copy todir="${build}/WEB-INF/${lib}">
+            <fileset dir="${aqmcommon.home}/${lib}"/>     
+        </copy>         
+		<copy file="web.xml" tofile="${build}/WEB-INF/web.xml" overwrite="yes"/>
+	</target>
+	
+	<target name="dist" depends="build">
+    		<jar destfile="${dist.jar}" basedir="${build}"/>    
+  	</target>
+	
+	<target name="deploy" depends="clean,dist">
+	    <copy file="${dist.jar}" todir="${tomcat.home}/webapps" overwrite="yes"/>
+	</target>
+	
+	<target name="clean">
+		<delete dir="${build}" />
+		<delete dir="${classes}"/>
+		<delete file="${dist.jar}" />
+		<delete dir="WEB-INF" />
+		<delete dir="${tomcat.home}/webapps/${dist}"/>
+	</target>	
+</project>

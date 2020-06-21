@@ -1885,3 +1885,22 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 20-Jun-2020 16:15:49.077 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.rest.DataResource.getData num: 0, tail: 50, start: null end:null
 20-Jun-2020 16:15:49.086 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (null, 50, Fri Mar 20 16:15:49 EDT 2020, +1 year
 20-Jun-2020 16:15:49.106 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (null, 50, Fri Mar 20 16:15:49 EDT 2020, +1 year
+20-Jun-2020 16:55:36.694 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Jun-2020 16:55:36.719 INFO [localhost-startStop-1] com.sun.jersey.api.core.PackagesResourceConfig.init Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+20-Jun-2020 16:55:36.759 INFO [localhost-startStop-1] com.sun.jersey.api.core.ScanningResourceConfig.logClasses Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.SensorResource
+  class edu.asupoly.heal.aqm.rest.DataResource
+20-Jun-2020 16:55:36.760 INFO [localhost-startStop-1] com.sun.jersey.api.core.ScanningResourceConfig.init No provider classes found.
+20-Jun-2020 16:55:36.870 INFO [localhost-startStop-1] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+20-Jun-2020 16:56:35.449 INFO [localhost-startStop-3] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Jun-2020 16:56:35.470 INFO [localhost-startStop-3] com.sun.jersey.api.core.PackagesResourceConfig.init Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+20-Jun-2020 16:56:35.518 INFO [localhost-startStop-3] com.sun.jersey.api.core.ScanningResourceConfig.logClasses Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.DataResource
+  class edu.asupoly.heal.aqm.rest.SensorResource
+20-Jun-2020 16:56:35.519 INFO [localhost-startStop-3] com.sun.jersey.api.core.ScanningResourceConfig.init No provider classes found.
+20-Jun-2020 16:56:35.697 INFO [localhost-startStop-3] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+20-Jun-2020 16:56:49.950 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.init Testing DAO Connection -- OK
+20-Jun-2020 16:56:49.999 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (null, 10, Fri Mar 20 16:56:49 EDT 2020, +1 year
+20-Jun-2020 16:56:50.089 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (null, 10, Fri Mar 20 16:56:50 EDT 2020, +1 year

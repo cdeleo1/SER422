@@ -1,0 +1,44 @@
+<project name="AQM_Common" default="compile" basedir=".">
+    <property name="src" value="src" />
+    <property name="classes" value="classes" />
+	<property name="lib" value="lib"/>
+	<property name="properties" value="properties"/>
+	<property name="sql" value="sql"/>
+	<property name="dist.jar" value="aqm_common.jar"/>
+
+    <path id="compile.classpath">
+       <pathelement path="${classes}"/>  
+       <fileset dir="${lib}">
+          <include name="**/*.jar"/>
+       </fileset> 
+    </path>	
+	
+	<target name="prepare">
+		<tstamp/>
+		<mkdir dir="${build}"/>
+		<mkdir dir="${build}/WEB-INF"/>
+	</target>	
+	
+	<target name="compile">
+		<mkdir dir="WEB-INF"/>
+		<mkdir dir="${classes}"/>
+		<javac srcdir="${src}" destdir="${classes}" includeantruntime="false">
+			<classpath refid="compile.classpath"/>
+		</javac>
+		<copy todir="WEB-INF/${classes}">
+			<fileset dir="${classes}"/>
+		</copy>		
+		<copy todir="WEB-INF/${classes}/${properties}">
+			<fileset dir="${properties}"/>
+		</copy>
+	</target>
+	
+	<target name="dist" depends="compile">
+    		<jar destfile="${dist.jar}" basedir="${classes}"/>    
+  	</target>
+	
+	<target name="clean">
+		<delete dir="${classes}"/>
+		<delete file="${dist.jar}" />
+	</target>	
+</project>
