@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: ActiveMQ :: All JAR bundle
+Implementation-Version: 5.15.8
+Archiver-Version: Plexus Archiver
+Built-By: cshannon
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: ActiveMQ :: All JAR bundle
+Implementation-Vendor-Id: org.apache.activemq
+Implementation-Vendor: The Apache Software Foundation
+Main-Class: org.apache.activemq.console.command.ShellCommand
+Created-By: Apache Maven 3.5.4
+Build-Jdk: 1.8.0_192
+Specification-Version: 5.15.8
+
