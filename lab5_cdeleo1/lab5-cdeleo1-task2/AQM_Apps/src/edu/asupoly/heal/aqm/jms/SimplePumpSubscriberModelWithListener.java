@@ -23,17 +23,15 @@ import edu.asupoly.heal.aqm.model.ServerPushEvent;
 
 public class SimplePumpSubscriberModelWithListener implements
         javax.jms.MessageListener {
-
+    
     private TopicConnection connection;
     private Properties jndiProperties = new Properties();
-
+    
     /* Establish JMS publisher and subscriber */
     public SimplePumpSubscriberModelWithListener(String topicName,
             String clientName, String username, String password)
             throws Exception {
-
         final File file = new File("../properties/jndi.properties");
-
         try {
             jndiProperties.load(new FileInputStream(file));
         } catch (FileNotFoundException e) {
@@ -41,22 +39,17 @@ public class SimplePumpSubscriberModelWithListener implements
         } catch (IOException e) {
             e.printStackTrace();
         }
-        // Obtain a JNDI connection
         InitialContext jndi = new InitialContext(jndiProperties);
-        // Look up a JMS connection factory
         TopicConnectionFactory conFactory
                 = (TopicConnectionFactory) jndi.lookup("topicConnectionFactry");
-        // Create a JMS connection
         connection = conFactory.createTopicConnection();
         connection.setClientID(clientName);
-        // Look up a JMS topic - see jndi.properties in the classes directory
         Topic chatTopic = (Topic) jndi.lookup(topicName);
         TopicSession subSession = connection.createTopicSession(false,
                 Session.AUTO_ACKNOWLEDGE);
         TopicSubscriber subscriber = subSession.createDurableSubscriber(chatTopic,
                 "SimplePumpSubscriberModelWithListener");
-        subscriber.setMessageListener(this);  // so we will use onMessage
-        // Start the JMS connection; allows messages to be delivered
+        subscriber.setMessageListener(this);
         connection.start();
     }
 
@@ -100,8 +93,7 @@ public class SimplePumpSubscriberModelWithListener implements
                             args[2], args[3]);
             BufferedReader commandLine
                     = new java.io.BufferedReader(new InputStreamReader(System.in));
-            // closes the connection and exit the system when 'exit' enters in
-            // the command line
+            // CLOSES CONNECTION IF 'exit' IS ENTERED ON COMMAND LINE
             while (true) {
                 String s = commandLine.readLine();
                 if (s.equalsIgnoreCase("exit")) {

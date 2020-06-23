@@ -15,6 +15,8 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
+import java.util.Timer; 
+import java.util.TimerTask;
 
 import edu.asupoly.heal.aqm.dmp.IAQMDAO;
 import edu.asupoly.heal.aqm.dmp.AQMDAOFactory;
@@ -47,6 +49,8 @@ public class SimplePumpPublisherModel {
     private static final int DEFAULT_PERIODIC = 60;
     private Properties jndiProperties = new Properties();
     private String sensorJsonString = "";
+    private static final long MAX_TIMER = 60000;
+    public static SimplePumpPublisherModel obj;
 
     /* Establish JMS publisher */
     public SimplePumpPublisherModel() throws Exception {
@@ -89,29 +93,16 @@ public class SimplePumpPublisherModel {
     
     @SuppressWarnings("unchecked")
     private void setSensorData() throws Exception {
-        PrintWriter out = null;
         IAQMDAO dao = AQMDAOFactory.getDAO();
         String sensorDataString = "";
         try {
-            JSONArray Dylosrd = dao.findDylosReadingsByGroup(null, 10, true);
+            JSONArray Dylosrd = dao.findDylosReadingsByGroup(null, 50, true);
             JSONArray Sensordronerd = 
-                    dao.findSensordroneReadingsByGroup(null, 10, true);
+                    dao.findSensordroneReadingsByGroup(null, 50, true);
             Dylosrd.addAll(Sensordronerd);
-            
-            String search_callback = getJSONPObject("search_callback", Dylosrd);
-            out.print(search_callback);
-            System.out.println("search_callback: " + search_callback);
+            sensorDataString = getJSONPObject(Dylosrd);
         } catch (Exception e) {
             log.log(Level.SEVERE, "setSensorData() pushed stacktrace: " + e);
-        } finally {
-            try {
-                if (out != null) {
-                    out.flush();
-                    out.close();
-                }
-            } catch (Exception e2) {
-                log.log(Level.SEVERE, "setSensorData() PrintWriter pushed stacktrace: " + e2);
-            }
         }
         sensorJsonString = sensorDataString;
     }
@@ -121,8 +112,7 @@ public class SimplePumpPublisherModel {
     }
     
     @SuppressWarnings("unchecked")
-    private String getJSONPObject(String callback, JSONArray rd) 
-            throws Exception {
+    private String getJSONPObject(JSONArray rd) throws Exception {
         JSONObject obj = new JSONObject();
         obj.put("type", "FeatureCollection");
         obj.put("features", rd);
@@ -160,7 +150,8 @@ public class SimplePumpPublisherModel {
             }
         }
         
-        
+        Timer t = new Timer();
+        long milliseconds = 0;
         try {
             SimplePumpPublisherModel pub = new SimplePumpPublisherModel();
             BufferedReader commandLine = 
@@ -176,6 +167,22 @@ public class SimplePumpPublisherModel {
                     // FOREACH LOGIC
                 } else if (periodicFlag == true) {
                     // PERIODIC LOGIC
+                    milliseconds = Long.parseLong(args[1]) * 1000;
+                    t.scheduleAtFixedRate(new TimerTask() {
+                        @Override
+                        public void run() {
+                            System.out.println("\n\nTimer run() loop\n\n");
+                            try {
+                                pub.setSensorData();
+                                String timeJsonString = pub.getSensorData();
+                                System.out.println("timeJsonString result: \n\n" 
+                                        + timeJsonString);
+                            } catch (Exception e) {
+                                System.out.println("Exception thrown: " + e);
+                            }
+                        }
+                    }, milliseconds, MAX_TIMER);
+                    System.out.println("\n\nTimer End\n\n");
                 }
             }
             
@@ -184,6 +191,8 @@ public class SimplePumpPublisherModel {
                 String s = commandLine.readLine();
                 if (s.equalsIgnoreCase("exit")) {
                     pub.connection.close();
+                    t.cancel();
+                    System.out.println("\n\nTimer cancelled");
                     System.exit(0);
                 }
             }

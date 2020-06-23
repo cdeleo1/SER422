@@ -17,7 +17,6 @@ import java.util.Enumeration;
 import java.util.List;
 import java.util.Locale;
 import java.util.Properties;
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
@@ -27,7 +26,6 @@ import edu.asupoly.heal.aqm.dmp.AQMDAOFactory;
 import edu.asupoly.heal.aqm.model.DylosReading;
 import edu.asupoly.heal.aqm.model.SensordroneReading;
 import edu.asupoly.heal.aqm.model.ServerPushEvent;
-
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -190,7 +188,8 @@ public class AQMDAOJDBCImpl implements IAQMDAO {
         }
     }
 
-    private void importCommonReading(JSONObject jsonobj, PreparedStatement ps1, Timestamp d) throws Exception {
+    private void importCommonReading(JSONObject jsonobj, PreparedStatement ps1, 
+            Timestamp d) throws Exception {
         try {
             System.out.println(jsonobj.toString());
             ps1.setString(1, (String) jsonobj.get("deviceId"));
