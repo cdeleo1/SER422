@@ -1,21 +1,25 @@
 package edu.asupoly.heal.aqm.jms;
 
+import java.io.*;
 import javax.jms.*;
 import javax.naming.*;
 import org.apache.log4j.BasicConfigurator;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import org.apache.commons.io.IOUtils;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONValue;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.Properties;
 import java.util.Random;
 
-import edu.asupoly.heal.aqm.dmp.AQMDAOFactory;
 import edu.asupoly.heal.aqm.dmp.IAQMDAO;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Properties;
+import edu.asupoly.heal.aqm.dmp.AQMDAOFactory;
+import edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl;
+import edu.asupoly.heal.aqm.model.DylosReading;
+import edu.asupoly.heal.aqm.model.SensordroneReading;
+import edu.asupoly.heal.aqm.model.ServerPushEvent;
 
 public class SimplePumpSubscriberModelWithListener implements 
         javax.jms.MessageListener {
@@ -26,10 +30,12 @@ public class SimplePumpSubscriberModelWithListener implements
     private Properties jndiProperties =  new Properties();
 
     /* Establish JMS publisher and subscriber */
-    public SimplePumpSubscriberModelWithListener(String sensorJson) 
+    public SimplePumpSubscriberModelWithListener(String topicName, 
+            String clientName, String username, String password) 
             throws Exception {
         
         final File file = new File("../properties/jndi.properties");
+        
         try {
             jndiProperties.load(new FileInputStream(file));
         } catch (FileNotFoundException e) {
@@ -37,18 +43,20 @@ public class SimplePumpSubscriberModelWithListener implements
         } catch (IOException e) {
             e.printStackTrace();
         }
+        
         // Obtain a JNDI connection
         InitialContext jndi = new InitialContext(jndiProperties);
         // Look up a JMS connection factory
         TopicConnectionFactory conFactory
-                = (TopicConnectionFactory)jndi.lookup("connectionFactory");
+                = (TopicConnectionFactory)jndi.lookup("topicConnectionFactry");
         // Create a JMS connection
         connection = conFactory.createTopicConnection();
+        connection.setClientID(clientName);
         // Look up a JMS topic - see jndi.properties in the classes directory
-        Topic chatTopic = (Topic)jndi.lookup("Chat1");
-        connection.setClientID("cdeleo1"); // this is normally done by configuration not programmatically
+        Topic chatTopic = (Topic)jndi.lookup(topicName);
+        //connection.setClientID("cdeleo1"); // this is normally done by configuration not programmatically
         TopicSession subSession = connection.createTopicSession(false, 
-                        TopicSession.AUTO_ACKNOWLEDGE);
+                        Session.AUTO_ACKNOWLEDGE);
         TopicSubscriber subscriber = subSession.createDurableSubscriber(chatTopic,
                         "SimplePumpSubscriberModelWithListener");
         subscriber.setMessageListener(this);  // so we will use onMessage
@@ -59,8 +67,46 @@ public class SimplePumpSubscriberModelWithListener implements
     public void onMessage(Message message) {
         try {
             if (message instanceof TextMessage) {
-                TextMessage txtMessage = (TextMessage) message;
+                TextMessage txtMessage = (TextMessage)message;
                 System.out.println("Message received: " + txtMessage.getText());
+                Boolean appReturnValue;
+                String jsonString = (String)txtMessage.getText();
+                System.out.println("jsonString value: " + jsonString);
+                String returnValue = "PUSH_UNSET";
+                if (jsonString != null) {
+                    try {
+                        IAQMDAO dao = AQMDAOFactory.getDAO();
+                        Object obj = JSONValue.parse(jsonString);
+
+                        if (obj instanceof JSONArray) {
+                            System.out.println("obj instanceof JSONArray: true");
+                            if (dao.importReadings(jsonString)) {
+                                System.out.println("dao.importReadings(jsonString): SERVER_DYLOS_IMPORT_SUCCESS");
+                                returnValue = "SERVER_DYLOS_IMPORT_SUCCESS";
+                            } else {
+                                System.out.println("dao.importReadings(jsonString): SERVER_SENSOR_IMPORT_FAILED");
+                                returnValue = "SERVER_SENSOR_IMPORT_FAILED";
+                            }
+                        }
+                    } catch (Exception daoException) {
+                        daoException.printStackTrace();
+                    }
+                    
+                } else {
+                    returnValue = "SERVER_BAD_OBJECT_TYPE";
+                }
+                
+                System.out.println("returnValue value: " + returnValue);
+                
+                /*if(txtString != null) {
+                    try {
+                        IAQMDAO dao = AQMDAOFactory.getDAO();
+                        appReturnValue = dao.importReadings(txtString);
+                        System.out.println("appReturnValue = " + appReturnValue);
+                    } catch (Exception e2) {
+                        e2.printStackTrace();
+                    }
+                } */             
             } else {
                 System.out.println("Invalid message received.");
             }
@@ -74,31 +120,14 @@ public class SimplePumpSubscriberModelWithListener implements
         // BasicConfigurator.configure();
 
         try {
-            if (args.length != 1) {
-                System.out.println("Please Provide the sensor data in one of " +
-                        "the following formats: \n" +
-                        "Dylos Format:\n" +
-                        "{\"type\":\"dylos\",\"deviceId\":\"aqm1\",\"userId\":"+
-                        "\"user1\", \"dateTime\":\"Fri May 29\n" +
-                        "13:27:09 MST 2020\",\"smallParticle\":93," +
-                        "\"largeParticle\":26,\n\"geoLatitude\":33.3099177," +
-                        "\"geoLongitude\":-111.6726974,\"geoMethod\":" + 
-                        "\"manual\"\n}\n\n" +
-                        "Sensordrone Format:\n" +
-                        "{ \"coData\":3,\"dateTime\":\"20200529_124956\"," +
-                        "\"geoLongitude\":-111.6823322,\n\"co2Data\":5," +
-                        "\"co2DeviceID\":\"UNKNOWN\",\"geoMethod\":" +
-                        "\"Network\",\"type\":\"sensordrone\",\n" +
-                        "\"presureData\":96464,\"tempData\":25," +
-                        "\"geoLatitude\":33.2993061,\n\"deviceId\":" +
-                        "\"SensorDroneB8:FF:FE:B9:C3:FA\",\"humidityData\":" +
-                        "32\n}\n\n");
+            if (args.length != 4) {
+                System.out.println("Please Provide the topic name, unique "
+                        + "client id, username, password!");
             }
             
-            String json = args[0];
-            
             SimplePumpSubscriberModelWithListener demo = 
-                    new SimplePumpSubscriberModelWithListener(json);
+                    new SimplePumpSubscriberModelWithListener(args[0], args[1], 
+                            args[2], args[3]);
             BufferedReader commandLine = 
                     new java.io.BufferedReader(new InputStreamReader(System.in));
             // closes the connection and exit the system when 'exit' enters in
@@ -108,9 +137,17 @@ public class SimplePumpSubscriberModelWithListener implements
                 if (s.equalsIgnoreCase("exit")) {
                     demo.connection.close();
                     System.exit(0);
+                } else {
+                    Boolean appReturnValue = false;
+                    try {
+                        IAQMDAO dao = AQMDAOFactory.getDAO();
+                        appReturnValue = dao.importReadings(s);
+                        System.out.println("appReturnValue = " + appReturnValue);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    
                 }
-                IAQMDAO dao = AQMDAOFactory.getDAO();
-                dao.importReadings(s);
             }
         } catch (Exception e) {
             e.printStackTrace();

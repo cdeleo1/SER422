@@ -1,0 +1,16 @@
+23-Jun-2020 00:20:02.210 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.init Testing DAO Connection -- OK
+23-Jun-2020 00:20:02.260 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 6 deviceids in Dylos.
+23-Jun-2020 00:20:02.292 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+23-Jun-2020 00:20:02.315 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+23-Jun-2020 00:20:02.339 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+23-Jun-2020 00:20:02.360 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+23-Jun-2020 00:20:02.382 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+23-Jun-2020 00:20:02.403 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+23-Jun-2020 00:20:02.442 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 7 deviceids in Sensordrone.
+23-Jun-2020 00:20:02.461 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+23-Jun-2020 00:20:02.492 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+23-Jun-2020 00:20:02.510 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+23-Jun-2020 00:20:02.530 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+23-Jun-2020 00:20:02.594 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+23-Jun-2020 00:20:02.629 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FD, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+23-Jun-2020 00:20:02.653 INFO [http-nio-8080-exec-170] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FE, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year

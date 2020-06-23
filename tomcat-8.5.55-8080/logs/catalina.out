@@ -11988,3 +11988,1280 @@ INFO: query sensordrone: (null, 10, Fri Mar 20 16:56:50 EDT 2020, +1 year
  com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
 20-Jun-2020 23:30:51.521 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 20-Jun-2020 23:30:51.528 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+22-Jun-2020 19:58:02.344 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+22-Jun-2020 19:58:02.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+22-Jun-2020 19:58:02.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+22-Jun-2020 19:58:02.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+22-Jun-2020 19:58:02.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-59-generic
+22-Jun-2020 19:58:02.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+22-Jun-2020 19:58:02.385 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+22-Jun-2020 19:58:02.385 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_252-8u252-b09-1~18.04-b09
+22-Jun-2020 19:58:02.386 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+22-Jun-2020 19:58:02.386 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/cristi/SER422/tomcat-8.5.55-8080
+22-Jun-2020 19:58:02.386 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/cristi/SER422/tomcat-8.5.55-8080
+22-Jun-2020 19:58:02.386 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/cristi/SER422/tomcat-8.5.55-8080/conf/logging.properties
+22-Jun-2020 19:58:02.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Jun-2020 19:58:02.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+22-Jun-2020 19:58:02.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+22-Jun-2020 19:58:02.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+22-Jun-2020 19:58:02.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+22-Jun-2020 19:58:02.388 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/cristi/SER422/tomcat-8.5.55-8080
+22-Jun-2020 19:58:02.388 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/cristi/SER422/tomcat-8.5.55-8080
+22-Jun-2020 19:58:02.389 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/cristi/SER422/tomcat-8.5.55-8080/temp
+22-Jun-2020 19:58:02.389 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+22-Jun-2020 19:58:02.769 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+22-Jun-2020 19:58:02.822 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+22-Jun-2020 19:58:02.925 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1775 ms
+22-Jun-2020 19:58:03.101 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+22-Jun-2020 19:58:03.103 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+22-Jun-2020 19:58:03.247 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/app.war]
+22-Jun-2020 19:58:04.147 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jun-2020 19:58:04.390 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/app.war] has finished in [1,141] ms
+22-Jun-2020 19:58:04.392 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 19:58:04.553 SEVERE [localhost-startStop-1] org.apache.jasper.EmbeddedServletOptions.<init> The scratchDir you specified: [/home/cristi/SER422/tomcat-8.5.55-8080/work/Catalina/localhost/aqmapps] is unusable.
+22-Jun-2020 19:58:04.557 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [165] ms
+22-Jun-2020 19:58:04.559 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war]
+Jun 22, 2020 7:58:06 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jun 22, 2020 7:58:06 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+Jun 22, 2020 7:58:06 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.DataResource
+  class edu.asupoly.heal.aqm.rest.SensorResource
+Jun 22, 2020 7:58:06 PM com.sun.jersey.api.core.ScanningResourceConfig init
+INFO: No provider classes found.
+Jun 22, 2020 7:58:06 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+Jun 22, 2020 7:58:07 PM org.apache.jasper.EmbeddedServletOptions <init>
+SEVERE: The scratchDir you specified: [/home/cristi/SER422/tomcat-8.5.55-8080/work/Catalina/localhost/aqm] is unusable.
+22-Jun-2020 19:58:07.403 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war] has finished in [2,844] ms
+22-Jun-2020 19:58:07.423 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab3.war]
+22-Jun-2020 19:58:08.860 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jun-2020 19:58:10.001 WARNING [localhost-startStop-1] org.glassfish.jersey.internal.Errors.logErrors The following warnings have been detected: WARNING: A HTTP GET method, public java.util.List edu.asupoly.ser422.restexample.api.SubjectResource.findAuthorsBySubject(java.lang.String), should not consume any entity.
+
+22-Jun-2020 19:58:10.009 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab3.war] has finished in [2,586] ms
+22-Jun-2020 19:58:10.072 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war]
+22-Jun-2020 19:58:11.928 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jun-2020 19:58:12.872 WARNING [localhost-startStop-1] org.glassfish.jersey.internal.Errors.logErrors The following warnings have been detected: WARNING: A HTTP GET method, public java.util.List edu.asupoly.ser422.restexample.api.SubjectResource.findAuthorsBySubject(java.lang.String), should not consume any entity.
+
+22-Jun-2020 19:58:12.878 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/RestExampleAPI.war] has finished in [2,806] ms
+22-Jun-2020 19:58:12.880 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/calc.war]
+22-Jun-2020 19:58:13.049 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jun-2020 19:58:13.052 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/calc.war] has finished in [172] ms
+22-Jun-2020 19:58:13.054 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1]
+22-Jun-2020 19:58:13.071 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/lab2_cdeleo1] has finished in [16] ms
+22-Jun-2020 19:58:13.071 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples]
+22-Jun-2020 19:58:13.413 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/examples] has finished in [342] ms
+22-Jun-2020 19:58:13.413 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT]
+22-Jun-2020 19:58:13.443 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/ROOT] has finished in [30] ms
+22-Jun-2020 19:58:13.443 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager]
+22-Jun-2020 19:58:13.475 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/host-manager] has finished in [32] ms
+22-Jun-2020 19:58:13.475 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs]
+22-Jun-2020 19:58:13.492 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/docs] has finished in [17] ms
+22-Jun-2020 19:58:13.493 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager]
+22-Jun-2020 19:58:13.518 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/manager] has finished in [25] ms
+22-Jun-2020 19:58:13.518 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1]
+22-Jun-2020 19:58:13.532 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/task1_cdeleo1] has finished in [14] ms
+22-Jun-2020 19:58:13.543 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+22-Jun-2020 19:58:13.561 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 10635 ms
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl init
+INFO: Testing DAO Connection -- OK
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 7 deviceids in Dylos.
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm8, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 7 deviceids in Sensordrone.
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 7:58:14 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+Jun 22, 2020 8:03:50 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (null, 10, Sun Mar 22 20:03:50 EDT 2020, +1 year
+Jun 22, 2020 8:03:50 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (null, 10, Sun Mar 22 20:03:50 EDT 2020, +1 year
+Jun 22, 2020 8:04:02 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 7 deviceids in Dylos.
+Jun 22, 2020 8:04:02 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+Jun 22, 2020 8:04:02 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+Jun 22, 2020 8:04:02 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+Jun 22, 2020 8:04:02 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+Jun 22, 2020 8:04:02 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+Jun 22, 2020 8:04:02 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm8, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+Jun 22, 2020 8:04:02 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+Jun 22, 2020 8:04:02 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 7 deviceids in Sensordrone.
+Jun 22, 2020 8:04:03 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+Jun 22, 2020 8:04:03 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+Jun 22, 2020 8:04:03 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+Jun 22, 2020 8:04:03 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+Jun 22, 2020 8:04:03 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+Jun 22, 2020 8:04:03 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+Jun 22, 2020 8:04:03 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+Jun 22, 2020 8:05:46 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 7 deviceids in Dylos.
+Jun 22, 2020 8:05:46 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+Jun 22, 2020 8:05:46 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+Jun 22, 2020 8:05:46 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+Jun 22, 2020 8:05:46 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+Jun 22, 2020 8:05:46 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+Jun 22, 2020 8:05:46 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm8, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+Jun 22, 2020 8:05:46 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+Jun 22, 2020 8:05:46 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 7 deviceids in Sensordrone.
+Jun 22, 2020 8:05:46 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+Jun 22, 2020 8:05:47 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 20:05:47 EDT 2020, +1 year
+Jun 22, 2020 8:05:47 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 20:05:47 EDT 2020, +1 year
+Jun 22, 2020 8:05:47 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 20:05:47 EDT 2020, +1 year
+Jun 22, 2020 8:05:47 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 20:05:47 EDT 2020, +1 year
+Jun 22, 2020 8:05:47 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 20:05:47 EDT 2020, +1 year
+Jun 22, 2020 8:05:47 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 20:05:47 EDT 2020, +1 year
+Jun 22, 2020 8:06:00 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 7 deviceids in Dylos.
+Jun 22, 2020 8:06:00 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+Jun 22, 2020 8:06:00 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+Jun 22, 2020 8:06:00 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+Jun 22, 2020 8:06:00 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+Jun 22, 2020 8:06:00 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+Jun 22, 2020 8:06:00 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm8, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+Jun 22, 2020 8:06:00 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+Jun 22, 2020 8:06:00 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 7 deviceids in Sensordrone.
+Jun 22, 2020 8:06:01 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+Jun 22, 2020 8:06:01 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+Jun 22, 2020 8:06:01 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+Jun 22, 2020 8:06:01 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+Jun 22, 2020 8:06:01 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+Jun 22, 2020 8:06:01 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+Jun 22, 2020 8:06:01 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+Jun 22, 2020 8:06:12 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (null, 10, Sun Mar 22 20:06:12 EDT 2020, +1 year
+Jun 22, 2020 8:06:12 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (null, 10, Sun Mar 22 20:06:12 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 7 deviceids in Dylos.
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm8, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 7 deviceids in Sensordrone.
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:06:48 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+Jun 22, 2020 8:08:22 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 7 deviceids in Dylos.
+Jun 22, 2020 8:08:22 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+Jun 22, 2020 8:08:22 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+Jun 22, 2020 8:08:22 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+Jun 22, 2020 8:08:22 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+Jun 22, 2020 8:08:22 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+Jun 22, 2020 8:08:22 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm8, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+Jun 22, 2020 8:08:22 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+Jun 22, 2020 8:08:22 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 7 deviceids in Sensordrone.
+Jun 22, 2020 8:08:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+Jun 22, 2020 8:08:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+Jun 22, 2020 8:08:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+Jun 22, 2020 8:08:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+Jun 22, 2020 8:08:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+Jun 22, 2020 8:08:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+Jun 22, 2020 8:08:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+22-Jun-2020 20:12:04.867 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 20:12:04.885 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 20:12:04.914 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [29] ms
+22-Jun-2020 20:12:15.423 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 20:12:15.460 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 20:12:15.581 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [120] ms
+22-Jun-2020 20:13:26.127 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 20:13:26.139 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 20:13:26.188 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [49] ms
+22-Jun-2020 20:14:36.738 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 20:14:36.748 INFO [localhost-startStop-5] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 20:14:36.775 INFO [localhost-startStop-5] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [27] ms
+22-Jun-2020 20:14:46.780 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 20:14:46.823 INFO [localhost-startStop-6] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 20:14:46.918 INFO [localhost-startStop-6] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [94] ms
+Jun 22, 2020 8:15:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 7 deviceids in Dylos.
+Jun 22, 2020 8:15:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Sun Mar 22 20:15:23 EDT 2020, +1 year
+Jun 22, 2020 8:15:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Sun Mar 22 20:15:23 EDT 2020, +1 year
+Jun 22, 2020 8:15:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Sun Mar 22 20:15:23 EDT 2020, +1 year
+Jun 22, 2020 8:15:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Sun Mar 22 20:15:23 EDT 2020, +1 year
+Jun 22, 2020 8:15:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Sun Mar 22 20:15:23 EDT 2020, +1 year
+Jun 22, 2020 8:15:23 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm8, 2147483647, Sun Mar 22 20:15:23 EDT 2020, +1 year
+Jun 22, 2020 8:15:24 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+Jun 22, 2020 8:15:24 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 7 deviceids in Sensordrone.
+Jun 22, 2020 8:15:24 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+Jun 22, 2020 8:15:24 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+Jun 22, 2020 8:15:24 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+Jun 22, 2020 8:15:24 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+Jun 22, 2020 8:15:24 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+Jun 22, 2020 8:15:24 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+Jun 22, 2020 8:15:24 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+22-Jun-2020 21:11:19.551 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqm]
+22-Jun-2020 21:11:19.597 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [aqm] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+22-Jun-2020 21:11:19.602 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [aqm] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+22-Jun-2020 21:11:19.622 INFO [localhost-startStop-7] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war]
+Jun 22, 2020 9:11:20 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jun 22, 2020 9:11:20 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+Jun 22, 2020 9:11:20 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.SensorResource
+  class edu.asupoly.heal.aqm.rest.DataResource
+Jun 22, 2020 9:11:20 PM com.sun.jersey.api.core.ScanningResourceConfig init
+INFO: No provider classes found.
+Jun 22, 2020 9:11:20 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+22-Jun-2020 21:11:20.947 INFO [localhost-startStop-7] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war] has finished in [1,325] ms
+22-Jun-2020 21:11:31.449 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:11:31.463 INFO [localhost-startStop-8] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:11:31.525 INFO [localhost-startStop-8] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [61] ms
+22-Jun-2020 21:11:42.033 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:11:42.046 INFO [localhost-startStop-9] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:11:42.092 INFO [localhost-startStop-9] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [46] ms
+22-Jun-2020 21:11:52.095 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:11:52.138 INFO [localhost-startStop-10] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:11:52.295 INFO [localhost-startStop-10] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [157] ms
+22-Jun-2020 21:28:23.288 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:28:23.303 INFO [localhost-startStop-11] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:28:23.360 INFO [localhost-startStop-11] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [56] ms
+22-Jun-2020 21:29:03.871 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:29:03.885 INFO [localhost-startStop-12] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:29:03.936 INFO [localhost-startStop-12] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [50] ms
+22-Jun-2020 21:29:13.939 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:29:13.983 INFO [localhost-startStop-13] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:29:14.090 INFO [localhost-startStop-13] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [106] ms
+Jun 22, 2020 9:30:29 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl init
+INFO: Testing DAO Connection -- OK
+Jun 22, 2020 9:30:29 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 7 deviceids in Dylos.
+Jun 22, 2020 9:30:29 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+Jun 22, 2020 9:30:29 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+Jun 22, 2020 9:30:29 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+Jun 22, 2020 9:30:29 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+Jun 22, 2020 9:30:29 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+Jun 22, 2020 9:30:29 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm8, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+Jun 22, 2020 9:30:29 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+Jun 22, 2020 9:30:29 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 7 deviceids in Sensordrone.
+Jun 22, 2020 9:30:29 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+Jun 22, 2020 9:30:29 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+Jun 22, 2020 9:30:30 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 21:30:30 EDT 2020, +1 year
+Jun 22, 2020 9:30:30 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 21:30:30 EDT 2020, +1 year
+Jun 22, 2020 9:30:30 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 21:30:30 EDT 2020, +1 year
+Jun 22, 2020 9:30:30 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 21:30:30 EDT 2020, +1 year
+Jun 22, 2020 9:30:30 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 21:30:30 EDT 2020, +1 year
+Jun 22, 2020 9:33:35 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 6 deviceids in Dylos.
+Jun 22, 2020 9:33:35 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+Jun 22, 2020 9:33:35 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+Jun 22, 2020 9:33:35 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+Jun 22, 2020 9:33:35 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+Jun 22, 2020 9:33:35 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+Jun 22, 2020 9:33:35 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+Jun 22, 2020 9:33:35 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 5 deviceids in Sensordrone.
+Jun 22, 2020 9:33:35 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+Jun 22, 2020 9:33:35 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+Jun 22, 2020 9:33:35 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+Jun 22, 2020 9:33:35 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+Jun 22, 2020 9:33:35 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+Jun 22, 2020 9:34:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 6 deviceids in Dylos.
+Jun 22, 2020 9:34:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Sun Mar 22 21:34:18 EDT 2020, +1 year
+Jun 22, 2020 9:34:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Sun Mar 22 21:34:18 EDT 2020, +1 year
+Jun 22, 2020 9:34:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Sun Mar 22 21:34:18 EDT 2020, +1 year
+Jun 22, 2020 9:34:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Sun Mar 22 21:34:18 EDT 2020, +1 year
+Jun 22, 2020 9:34:19 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+Jun 22, 2020 9:34:19 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+Jun 22, 2020 9:34:19 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 5 deviceids in Sensordrone.
+Jun 22, 2020 9:34:19 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+Jun 22, 2020 9:34:19 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+Jun 22, 2020 9:34:19 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+Jun 22, 2020 9:34:19 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+Jun 22, 2020 9:34:19 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+22-Jun-2020 21:37:44.886 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:37:44.896 INFO [localhost-startStop-14] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:37:44.922 INFO [localhost-startStop-14] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [26] ms
+22-Jun-2020 21:39:25.465 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:39:25.487 INFO [localhost-startStop-15] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:39:25.535 INFO [localhost-startStop-15] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [48] ms
+22-Jun-2020 21:40:26.058 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:40:26.069 INFO [localhost-startStop-16] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:40:26.098 INFO [localhost-startStop-16] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [29] ms
+22-Jun-2020 21:40:36.112 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:40:36.155 INFO [localhost-startStop-17] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:40:36.255 INFO [localhost-startStop-17] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [100] ms
+22-Jun-2020 21:50:47.145 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:50:47.222 INFO [localhost-startStop-18] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:50:47.251 INFO [localhost-startStop-18] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [29] ms
+22-Jun-2020 21:50:57.253 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:50:57.265 INFO [localhost-startStop-19] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:50:57.289 INFO [localhost-startStop-19] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [24] ms
+22-Jun-2020 21:57:07.966 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:57:07.975 INFO [localhost-startStop-20] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:57:07.999 INFO [localhost-startStop-20] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [25] ms
+22-Jun-2020 21:57:18.000 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 21:57:18.013 INFO [localhost-startStop-21] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 21:57:18.037 INFO [localhost-startStop-21] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [24] ms
+22-Jun-2020 22:04:18.294 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:04:18.305 INFO [localhost-startStop-22] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:04:18.330 INFO [localhost-startStop-22] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [24] ms
+22-Jun-2020 22:17:29.333 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:17:29.365 INFO [localhost-startStop-23] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:17:29.453 INFO [localhost-startStop-23] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [88] ms
+22-Jun-2020 22:18:29.983 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:18:29.992 INFO [localhost-startStop-24] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:18:30.016 INFO [localhost-startStop-24] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [24] ms
+22-Jun-2020 22:19:10.053 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:19:10.062 INFO [localhost-startStop-25] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:19:10.102 INFO [localhost-startStop-25] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [40] ms
+22-Jun-2020 22:40:40.875 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:40:40.889 INFO [localhost-startStop-26] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:40:40.930 INFO [localhost-startStop-26] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [41] ms
+22-Jun-2020 22:41:01.442 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqm]
+22-Jun-2020 22:41:01.444 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [aqm] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+22-Jun-2020 22:41:01.446 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [aqm] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+22-Jun-2020 22:41:01.455 INFO [localhost-startStop-27] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war]
+Jun 22, 2020 10:41:01 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jun 22, 2020 10:41:01 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+Jun 22, 2020 10:41:02 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.SensorResource
+  class edu.asupoly.heal.aqm.rest.DataResource
+Jun 22, 2020 10:41:02 PM com.sun.jersey.api.core.ScanningResourceConfig init
+INFO: No provider classes found.
+Jun 22, 2020 10:41:02 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+22-Jun-2020 22:41:02.626 INFO [localhost-startStop-27] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war] has finished in [1,171] ms
+22-Jun-2020 22:41:13.128 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:41:13.142 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqm]
+22-Jun-2020 22:41:13.162 INFO [localhost-startStop-28] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:41:13.224 INFO [localhost-startStop-28] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [63] ms
+22-Jun-2020 22:41:13.224 INFO [localhost-startStop-28] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war]
+Jun 22, 2020 10:41:13 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jun 22, 2020 10:41:13 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+Jun 22, 2020 10:41:13 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.SensorResource
+  class edu.asupoly.heal.aqm.rest.DataResource
+Jun 22, 2020 10:41:13 PM com.sun.jersey.api.core.ScanningResourceConfig init
+INFO: No provider classes found.
+Jun 22, 2020 10:41:13 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+22-Jun-2020 22:41:14.350 INFO [localhost-startStop-28] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war] has finished in [1,126] ms
+22-Jun-2020 22:41:24.353 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:41:24.398 INFO [localhost-startStop-29] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:41:24.497 INFO [localhost-startStop-29] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [98] ms
+22-Jun-2020 22:44:34.619 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:44:34.631 INFO [localhost-startStop-30] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:44:34.674 INFO [localhost-startStop-30] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [43] ms
+22-Jun-2020 22:46:55.250 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqm]
+22-Jun-2020 22:46:55.266 INFO [localhost-startStop-31] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war]
+Jun 22, 2020 10:46:55 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jun 22, 2020 10:46:55 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+Jun 22, 2020 10:46:55 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.DataResource
+  class edu.asupoly.heal.aqm.rest.SensorResource
+Jun 22, 2020 10:46:55 PM com.sun.jersey.api.core.ScanningResourceConfig init
+INFO: No provider classes found.
+Jun 22, 2020 10:46:56 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+Jun 22, 2020 10:46:56 PM org.apache.catalina.core.ApplicationContext log
+SEVERE: StandardWrapper.Throwable
+com.sun.jersey.spi.service.ServiceConfigurationError: com.sun.jersey.spi.container.ResourceMethodCustomInvokerDispatchProvider: : java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar (No such file or directory)
+	at com.sun.jersey.spi.service.ServiceFinder.fail(ServiceFinder.java:564)
+	at com.sun.jersey.spi.service.ServiceFinder.parse(ServiceFinder.java:636)
+	at com.sun.jersey.spi.service.ServiceFinder.access$500(ServiceFinder.java:162)
+	at com.sun.jersey.spi.service.ServiceFinder$AbstractLazyIterator.hasNext(ServiceFinder.java:692)
+	at com.sun.jersey.spi.service.ServiceFinder.toClassArray(ServiceFinder.java:549)
+	at com.sun.jersey.core.spi.component.ProviderServices.getServiceClasses(ProviderServices.java:345)
+	at com.sun.jersey.core.spi.component.ProviderServices.getProviderAndServiceClasses(ProviderServices.java:324)
+	at com.sun.jersey.core.spi.component.ProviderServices.getProvidersAndServices(ProviderServices.java:175)
+	at com.sun.jersey.spi.container.ResourceMethodCustomInvokerDispatchFactory.<init>(ResourceMethodCustomInvokerDispatchFactory.java:64)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._initiate(WebApplicationImpl.java:914)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.access$700(WebApplicationImpl.java:180)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:799)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:795)
+	at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:193)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:790)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.initiate(ServletContainer.java:491)
+	at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321)
+	at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605)
+	at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1144)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1091)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:985)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4883)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5197)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Jun 22, 2020 10:46:56 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [jersey-serlvet] in web application [/aqm] threw load() exception
+com.sun.jersey.spi.service.ServiceConfigurationError: com.sun.jersey.spi.container.ResourceMethodCustomInvokerDispatchProvider: : java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar (No such file or directory)
+	at com.sun.jersey.spi.service.ServiceFinder.fail(ServiceFinder.java:564)
+	at com.sun.jersey.spi.service.ServiceFinder.parse(ServiceFinder.java:636)
+	at com.sun.jersey.spi.service.ServiceFinder.access$500(ServiceFinder.java:162)
+	at com.sun.jersey.spi.service.ServiceFinder$AbstractLazyIterator.hasNext(ServiceFinder.java:692)
+	at com.sun.jersey.spi.service.ServiceFinder.toClassArray(ServiceFinder.java:549)
+	at com.sun.jersey.core.spi.component.ProviderServices.getServiceClasses(ProviderServices.java:345)
+	at com.sun.jersey.core.spi.component.ProviderServices.getProviderAndServiceClasses(ProviderServices.java:324)
+	at com.sun.jersey.core.spi.component.ProviderServices.getProvidersAndServices(ProviderServices.java:175)
+	at com.sun.jersey.spi.container.ResourceMethodCustomInvokerDispatchFactory.<init>(ResourceMethodCustomInvokerDispatchFactory.java:64)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._initiate(WebApplicationImpl.java:914)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.access$700(WebApplicationImpl.java:180)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:799)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:795)
+	at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:193)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:790)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.initiate(ServletContainer.java:491)
+	at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321)
+	at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605)
+	at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1144)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1091)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:985)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4883)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5197)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+22-Jun-2020 22:46:56.033 INFO [localhost-startStop-31] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war] has finished in [766] ms
+22-Jun-2020 22:47:06.535 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:47:06.541 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqm]
+22-Jun-2020 22:47:06.559 INFO [localhost-startStop-32] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:47:06.595 INFO [localhost-startStop-32] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [36] ms
+22-Jun-2020 22:47:06.595 INFO [localhost-startStop-32] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war]
+Jun 22, 2020 10:47:06 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jun 22, 2020 10:47:06 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+Jun 22, 2020 10:47:07 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.SensorResource
+  class edu.asupoly.heal.aqm.rest.DataResource
+Jun 22, 2020 10:47:07 PM com.sun.jersey.api.core.ScanningResourceConfig init
+INFO: No provider classes found.
+Jun 22, 2020 10:47:07 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+22-Jun-2020 22:47:07.578 INFO [localhost-startStop-32] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war] has finished in [982] ms
+22-Jun-2020 22:47:17.581 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:47:17.614 INFO [localhost-startStop-33] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:47:17.722 INFO [localhost-startStop-33] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [108] ms
+22-Jun-2020 22:50:58.336 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:50:58.342 INFO [localhost-startStop-34] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:50:58.365 INFO [localhost-startStop-34] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [23] ms
+22-Jun-2020 22:51:08.368 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:51:08.400 INFO [localhost-startStop-35] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:51:08.485 INFO [localhost-startStop-35] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [85] ms
+22-Jun-2020 22:52:49.050 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:52:49.057 INFO [localhost-startStop-36] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:52:49.081 INFO [localhost-startStop-36] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [24] ms
+22-Jun-2020 22:52:59.083 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:52:59.092 INFO [localhost-startStop-37] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:52:59.115 INFO [localhost-startStop-37] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [22] ms
+22-Jun-2020 22:53:59.651 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:53:59.669 INFO [localhost-startStop-38] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:53:59.704 INFO [localhost-startStop-38] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [35] ms
+22-Jun-2020 22:54:09.706 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:54:09.716 INFO [localhost-startStop-39] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:54:09.743 INFO [localhost-startStop-39] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [27] ms
+22-Jun-2020 22:57:00.316 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 22:57:00.327 INFO [localhost-startStop-40] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 22:57:00.350 INFO [localhost-startStop-40] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [23] ms
+22-Jun-2020 23:06:21.214 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:06:21.225 INFO [localhost-startStop-41] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:06:21.249 INFO [localhost-startStop-41] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [24] ms
+22-Jun-2020 23:14:42.032 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:14:42.040 INFO [localhost-startStop-42] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:14:42.063 INFO [localhost-startStop-42] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [22] ms
+22-Jun-2020 23:16:42.614 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:16:42.621 INFO [localhost-startStop-43] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:16:42.645 INFO [localhost-startStop-43] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [24] ms
+22-Jun-2020 23:16:52.656 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:16:52.690 INFO [localhost-startStop-44] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:16:52.776 INFO [localhost-startStop-44] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [86] ms
+22-Jun-2020 23:20:03.371 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:20:03.379 INFO [localhost-startStop-45] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:20:03.402 INFO [localhost-startStop-45] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [23] ms
+22-Jun-2020 23:20:13.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:20:13.412 INFO [localhost-startStop-46] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:20:13.436 INFO [localhost-startStop-46] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [23] ms
+22-Jun-2020 23:30:14.259 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:30:14.266 INFO [localhost-startStop-47] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:30:14.290 INFO [localhost-startStop-47] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [24] ms
+22-Jun-2020 23:30:54.806 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:30:54.814 INFO [localhost-startStop-48] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:30:54.839 INFO [localhost-startStop-48] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [24] ms
+22-Jun-2020 23:31:04.841 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:31:04.876 INFO [localhost-startStop-49] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:31:04.963 INFO [localhost-startStop-49] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [86] ms
+Jun 22, 2020 11:37:09 PM edu.asupoly.heal.aqm.rest.AQMImportServlet doPost
+INFO: Received data: [{"coData": -2, "dateTime": "Fri Jun 12 13:27:17 MST 2020", "geoLongitude": -111.6823322, "co2Data": -1, "co2DeviceID": "UNKNOWN", "geoMethod": "Network", "type": "sensordrone", "pressureData": 96464, "tempData": 25, "geoLatitude": 33.2993071, "deviceId": "SensorDroneB8:FF:FE:B9:C3:FD", "humidityData": 32}]
+Jun 22, 2020 11:37:10 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl init
+INFO: Testing DAO Connection -- OK
+{"dateTime":"Fri Jun 12 13:27:17 MST 2020","geoLongitude":-111.6823322,"pressureData":96464,"geoLatitude":33.2993071,"co2Data":-1,"tempData":25,"co2DeviceID":"UNKNOWN","coData":-2,"humidityData":32,"type":"sensordrone","deviceId":"SensorDroneB8:FF:FE:B9:C3:FD","geoMethod":"Network"}
+Jun 22, 2020 11:37:10 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl importReadings
+INFO: data type = sensordrone
+Jun 22, 2020 11:37:10 PM edu.asupoly.heal.aqm.rest.AQMImportServlet doPost
+INFO: Server returning value: 1
+Jun 22, 2020 11:37:17 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 6 deviceids in Dylos.
+Jun 22, 2020 11:37:17 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Sun Mar 22 23:37:17 EDT 2020, +1 year
+Jun 22, 2020 11:37:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+Jun 22, 2020 11:37:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+Jun 22, 2020 11:37:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+Jun 22, 2020 11:37:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+Jun 22, 2020 11:37:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+Jun 22, 2020 11:37:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 6 deviceids in Sensordrone.
+Jun 22, 2020 11:37:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+Jun 22, 2020 11:37:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+Jun 22, 2020 11:37:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+Jun 22, 2020 11:37:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+Jun 22, 2020 11:37:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+Jun 22, 2020 11:37:18 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FD, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+22-Jun-2020 23:42:55.888 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:42:55.895 INFO [localhost-startStop-50] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:42:55.918 INFO [localhost-startStop-50] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [23] ms
+22-Jun-2020 23:43:05.922 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:43:05.958 INFO [localhost-startStop-51] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:43:06.041 INFO [localhost-startStop-51] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [83] ms
+22-Jun-2020 23:48:56.722 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:48:56.729 INFO [localhost-startStop-52] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:48:56.761 INFO [localhost-startStop-52] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [32] ms
+22-Jun-2020 23:49:06.763 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:49:06.779 INFO [localhost-startStop-53] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:49:06.823 INFO [localhost-startStop-53] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [44] ms
+22-Jun-2020 23:53:37.490 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:53:37.498 INFO [localhost-startStop-54] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:53:37.543 INFO [localhost-startStop-54] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [45] ms
+22-Jun-2020 23:53:47.544 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:53:47.555 INFO [localhost-startStop-55] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:53:47.580 INFO [localhost-startStop-55] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [25] ms
+Jun 22, 2020 11:55:06 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 6 deviceids in Dylos.
+Jun 22, 2020 11:55:06 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Sun Mar 22 23:55:06 EDT 2020, +1 year
+Jun 22, 2020 11:55:07 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+Jun 22, 2020 11:55:07 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+Jun 22, 2020 11:55:07 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+Jun 22, 2020 11:55:07 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+Jun 22, 2020 11:55:07 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+Jun 22, 2020 11:55:07 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 6 deviceids in Sensordrone.
+Jun 22, 2020 11:55:07 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+Jun 22, 2020 11:55:07 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+Jun 22, 2020 11:55:07 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+Jun 22, 2020 11:55:07 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+Jun 22, 2020 11:55:07 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+Jun 22, 2020 11:55:07 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FD, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+Jun 22, 2020 11:55:11 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 6 deviceids in Dylos.
+Jun 22, 2020 11:55:11 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+Jun 22, 2020 11:55:11 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+Jun 22, 2020 11:55:11 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+Jun 22, 2020 11:55:11 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+Jun 22, 2020 11:55:11 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+Jun 22, 2020 11:55:11 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+Jun 22, 2020 11:55:11 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 6 deviceids in Sensordrone.
+Jun 22, 2020 11:55:11 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+Jun 22, 2020 11:55:11 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+Jun 22, 2020 11:55:11 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+Jun 22, 2020 11:55:12 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 23:55:12 EDT 2020, +1 year
+Jun 22, 2020 11:55:12 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 23:55:12 EDT 2020, +1 year
+Jun 22, 2020 11:55:12 PM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FD, 2147483647, Sun Mar 22 23:55:12 EDT 2020, +1 year
+22-Jun-2020 23:56:28.174 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqm]
+22-Jun-2020 23:56:28.178 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [aqm] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+22-Jun-2020 23:56:28.179 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [aqm] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+22-Jun-2020 23:56:28.184 INFO [localhost-startStop-56] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war]
+22-Jun-2020 23:56:28.357 SEVERE [localhost-startStop-56] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derbytools.jar] for annotations
+	java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derbytools.jar (No such file or directory)
+		at java.util.zip.ZipFile.open(Native Method)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+		at java.util.jar.JarFile.<init>(JarFile.java:166)
+		at java.util.jar.JarFile.<init>(JarFile.java:130)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+		at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+		at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:2004)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1985)
+		at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1938)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1234)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1141)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:776)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5061)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+22-Jun-2020 23:56:28.358 SEVERE [localhost-startStop-56] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/json-simple-1.1.1.jar] for annotations
+	java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/json-simple-1.1.1.jar (No such file or directory)
+		at java.util.zip.ZipFile.open(Native Method)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+		at java.util.jar.JarFile.<init>(JarFile.java:166)
+		at java.util.jar.JarFile.<init>(JarFile.java:130)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+		at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+		at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:2004)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1985)
+		at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1938)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1234)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1141)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:776)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5061)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+22-Jun-2020 23:56:28.359 SEVERE [localhost-startStop-56] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derby.jar] for annotations
+	java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derby.jar (No such file or directory)
+		at java.util.zip.ZipFile.open(Native Method)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+		at java.util.jar.JarFile.<init>(JarFile.java:166)
+		at java.util.jar.JarFile.<init>(JarFile.java:130)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+		at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+		at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:2004)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1985)
+		at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1938)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1234)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1141)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:776)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5061)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+22-Jun-2020 23:56:28.362 SEVERE [localhost-startStop-56] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar] for annotations
+	java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar (No such file or directory)
+		at java.util.zip.ZipFile.open(Native Method)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+		at java.util.jar.JarFile.<init>(JarFile.java:166)
+		at java.util.jar.JarFile.<init>(JarFile.java:130)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+		at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+		at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:2004)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1985)
+		at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1938)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1234)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1141)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:776)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5061)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+22-Jun-2020 23:56:28.368 SEVERE [localhost-startStop-56] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar] for static resources to be included in context with name [/aqm]
+22-Jun-2020 23:56:28.369 SEVERE [localhost-startStop-56] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derbytools.jar] for static resources to be included in context with name [/aqm]
+22-Jun-2020 23:56:28.369 SEVERE [localhost-startStop-56] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/json-simple-1.1.1.jar] for static resources to be included in context with name [/aqm]
+22-Jun-2020 23:56:28.369 SEVERE [localhost-startStop-56] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derby.jar] for static resources to be included in context with name [/aqm]
+22-Jun-2020 23:56:28.392 SEVERE [localhost-startStop-56] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar] for static resources to be included in context with name [/aqm]
+Jun 22, 2020 11:56:28 PM org.apache.tomcat.util.scan.StandardJarScanner processURLs
+WARNING: Failed to scan [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar] from classloader hierarchy
+java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:385)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:320)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:271)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:234)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5152)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Jun 22, 2020 11:56:28 PM org.apache.tomcat.util.scan.StandardJarScanner processURLs
+WARNING: Failed to scan [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derby.jar] from classloader hierarchy
+java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derby.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:385)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:320)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:271)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:234)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5152)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Jun 22, 2020 11:56:28 PM org.apache.tomcat.util.scan.StandardJarScanner processURLs
+WARNING: Failed to scan [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/json-simple-1.1.1.jar] from classloader hierarchy
+java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/json-simple-1.1.1.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:385)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:320)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:271)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:234)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5152)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Jun 22, 2020 11:56:28 PM org.apache.tomcat.util.scan.StandardJarScanner processURLs
+WARNING: Failed to scan [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derbytools.jar] from classloader hierarchy
+java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derbytools.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:385)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:320)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:271)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:234)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5152)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Jun 22, 2020 11:56:28 PM org.apache.tomcat.util.scan.StandardJarScanner processURLs
+WARNING: Failed to scan [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar] from classloader hierarchy
+java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:385)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:320)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:271)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:234)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5152)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Jun 22, 2020 11:56:28 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+Jun 22, 2020 11:56:28 PM org.apache.catalina.core.ApplicationContext log
+SEVERE: StandardWrapper.Throwable
+com.sun.jersey.spi.service.ServiceConfigurationError: com.sun.jersey.spi.container.WebApplicationProvider: : java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar (No such file or directory)
+	at com.sun.jersey.spi.service.ServiceFinder.fail(ServiceFinder.java:564)
+	at com.sun.jersey.spi.service.ServiceFinder.parse(ServiceFinder.java:636)
+	at com.sun.jersey.spi.service.ServiceFinder.access$500(ServiceFinder.java:162)
+	at com.sun.jersey.spi.service.ServiceFinder$LazyObjectIterator.hasNext(ServiceFinder.java:829)
+	at com.sun.jersey.spi.container.WebApplicationFactory.createWebApplication(WebApplicationFactory.java:64)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.create(ServletContainer.java:394)
+	at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.create(ServletContainer.java:309)
+	at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:603)
+	at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1144)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1091)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:985)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4883)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5197)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Jun 22, 2020 11:56:28 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [jersey-serlvet] in web application [/aqm] threw load() exception
+com.sun.jersey.spi.service.ServiceConfigurationError: com.sun.jersey.spi.container.WebApplicationProvider: : java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar (No such file or directory)
+	at com.sun.jersey.spi.service.ServiceFinder.fail(ServiceFinder.java:564)
+	at com.sun.jersey.spi.service.ServiceFinder.parse(ServiceFinder.java:636)
+	at com.sun.jersey.spi.service.ServiceFinder.access$500(ServiceFinder.java:162)
+	at com.sun.jersey.spi.service.ServiceFinder$LazyObjectIterator.hasNext(ServiceFinder.java:829)
+	at com.sun.jersey.spi.container.WebApplicationFactory.createWebApplication(WebApplicationFactory.java:64)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.create(ServletContainer.java:394)
+	at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.create(ServletContainer.java:309)
+	at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:603)
+	at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1144)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1091)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:985)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4883)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5197)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+22-Jun-2020 23:56:28.464 INFO [localhost-startStop-56] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war] has finished in [280] ms
+22-Jun-2020 23:56:38.470 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqm]
+22-Jun-2020 23:56:38.512 INFO [localhost-startStop-57] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war]
+Jun 22, 2020 11:56:39 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jun 22, 2020 11:56:39 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+Jun 22, 2020 11:56:39 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.SensorResource
+  class edu.asupoly.heal.aqm.rest.DataResource
+Jun 22, 2020 11:56:39 PM com.sun.jersey.api.core.ScanningResourceConfig init
+INFO: No provider classes found.
+Jun 22, 2020 11:56:39 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+22-Jun-2020 23:56:40.693 INFO [localhost-startStop-57] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm.war] has finished in [2,182] ms
+22-Jun-2020 23:56:51.195 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:56:51.209 INFO [localhost-startStop-58] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:56:51.235 INFO [localhost-startStop-58] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [26] ms
+22-Jun-2020 23:57:01.237 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+22-Jun-2020 23:57:01.247 INFO [localhost-startStop-59] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+22-Jun-2020 23:57:01.275 INFO [localhost-startStop-59] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [28] ms
+23-Jun-2020 00:01:01.928 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:01:01.938 INFO [localhost-startStop-60] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:01:01.967 INFO [localhost-startStop-60] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [28] ms
+23-Jun-2020 00:01:11.971 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:01:12.010 INFO [localhost-startStop-61] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:01:12.093 INFO [localhost-startStop-61] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [82] ms
+23-Jun-2020 00:01:52.611 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:01:52.622 INFO [localhost-startStop-62] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:01:52.646 INFO [localhost-startStop-62] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [24] ms
+23-Jun-2020 00:02:02.649 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:02:02.681 INFO [localhost-startStop-63] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:02:02.769 INFO [localhost-startStop-63] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [88] ms
+23-Jun-2020 00:04:33.335 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:04:33.342 INFO [localhost-startStop-64] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:04:33.366 INFO [localhost-startStop-64] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [24] ms
+23-Jun-2020 00:04:43.368 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:04:43.383 INFO [localhost-startStop-65] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:04:43.423 INFO [localhost-startStop-65] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [39] ms
+23-Jun-2020 00:06:43.967 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:06:43.975 INFO [localhost-startStop-66] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:06:43.997 INFO [localhost-startStop-66] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [23] ms
+23-Jun-2020 00:06:54.000 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:06:54.032 INFO [localhost-startStop-67] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:06:54.115 INFO [localhost-startStop-67] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [83] ms
+23-Jun-2020 00:10:44.722 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:10:44.728 INFO [localhost-startStop-68] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:10:44.751 INFO [localhost-startStop-68] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [23] ms
+23-Jun-2020 00:10:54.753 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:10:54.762 INFO [localhost-startStop-69] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:10:54.790 INFO [localhost-startStop-69] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [28] ms
+23-Jun-2020 00:12:35.347 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:12:35.357 INFO [localhost-startStop-70] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:12:35.396 INFO [localhost-startStop-70] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [39] ms
+23-Jun-2020 00:12:45.398 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:12:45.417 INFO [localhost-startStop-71] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:12:45.439 INFO [localhost-startStop-71] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [22] ms
+23-Jun-2020 00:16:26.051 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:16:26.062 INFO [localhost-startStop-72] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:16:26.125 INFO [localhost-startStop-72] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [63] ms
+23-Jun-2020 00:16:36.128 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:16:36.167 INFO [localhost-startStop-73] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:16:36.258 INFO [localhost-startStop-73] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [91] ms
+23-Jun-2020 00:19:26.851 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:19:26.862 INFO [localhost-startStop-74] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:19:26.884 INFO [localhost-startStop-74] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [22] ms
+23-Jun-2020 00:19:36.888 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:19:36.920 INFO [localhost-startStop-75] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:19:37.002 INFO [localhost-startStop-75] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [83] ms
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl init
+INFO: Testing DAO Connection -- OK
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinDylos
+INFO:  have 6 deviceids in Dylos.
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm0, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm1, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm2, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm3, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (aqm5, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDylosReadingsByGroup
+INFO: query dylos: (dylos, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findDeviceIdinSensordrone
+INFO:  have 7 deviceids in Sensordrone.
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (sensordrone, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FD, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year
+Jun 23, 2020 12:20:02 AM edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl findSensordroneReadingsByGroup
+INFO: query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FE, 2147483647, Mon Mar 23 00:20:02 EDT 2020, +1 year

@@ -12,7 +12,8 @@
 	
     <path id="compile.classpath">
         <pathelement path="${classes}"/>
-        <pathelement path="${aqmcommon.home}/${classes}"/> 
+        <pathelement path="${aqmcommon.home}/${classes}"/>
+        <pathelement path="${aqmrest.home}/${classes}"/> 
         <fileset dir="${lib}">
             <include name="**/*.jar"/>
             <include name="**/jndi.properties"/>

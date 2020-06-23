@@ -1,0 +1,48 @@
+23-Jun-2020 00:01:01.928 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:01:01.938 INFO [localhost-startStop-60] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:01:01.967 INFO [localhost-startStop-60] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [28] ms
+23-Jun-2020 00:01:11.971 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:01:12.010 INFO [localhost-startStop-61] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:01:12.093 INFO [localhost-startStop-61] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [82] ms
+23-Jun-2020 00:01:52.611 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:01:52.622 INFO [localhost-startStop-62] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:01:52.646 INFO [localhost-startStop-62] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [24] ms
+23-Jun-2020 00:02:02.649 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:02:02.681 INFO [localhost-startStop-63] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:02:02.769 INFO [localhost-startStop-63] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [88] ms
+23-Jun-2020 00:04:33.335 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:04:33.342 INFO [localhost-startStop-64] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:04:33.366 INFO [localhost-startStop-64] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [24] ms
+23-Jun-2020 00:04:43.368 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:04:43.383 INFO [localhost-startStop-65] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:04:43.423 INFO [localhost-startStop-65] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [39] ms
+23-Jun-2020 00:06:43.967 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:06:43.975 INFO [localhost-startStop-66] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:06:43.997 INFO [localhost-startStop-66] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [23] ms
+23-Jun-2020 00:06:54.000 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:06:54.032 INFO [localhost-startStop-67] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:06:54.115 INFO [localhost-startStop-67] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [83] ms
+23-Jun-2020 00:10:44.722 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:10:44.728 INFO [localhost-startStop-68] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:10:44.751 INFO [localhost-startStop-68] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [23] ms
+23-Jun-2020 00:10:54.753 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:10:54.762 INFO [localhost-startStop-69] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:10:54.790 INFO [localhost-startStop-69] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [28] ms
+23-Jun-2020 00:12:35.347 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:12:35.357 INFO [localhost-startStop-70] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:12:35.396 INFO [localhost-startStop-70] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [39] ms
+23-Jun-2020 00:12:45.398 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:12:45.417 INFO [localhost-startStop-71] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:12:45.439 INFO [localhost-startStop-71] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [22] ms
+23-Jun-2020 00:16:26.051 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:16:26.062 INFO [localhost-startStop-72] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:16:26.125 INFO [localhost-startStop-72] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [63] ms
+23-Jun-2020 00:16:36.128 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:16:36.167 INFO [localhost-startStop-73] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:16:36.258 INFO [localhost-startStop-73] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [91] ms
+23-Jun-2020 00:19:26.851 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:19:26.862 INFO [localhost-startStop-74] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:19:26.884 INFO [localhost-startStop-74] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [22] ms
+23-Jun-2020 00:19:36.888 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/aqmapps]
+23-Jun-2020 00:19:36.920 INFO [localhost-startStop-75] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war]
+23-Jun-2020 00:19:37.002 INFO [localhost-startStop-75] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqmapps.war] has finished in [83] ms

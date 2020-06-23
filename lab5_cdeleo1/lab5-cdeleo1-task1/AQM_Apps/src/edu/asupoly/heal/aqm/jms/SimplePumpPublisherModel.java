@@ -4,6 +4,9 @@ import javax.jms.*;
 import javax.naming.*;
 import org.apache.log4j.BasicConfigurator;
 
+import org.apache.activemq.ActiveMQConnection;
+import org.apache.activemq.ActiveMQConnectionFactory;
+
 import java.io.*;
 
 import java.io.BufferedReader;
@@ -15,12 +18,19 @@ import java.util.Properties;
 
 import java.io.IOException;
 
-public class SimplePumpPublisherModel {
+import edu.asupoly.heal.aqm.dmp.IAQMDAO;
+import edu.asupoly.heal.aqm.dmp.AQMDAOFactory;
+import edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl;
+import edu.asupoly.heal.aqm.model.DylosReading;
+import edu.asupoly.heal.aqm.model.SensordroneReading;
+import edu.asupoly.heal.aqm.model.ServerPushEvent;
+
+public class SimplePumpPublisherModel implements javax.jms.MessageListener {
 
     private TopicSession pubSession;
     private TopicPublisher publisher;
     private TopicConnection connection;
-    
+
     private static final String USAGE = "java edu.asupoly.heal.aqm.clients.SimplePump -url <URL> -device dylos|sensordrone -lat1 float -lat2 float -long1 float -long2 float -rate int -num int";
 
     private static final String URL = "-url";
@@ -48,11 +58,12 @@ public class SimplePumpPublisherModel {
     private static final int DYLOS_UPPER_BOUND_LARGE = 1500;
     private static final int SENSORDRONE_UPPER_BOUND_LARGE = 2000;
 
-    private Properties jndiProperties =  new Properties();
-    
+    private Properties jndiProperties = new Properties();
+
     /* Establish JMS publisher */
-    public SimplePumpPublisherModel(String sensorJson) throws Exception {
-        
+    public SimplePumpPublisherModel(String topicName, String username,
+            String password) throws Exception {
+
         final File file = new File("../properties/jndi.properties");
         try {
             jndiProperties.load(new FileInputStream(file));
@@ -61,21 +72,37 @@ public class SimplePumpPublisherModel {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         // Obtain a JNDI connection - see jndi.properties
         InitialContext jndi = new InitialContext(jndiProperties);
         // Look up a JMS connection factory
-        TopicConnectionFactory conFactory = 
-                (TopicConnectionFactory)jndi.lookup("connectionFactory");
+        TopicConnectionFactory conFactory
+                = (TopicConnectionFactory) jndi.lookup("topicConnectionFactry");
         // Create a JMS connection
-        connection = conFactory.createTopicConnection();
-        // Look up a JMS topic
-        Topic chatTopic = (Topic)jndi.lookup("Chat1");
+        connection = conFactory.createTopicConnection(username, password);
+        String jmsURL = "tcp://localhost:61616";
+        // Create a ConnectionFactory
+        ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(jmsURL);
+        connectionFactory.createConnection();
         // Create JMS session objects for publisher
-        pubSession = connection.createTopicSession(false, 
+        pubSession = connection.createTopicSession(false,
                 TopicSession.AUTO_ACKNOWLEDGE);
+        //TopicSession subSession = 
+        //        connection.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
+        // Look up a JMS topic
+        Topic chatTopic = (Topic) jndi.lookup(topicName);
+
         // Create a JMS publisher
         publisher = pubSession.createPublisher(chatTopic);
+        //TopicSubscriber subscriber = subSession.createSubscriber(chatTopic);
+        // Set a JMS message listener
+        //subscriber.setMessageListener(this);
+        // Start the JMS connection; allows messages to be delivered
+        connection.start();
+        // Create and send message using topic publisher
+        //TextMessage message = pubSession.createTextMessage();
+        //message.setText(username + ": Howdy Friends!");
+        //publisher.publish(message);
         publisher.setDeliveryMode(DeliveryMode.PERSISTENT);
     }
 
@@ -93,10 +120,26 @@ public class SimplePumpPublisherModel {
         return rval;
     }
 
+    /*
+     * A client can register a message listener with a consumer. A message
+     * listener is similar to an event listener. Whenever a message arrives at
+     * the destination, the JMS provider delivers the message by calling the
+     * listener's onMessage method, which acts on the contents of the message.
+     */
+    public void onMessage(Message message) {
+        try {
+            TextMessage textMessage = (TextMessage) message;
+            String text = textMessage.getText();
+            System.out.println(text);
+        } catch (JMSException jmse) {
+            jmse.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) {
         // uncomment this line for verbose logging to the screen
         //BasicConfigurator.configure();
-        
+
         float lat1 = DEFAULT_LAT1;
         float lat2 = DEFAULT_LAT2;
         float long1 = DEFAULT_LONG1;
@@ -109,27 +152,11 @@ public class SimplePumpPublisherModel {
         float latitude = DEFAULT_LAT1, longitude = DEFAULT_LONG1;   // the actual coordinates for the sensor readings.
 
         try {
-            if (args.length % 2 != 0) {
-                System.out.println("Please Provide the sensor data in one of "
-                        + "the following formats: \n"
-                        + "Dylos Format:\n"
-                        + "{\"type\":\"dylos\",\"deviceId\":\"aqm1\",\"userId\":"
-                        + "\"user1\", \"dateTime\":\"Fri May 29\n"
-                        + "13:27:09 MST 2020\",\"smallParticle\":93,"
-                        + "\"largeParticle\":26,\n\"geoLatitude\":33.3099177,"
-                        + "\"geoLongitude\":-111.6726974,\"geoMethod\":"
-                        + "\"manual\"\n}\n\n"
-                        + "Sensordrone Format:\n"
-                        + "{ \"coData\":3,\"dateTime\":\"20200529_124956\","
-                        + "\"geoLongitude\":-111.6823322,\n\"co2Data\":5,"
-                        + "\"co2DeviceID\":\"UNKNOWN\",\"geoMethod\":"
-                        + "\"Network\",\"type\":\"sensordrone\",\n"
-                        + "\"presureData\":96464,\"tempData\":25,"
-                        + "\"geoLatitude\":33.2993061,\n\"deviceId\":"
-                        + "\"SensorDroneB8:FF:FE:B9:C3:FA\",\"humidityData\":"
-                        + "32\n}\n\n");
+            if (args.length != 3) {
+                System.out
+                        .println("Please Provide the topic name,username,password!");
             }
-
+            /*
             for (int i = 0; i < args.length; i++) {
                 // if I wasn't lazy I would've made a String enum or something
                 System.out.println("Processing arg " + args[i] + " value " + 
@@ -201,27 +228,28 @@ public class SimplePumpPublisherModel {
                 json = json.replace("GEO_LONG", "" + longitude);
                 json = json.replace("DATE_TIME", nextDate);
                 json = json.replace("DEVICE", device);
+             */
+            SimplePumpPublisherModel demo
+                    = new SimplePumpPublisherModel(args[0], args[1], args[2]);
 
-                SimplePumpPublisherModel demo
-                        = new SimplePumpPublisherModel(json);
+            //demo.goPublish(json);
+            BufferedReader commandLine
+                    = new java.io.BufferedReader(new InputStreamReader(System.in));
 
-                BufferedReader commandLine
-                        = new java.io.BufferedReader(new InputStreamReader(System.in));
-
-                // closes the connection and exit the system when 'exit' entered in the command line
-                while (true) {
-                    String s = commandLine.readLine();
-                    if (s.equalsIgnoreCase("exit")) {
-                        demo.connection.close();
-                        System.exit(0);
-                    }
-                    if (demo.goPublish(s)) {
-                        System.out.println("Published " + s);
-                    } else {
-                        System.out.println("Unable to publish " + s);
-                    }
+            // closes the connection and exit the system when 'exit' entered in the command line
+            while (true) {
+                String s = commandLine.readLine();
+                if (s.equalsIgnoreCase("exit")) {
+                    demo.connection.close();
+                    System.exit(0);
                 }
-            } 
+                if (demo.goPublish(s)) {
+                    System.out.println("Published " + s);
+                } else {
+                    System.out.println("Unable to publish " + s);
+                }
+            }
+            //} 
         } catch (Exception e) {
             e.printStackTrace();
         }
