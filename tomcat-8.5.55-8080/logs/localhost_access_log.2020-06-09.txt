@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:00:11:57 -0400] "GET /RestExampleAPI/rest/subjects HTTP/1.1" 200 196
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:00:18:01 -0400] "GET /RestExampleAPI/rest/subjects HTTP/1.1" 200 196
+0:0:0:0:0:0:0:1 - tomcat [09/Jun/2020:00:18:17 -0400] "GET /manager/html/list HTTP/1.1" 200 25291
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:00:18:18 -0400] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:00:18:21 -0400] "GET /lab3/ HTTP/1.1" 404 760
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:00:18:28 -0400] "GET /lab3/rest/authors HTTP/1.1" 200 371
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:00:18:33 -0400] "GET /lab3/rest/books HTTP/1.1" 200 410
+0:0:0:0:0:0:0:1 - - [09/Jun/2020:00:18:40 -0400] "GET /lab3/rest/subjects HTTP/1.1" 200 391

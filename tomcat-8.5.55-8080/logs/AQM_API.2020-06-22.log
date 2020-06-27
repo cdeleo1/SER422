@@ -1,0 +1,552 @@
+22-Jun-2020 19:58:06.339 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jun-2020 19:58:06.365 INFO [localhost-startStop-1] com.sun.jersey.api.core.PackagesResourceConfig.init Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+22-Jun-2020 19:58:06.401 INFO [localhost-startStop-1] com.sun.jersey.api.core.ScanningResourceConfig.logClasses Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.DataResource
+  class edu.asupoly.heal.aqm.rest.SensorResource
+22-Jun-2020 19:58:06.403 INFO [localhost-startStop-1] com.sun.jersey.api.core.ScanningResourceConfig.init No provider classes found.
+22-Jun-2020 19:58:06.512 INFO [localhost-startStop-1] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+22-Jun-2020 19:58:07.401 SEVERE [localhost-startStop-1] org.apache.jasper.EmbeddedServletOptions.<init> The scratchDir you specified: [/home/cristi/SER422/tomcat-8.5.55-8080/work/Catalina/localhost/aqm] is unusable.
+22-Jun-2020 19:58:14.127 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.init Testing DAO Connection -- OK
+22-Jun-2020 19:58:14.200 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 7 deviceids in Dylos.
+22-Jun-2020 19:58:14.226 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 19:58:14.244 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 19:58:14.286 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 19:58:14.325 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 19:58:14.343 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 19:58:14.360 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm8, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 19:58:14.374 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 19:58:14.415 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 7 deviceids in Sensordrone.
+22-Jun-2020 19:58:14.432 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 19:58:14.468 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 19:58:14.484 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 19:58:14.502 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 19:58:14.535 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 19:58:14.555 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 19:58:14.573 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 19:58:14 EDT 2020, +1 year
+22-Jun-2020 20:03:50.796 INFO [http-nio-8080-exec-8] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (null, 10, Sun Mar 22 20:03:50 EDT 2020, +1 year
+22-Jun-2020 20:03:50.884 INFO [http-nio-8080-exec-8] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (null, 10, Sun Mar 22 20:03:50 EDT 2020, +1 year
+22-Jun-2020 20:04:02.460 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 7 deviceids in Dylos.
+22-Jun-2020 20:04:02.497 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+22-Jun-2020 20:04:02.543 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+22-Jun-2020 20:04:02.613 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+22-Jun-2020 20:04:02.674 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+22-Jun-2020 20:04:02.719 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+22-Jun-2020 20:04:02.741 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm8, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+22-Jun-2020 20:04:02.759 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Sun Mar 22 20:04:02 EDT 2020, +1 year
+22-Jun-2020 20:04:02.798 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 7 deviceids in Sensordrone.
+22-Jun-2020 20:04:03.083 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+22-Jun-2020 20:04:03.128 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+22-Jun-2020 20:04:03.151 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+22-Jun-2020 20:04:03.174 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+22-Jun-2020 20:04:03.204 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+22-Jun-2020 20:04:03.238 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+22-Jun-2020 20:04:03.257 INFO [http-nio-8080-exec-1] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 20:04:03 EDT 2020, +1 year
+22-Jun-2020 20:05:46.611 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 7 deviceids in Dylos.
+22-Jun-2020 20:05:46.644 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+22-Jun-2020 20:05:46.692 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+22-Jun-2020 20:05:46.731 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+22-Jun-2020 20:05:46.765 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+22-Jun-2020 20:05:46.831 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+22-Jun-2020 20:05:46.887 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm8, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+22-Jun-2020 20:05:46.907 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+22-Jun-2020 20:05:46.959 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 7 deviceids in Sensordrone.
+22-Jun-2020 20:05:46.992 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Sun Mar 22 20:05:46 EDT 2020, +1 year
+22-Jun-2020 20:05:47.038 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 20:05:47 EDT 2020, +1 year
+22-Jun-2020 20:05:47.064 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 20:05:47 EDT 2020, +1 year
+22-Jun-2020 20:05:47.080 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 20:05:47 EDT 2020, +1 year
+22-Jun-2020 20:05:47.102 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 20:05:47 EDT 2020, +1 year
+22-Jun-2020 20:05:47.135 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 20:05:47 EDT 2020, +1 year
+22-Jun-2020 20:05:47.153 INFO [http-nio-8080-exec-4] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 20:05:47 EDT 2020, +1 year
+22-Jun-2020 20:06:00.657 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 7 deviceids in Dylos.
+22-Jun-2020 20:06:00.687 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+22-Jun-2020 20:06:00.730 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+22-Jun-2020 20:06:00.775 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+22-Jun-2020 20:06:00.810 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+22-Jun-2020 20:06:00.850 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+22-Jun-2020 20:06:00.884 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm8, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+22-Jun-2020 20:06:00.918 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Sun Mar 22 20:06:00 EDT 2020, +1 year
+22-Jun-2020 20:06:00.978 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 7 deviceids in Sensordrone.
+22-Jun-2020 20:06:01.009 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+22-Jun-2020 20:06:01.059 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+22-Jun-2020 20:06:01.114 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+22-Jun-2020 20:06:01.157 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+22-Jun-2020 20:06:01.201 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+22-Jun-2020 20:06:01.255 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+22-Jun-2020 20:06:01.301 INFO [http-nio-8080-exec-7] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 20:06:01 EDT 2020, +1 year
+22-Jun-2020 20:06:12.094 INFO [http-nio-8080-exec-10] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (null, 10, Sun Mar 22 20:06:12 EDT 2020, +1 year
+22-Jun-2020 20:06:12.147 INFO [http-nio-8080-exec-10] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (null, 10, Sun Mar 22 20:06:12 EDT 2020, +1 year
+22-Jun-2020 20:06:48.104 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 7 deviceids in Dylos.
+22-Jun-2020 20:06:48.137 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:06:48.170 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:06:48.203 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:06:48.236 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:06:48.282 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:06:48.305 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm8, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:06:48.321 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:06:48.352 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 7 deviceids in Sensordrone.
+22-Jun-2020 20:06:48.369 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:06:48.410 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:06:48.435 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:06:48.456 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:06:48.478 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:06:48.503 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:06:48.521 INFO [http-nio-8080-exec-3] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 20:06:48 EDT 2020, +1 year
+22-Jun-2020 20:08:22.619 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 7 deviceids in Dylos.
+22-Jun-2020 20:08:22.666 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+22-Jun-2020 20:08:22.709 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+22-Jun-2020 20:08:22.744 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+22-Jun-2020 20:08:22.775 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+22-Jun-2020 20:08:22.846 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+22-Jun-2020 20:08:22.884 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm8, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+22-Jun-2020 20:08:22.927 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Sun Mar 22 20:08:22 EDT 2020, +1 year
+22-Jun-2020 20:08:22.985 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 7 deviceids in Sensordrone.
+22-Jun-2020 20:08:23.019 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+22-Jun-2020 20:08:23.087 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+22-Jun-2020 20:08:23.111 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+22-Jun-2020 20:08:23.145 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+22-Jun-2020 20:08:23.161 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+22-Jun-2020 20:08:23.183 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+22-Jun-2020 20:08:23.211 INFO [http-nio-8080-exec-6] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 20:08:23 EDT 2020, +1 year
+22-Jun-2020 20:15:23.753 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 7 deviceids in Dylos.
+22-Jun-2020 20:15:23.801 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Sun Mar 22 20:15:23 EDT 2020, +1 year
+22-Jun-2020 20:15:23.841 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Sun Mar 22 20:15:23 EDT 2020, +1 year
+22-Jun-2020 20:15:23.875 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Sun Mar 22 20:15:23 EDT 2020, +1 year
+22-Jun-2020 20:15:23.908 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Sun Mar 22 20:15:23 EDT 2020, +1 year
+22-Jun-2020 20:15:23.944 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Sun Mar 22 20:15:23 EDT 2020, +1 year
+22-Jun-2020 20:15:23.977 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm8, 2147483647, Sun Mar 22 20:15:23 EDT 2020, +1 year
+22-Jun-2020 20:15:24.010 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+22-Jun-2020 20:15:24.070 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 7 deviceids in Sensordrone.
+22-Jun-2020 20:15:24.143 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+22-Jun-2020 20:15:24.198 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+22-Jun-2020 20:15:24.225 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+22-Jun-2020 20:15:24.272 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+22-Jun-2020 20:15:24.299 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+22-Jun-2020 20:15:24.324 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+22-Jun-2020 20:15:24.341 INFO [http-nio-8080-exec-12] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 20:15:24 EDT 2020, +1 year
+22-Jun-2020 21:11:20.299 INFO [localhost-startStop-7] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jun-2020 21:11:20.314 INFO [localhost-startStop-7] com.sun.jersey.api.core.PackagesResourceConfig.init Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+22-Jun-2020 21:11:20.348 INFO [localhost-startStop-7] com.sun.jersey.api.core.ScanningResourceConfig.logClasses Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.SensorResource
+  class edu.asupoly.heal.aqm.rest.DataResource
+22-Jun-2020 21:11:20.348 INFO [localhost-startStop-7] com.sun.jersey.api.core.ScanningResourceConfig.init No provider classes found.
+22-Jun-2020 21:11:20.432 INFO [localhost-startStop-7] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+22-Jun-2020 21:30:29.626 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.init Testing DAO Connection -- OK
+22-Jun-2020 21:30:29.676 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 7 deviceids in Dylos.
+22-Jun-2020 21:30:29.710 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+22-Jun-2020 21:30:29.733 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+22-Jun-2020 21:30:29.759 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+22-Jun-2020 21:30:29.781 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+22-Jun-2020 21:30:29.805 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+22-Jun-2020 21:30:29.827 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm8, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+22-Jun-2020 21:30:29.847 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+22-Jun-2020 21:30:29.899 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 7 deviceids in Sensordrone.
+22-Jun-2020 21:30:29.921 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+22-Jun-2020 21:30:29.977 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 21:30:29 EDT 2020, +1 year
+22-Jun-2020 21:30:30.019 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 21:30:30 EDT 2020, +1 year
+22-Jun-2020 21:30:30.054 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 21:30:30 EDT 2020, +1 year
+22-Jun-2020 21:30:30.075 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 21:30:30 EDT 2020, +1 year
+22-Jun-2020 21:30:30.104 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FB, 2147483647, Sun Mar 22 21:30:30 EDT 2020, +1 year
+22-Jun-2020 21:30:30.131 INFO [http-nio-8080-exec-25] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FC, 2147483647, Sun Mar 22 21:30:30 EDT 2020, +1 year
+22-Jun-2020 21:33:35.555 INFO [http-nio-8080-exec-33] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 6 deviceids in Dylos.
+22-Jun-2020 21:33:35.590 INFO [http-nio-8080-exec-33] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+22-Jun-2020 21:33:35.611 INFO [http-nio-8080-exec-33] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+22-Jun-2020 21:33:35.630 INFO [http-nio-8080-exec-33] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+22-Jun-2020 21:33:35.649 INFO [http-nio-8080-exec-33] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+22-Jun-2020 21:33:35.670 INFO [http-nio-8080-exec-33] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+22-Jun-2020 21:33:35.690 INFO [http-nio-8080-exec-33] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+22-Jun-2020 21:33:35.723 INFO [http-nio-8080-exec-33] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 5 deviceids in Sensordrone.
+22-Jun-2020 21:33:35.739 INFO [http-nio-8080-exec-33] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+22-Jun-2020 21:33:35.766 INFO [http-nio-8080-exec-33] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+22-Jun-2020 21:33:35.786 INFO [http-nio-8080-exec-33] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+22-Jun-2020 21:33:35.814 INFO [http-nio-8080-exec-33] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+22-Jun-2020 21:33:35.847 INFO [http-nio-8080-exec-33] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 21:33:35 EDT 2020, +1 year
+22-Jun-2020 21:34:18.757 INFO [http-nio-8080-exec-37] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 6 deviceids in Dylos.
+22-Jun-2020 21:34:18.803 INFO [http-nio-8080-exec-37] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Sun Mar 22 21:34:18 EDT 2020, +1 year
+22-Jun-2020 21:34:18.875 INFO [http-nio-8080-exec-37] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Sun Mar 22 21:34:18 EDT 2020, +1 year
+22-Jun-2020 21:34:18.915 INFO [http-nio-8080-exec-37] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Sun Mar 22 21:34:18 EDT 2020, +1 year
+22-Jun-2020 21:34:18.978 INFO [http-nio-8080-exec-37] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Sun Mar 22 21:34:18 EDT 2020, +1 year
+22-Jun-2020 21:34:19.058 INFO [http-nio-8080-exec-37] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+22-Jun-2020 21:34:19.112 INFO [http-nio-8080-exec-37] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+22-Jun-2020 21:34:19.231 INFO [http-nio-8080-exec-37] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 5 deviceids in Sensordrone.
+22-Jun-2020 21:34:19.278 INFO [http-nio-8080-exec-37] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+22-Jun-2020 21:34:19.344 INFO [http-nio-8080-exec-37] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+22-Jun-2020 21:34:19.370 INFO [http-nio-8080-exec-37] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+22-Jun-2020 21:34:19.392 INFO [http-nio-8080-exec-37] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+22-Jun-2020 21:34:19.427 INFO [http-nio-8080-exec-37] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 21:34:19 EDT 2020, +1 year
+22-Jun-2020 22:41:01.966 INFO [localhost-startStop-27] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jun-2020 22:41:01.978 INFO [localhost-startStop-27] com.sun.jersey.api.core.PackagesResourceConfig.init Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+22-Jun-2020 22:41:02.004 INFO [localhost-startStop-27] com.sun.jersey.api.core.ScanningResourceConfig.logClasses Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.SensorResource
+  class edu.asupoly.heal.aqm.rest.DataResource
+22-Jun-2020 22:41:02.004 INFO [localhost-startStop-27] com.sun.jersey.api.core.ScanningResourceConfig.init No provider classes found.
+22-Jun-2020 22:41:02.143 INFO [localhost-startStop-27] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+22-Jun-2020 22:41:13.683 INFO [localhost-startStop-28] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jun-2020 22:41:13.694 INFO [localhost-startStop-28] com.sun.jersey.api.core.PackagesResourceConfig.init Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+22-Jun-2020 22:41:13.724 INFO [localhost-startStop-28] com.sun.jersey.api.core.ScanningResourceConfig.logClasses Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.SensorResource
+  class edu.asupoly.heal.aqm.rest.DataResource
+22-Jun-2020 22:41:13.724 INFO [localhost-startStop-28] com.sun.jersey.api.core.ScanningResourceConfig.init No provider classes found.
+22-Jun-2020 22:41:13.792 INFO [localhost-startStop-28] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+22-Jun-2020 22:46:55.902 INFO [localhost-startStop-31] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jun-2020 22:46:55.915 INFO [localhost-startStop-31] com.sun.jersey.api.core.PackagesResourceConfig.init Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+22-Jun-2020 22:46:55.944 INFO [localhost-startStop-31] com.sun.jersey.api.core.ScanningResourceConfig.logClasses Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.DataResource
+  class edu.asupoly.heal.aqm.rest.SensorResource
+22-Jun-2020 22:46:55.945 INFO [localhost-startStop-31] com.sun.jersey.api.core.ScanningResourceConfig.init No provider classes found.
+22-Jun-2020 22:46:56.019 INFO [localhost-startStop-31] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+22-Jun-2020 22:46:56.027 SEVERE [localhost-startStop-31] org.apache.catalina.core.ApplicationContext.log StandardWrapper.Throwable
+	com.sun.jersey.spi.service.ServiceConfigurationError: com.sun.jersey.spi.container.ResourceMethodCustomInvokerDispatchProvider: : java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar (No such file or directory)
+		at com.sun.jersey.spi.service.ServiceFinder.fail(ServiceFinder.java:564)
+		at com.sun.jersey.spi.service.ServiceFinder.parse(ServiceFinder.java:636)
+		at com.sun.jersey.spi.service.ServiceFinder.access$500(ServiceFinder.java:162)
+		at com.sun.jersey.spi.service.ServiceFinder$AbstractLazyIterator.hasNext(ServiceFinder.java:692)
+		at com.sun.jersey.spi.service.ServiceFinder.toClassArray(ServiceFinder.java:549)
+		at com.sun.jersey.core.spi.component.ProviderServices.getServiceClasses(ProviderServices.java:345)
+		at com.sun.jersey.core.spi.component.ProviderServices.getProviderAndServiceClasses(ProviderServices.java:324)
+		at com.sun.jersey.core.spi.component.ProviderServices.getProvidersAndServices(ProviderServices.java:175)
+		at com.sun.jersey.spi.container.ResourceMethodCustomInvokerDispatchFactory.<init>(ResourceMethodCustomInvokerDispatchFactory.java:64)
+		at com.sun.jersey.server.impl.application.WebApplicationImpl._initiate(WebApplicationImpl.java:914)
+		at com.sun.jersey.server.impl.application.WebApplicationImpl.access$700(WebApplicationImpl.java:180)
+		at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:799)
+		at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:795)
+		at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:193)
+		at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795)
+		at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:790)
+		at com.sun.jersey.spi.container.servlet.ServletContainer.initiate(ServletContainer.java:491)
+		at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321)
+		at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605)
+		at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+		at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+		at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+		at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+		at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1144)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1091)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:985)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4883)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5197)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+22-Jun-2020 22:46:56.028 SEVERE [localhost-startStop-31] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [jersey-serlvet] in web application [/aqm] threw load() exception
+	com.sun.jersey.spi.service.ServiceConfigurationError: com.sun.jersey.spi.container.ResourceMethodCustomInvokerDispatchProvider: : java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar (No such file or directory)
+		at com.sun.jersey.spi.service.ServiceFinder.fail(ServiceFinder.java:564)
+		at com.sun.jersey.spi.service.ServiceFinder.parse(ServiceFinder.java:636)
+		at com.sun.jersey.spi.service.ServiceFinder.access$500(ServiceFinder.java:162)
+		at com.sun.jersey.spi.service.ServiceFinder$AbstractLazyIterator.hasNext(ServiceFinder.java:692)
+		at com.sun.jersey.spi.service.ServiceFinder.toClassArray(ServiceFinder.java:549)
+		at com.sun.jersey.core.spi.component.ProviderServices.getServiceClasses(ProviderServices.java:345)
+		at com.sun.jersey.core.spi.component.ProviderServices.getProviderAndServiceClasses(ProviderServices.java:324)
+		at com.sun.jersey.core.spi.component.ProviderServices.getProvidersAndServices(ProviderServices.java:175)
+		at com.sun.jersey.spi.container.ResourceMethodCustomInvokerDispatchFactory.<init>(ResourceMethodCustomInvokerDispatchFactory.java:64)
+		at com.sun.jersey.server.impl.application.WebApplicationImpl._initiate(WebApplicationImpl.java:914)
+		at com.sun.jersey.server.impl.application.WebApplicationImpl.access$700(WebApplicationImpl.java:180)
+		at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:799)
+		at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:795)
+		at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:193)
+		at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795)
+		at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:790)
+		at com.sun.jersey.spi.container.servlet.ServletContainer.initiate(ServletContainer.java:491)
+		at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321)
+		at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605)
+		at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+		at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+		at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+		at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+		at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1144)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1091)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:985)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4883)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5197)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+22-Jun-2020 22:47:06.974 INFO [localhost-startStop-32] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jun-2020 22:47:06.990 INFO [localhost-startStop-32] com.sun.jersey.api.core.PackagesResourceConfig.init Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+22-Jun-2020 22:47:07.019 INFO [localhost-startStop-32] com.sun.jersey.api.core.ScanningResourceConfig.logClasses Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.SensorResource
+  class edu.asupoly.heal.aqm.rest.DataResource
+22-Jun-2020 22:47:07.019 INFO [localhost-startStop-32] com.sun.jersey.api.core.ScanningResourceConfig.init No provider classes found.
+22-Jun-2020 22:47:07.088 INFO [localhost-startStop-32] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
+22-Jun-2020 23:37:09.734 INFO [http-nio-8080-exec-136] edu.asupoly.heal.aqm.rest.AQMImportServlet.doPost Received data: [{"coData": -2, "dateTime": "Fri Jun 12 13:27:17 MST 2020", "geoLongitude": -111.6823322, "co2Data": -1, "co2DeviceID": "UNKNOWN", "geoMethod": "Network", "type": "sensordrone", "pressureData": 96464, "tempData": 25, "geoLatitude": 33.2993071, "deviceId": "SensorDroneB8:FF:FE:B9:C3:FD", "humidityData": 32}]
+22-Jun-2020 23:37:10.328 INFO [http-nio-8080-exec-136] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.init Testing DAO Connection -- OK
+22-Jun-2020 23:37:10.402 INFO [http-nio-8080-exec-136] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.importReadings data type = sensordrone
+22-Jun-2020 23:37:10.407 INFO [http-nio-8080-exec-136] edu.asupoly.heal.aqm.rest.AQMImportServlet.doPost Server returning value: 1
+22-Jun-2020 23:37:17.860 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 6 deviceids in Dylos.
+22-Jun-2020 23:37:17.956 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Sun Mar 22 23:37:17 EDT 2020, +1 year
+22-Jun-2020 23:37:18.016 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+22-Jun-2020 23:37:18.090 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+22-Jun-2020 23:37:18.126 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+22-Jun-2020 23:37:18.150 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+22-Jun-2020 23:37:18.168 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+22-Jun-2020 23:37:18.208 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 6 deviceids in Sensordrone.
+22-Jun-2020 23:37:18.225 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+22-Jun-2020 23:37:18.266 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+22-Jun-2020 23:37:18.300 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+22-Jun-2020 23:37:18.320 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+22-Jun-2020 23:37:18.345 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+22-Jun-2020 23:37:18.371 INFO [http-nio-8080-exec-137] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FD, 2147483647, Sun Mar 22 23:37:18 EDT 2020, +1 year
+22-Jun-2020 23:55:06.973 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 6 deviceids in Dylos.
+22-Jun-2020 23:55:06.997 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Sun Mar 22 23:55:06 EDT 2020, +1 year
+22-Jun-2020 23:55:07.012 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+22-Jun-2020 23:55:07.029 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+22-Jun-2020 23:55:07.043 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+22-Jun-2020 23:55:07.059 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+22-Jun-2020 23:55:07.072 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+22-Jun-2020 23:55:07.095 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 6 deviceids in Sensordrone.
+22-Jun-2020 23:55:07.109 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+22-Jun-2020 23:55:07.129 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+22-Jun-2020 23:55:07.142 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+22-Jun-2020 23:55:07.156 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+22-Jun-2020 23:55:07.169 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+22-Jun-2020 23:55:07.200 INFO [http-nio-8080-exec-151] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FD, 2147483647, Sun Mar 22 23:55:07 EDT 2020, +1 year
+22-Jun-2020 23:55:11.714 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinDylos  have 6 deviceids in Dylos.
+22-Jun-2020 23:55:11.739 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm0, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+22-Jun-2020 23:55:11.776 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm1, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+22-Jun-2020 23:55:11.805 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm2, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+22-Jun-2020 23:55:11.835 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm3, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+22-Jun-2020 23:55:11.867 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (aqm5, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+22-Jun-2020 23:55:11.887 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDylosReadingsByGroup query dylos: (dylos, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+22-Jun-2020 23:55:11.919 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findDeviceIdinSensordrone  have 6 deviceids in Sensordrone.
+22-Jun-2020 23:55:11.935 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (sensordrone, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+22-Jun-2020 23:55:11.963 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone00:00:00:00:00:00, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+22-Jun-2020 23:55:11.986 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone11:00:00:00:00:00, 2147483647, Sun Mar 22 23:55:11 EDT 2020, +1 year
+22-Jun-2020 23:55:12.007 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDrone12:00:00:00:00:00, 2147483647, Sun Mar 22 23:55:12 EDT 2020, +1 year
+22-Jun-2020 23:55:12.036 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FA, 2147483647, Sun Mar 22 23:55:12 EDT 2020, +1 year
+22-Jun-2020 23:55:12.060 INFO [http-nio-8080-exec-138] edu.asupoly.heal.aqm.dmp.AQMDAOJDBCImpl.findSensordroneReadingsByGroup query sensordrone: (SensorDroneB8:FF:FE:B9:C3:FD, 2147483647, Sun Mar 22 23:55:12 EDT 2020, +1 year
+22-Jun-2020 23:56:28.403 WARNING [localhost-startStop-56] org.apache.tomcat.util.scan.StandardJarScanner.processURLs Failed to scan [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar] from classloader hierarchy
+	java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar (No such file or directory)
+		at java.util.zip.ZipFile.open(Native Method)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+		at java.util.jar.JarFile.<init>(JarFile.java:166)
+		at java.util.jar.JarFile.<init>(JarFile.java:130)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+		at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+		at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+		at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:385)
+		at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:320)
+		at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:271)
+		at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:234)
+		at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+		at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+		at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5152)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+22-Jun-2020 23:56:28.404 WARNING [localhost-startStop-56] org.apache.tomcat.util.scan.StandardJarScanner.processURLs Failed to scan [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derby.jar] from classloader hierarchy
+	java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derby.jar (No such file or directory)
+		at java.util.zip.ZipFile.open(Native Method)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+		at java.util.jar.JarFile.<init>(JarFile.java:166)
+		at java.util.jar.JarFile.<init>(JarFile.java:130)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+		at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+		at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+		at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:385)
+		at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:320)
+		at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:271)
+		at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:234)
+		at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+		at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+		at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5152)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+22-Jun-2020 23:56:28.406 WARNING [localhost-startStop-56] org.apache.tomcat.util.scan.StandardJarScanner.processURLs Failed to scan [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/json-simple-1.1.1.jar] from classloader hierarchy
+	java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/json-simple-1.1.1.jar (No such file or directory)
+		at java.util.zip.ZipFile.open(Native Method)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+		at java.util.jar.JarFile.<init>(JarFile.java:166)
+		at java.util.jar.JarFile.<init>(JarFile.java:130)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+		at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+		at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+		at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:385)
+		at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:320)
+		at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:271)
+		at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:234)
+		at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+		at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+		at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5152)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+22-Jun-2020 23:56:28.409 WARNING [localhost-startStop-56] org.apache.tomcat.util.scan.StandardJarScanner.processURLs Failed to scan [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derbytools.jar] from classloader hierarchy
+	java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/derbytools.jar (No such file or directory)
+		at java.util.zip.ZipFile.open(Native Method)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+		at java.util.jar.JarFile.<init>(JarFile.java:166)
+		at java.util.jar.JarFile.<init>(JarFile.java:130)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+		at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+		at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+		at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:385)
+		at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:320)
+		at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:271)
+		at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:234)
+		at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+		at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+		at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5152)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+22-Jun-2020 23:56:28.410 WARNING [localhost-startStop-56] org.apache.tomcat.util.scan.StandardJarScanner.processURLs Failed to scan [file:/home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar] from classloader hierarchy
+	java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar (No such file or directory)
+		at java.util.zip.ZipFile.open(Native Method)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+		at java.util.jar.JarFile.<init>(JarFile.java:166)
+		at java.util.jar.JarFile.<init>(JarFile.java:130)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+		at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+		at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+		at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:385)
+		at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:320)
+		at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:271)
+		at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:234)
+		at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+		at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+		at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5152)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+22-Jun-2020 23:56:28.436 INFO [localhost-startStop-56] com.sun.jersey.api.core.PackagesResourceConfig.init Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+22-Jun-2020 23:56:28.458 SEVERE [localhost-startStop-56] org.apache.catalina.core.ApplicationContext.log StandardWrapper.Throwable
+	com.sun.jersey.spi.service.ServiceConfigurationError: com.sun.jersey.spi.container.WebApplicationProvider: : java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar (No such file or directory)
+		at com.sun.jersey.spi.service.ServiceFinder.fail(ServiceFinder.java:564)
+		at com.sun.jersey.spi.service.ServiceFinder.parse(ServiceFinder.java:636)
+		at com.sun.jersey.spi.service.ServiceFinder.access$500(ServiceFinder.java:162)
+		at com.sun.jersey.spi.service.ServiceFinder$LazyObjectIterator.hasNext(ServiceFinder.java:829)
+		at com.sun.jersey.spi.container.WebApplicationFactory.createWebApplication(WebApplicationFactory.java:64)
+		at com.sun.jersey.spi.container.servlet.ServletContainer.create(ServletContainer.java:394)
+		at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.create(ServletContainer.java:309)
+		at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:603)
+		at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+		at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+		at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+		at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+		at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1144)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1091)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:985)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4883)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5197)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+22-Jun-2020 23:56:28.459 SEVERE [localhost-startStop-56] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [jersey-serlvet] in web application [/aqm] threw load() exception
+	com.sun.jersey.spi.service.ServiceConfigurationError: com.sun.jersey.spi.container.WebApplicationProvider: : java.io.FileNotFoundException: /home/cristi/SER422/tomcat-8.5.55-8080/webapps/aqm/WEB-INF/lib/jersey-bundle-1.18.jar (No such file or directory)
+		at com.sun.jersey.spi.service.ServiceFinder.fail(ServiceFinder.java:564)
+		at com.sun.jersey.spi.service.ServiceFinder.parse(ServiceFinder.java:636)
+		at com.sun.jersey.spi.service.ServiceFinder.access$500(ServiceFinder.java:162)
+		at com.sun.jersey.spi.service.ServiceFinder$LazyObjectIterator.hasNext(ServiceFinder.java:829)
+		at com.sun.jersey.spi.container.WebApplicationFactory.createWebApplication(WebApplicationFactory.java:64)
+		at com.sun.jersey.spi.container.servlet.ServletContainer.create(ServletContainer.java:394)
+		at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.create(ServletContainer.java:309)
+		at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:603)
+		at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207)
+		at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376)
+		at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559)
+		at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+		at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1144)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1091)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:985)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4883)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5197)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1840)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+22-Jun-2020 23:56:39.533 INFO [localhost-startStop-57] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jun-2020 23:56:39.548 INFO [localhost-startStop-57] com.sun.jersey.api.core.PackagesResourceConfig.init Scanning for root resource and provider classes in the packages:
+  edu.asupoly.heal.aqm.rest
+22-Jun-2020 23:56:39.588 INFO [localhost-startStop-57] com.sun.jersey.api.core.ScanningResourceConfig.logClasses Root resource classes found:
+  class edu.asupoly.heal.aqm.rest.SensorResource
+  class edu.asupoly.heal.aqm.rest.DataResource
+22-Jun-2020 23:56:39.589 INFO [localhost-startStop-57] com.sun.jersey.api.core.ScanningResourceConfig.init No provider classes found.
+22-Jun-2020 23:56:39.685 INFO [localhost-startStop-57] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate Initiating Jersey application, version 'Jersey: 1.18 11/22/2013 03:05 AM'
